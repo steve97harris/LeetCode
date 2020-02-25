@@ -12,12 +12,10 @@ namespace LeetCode
         
         static void LongestCommonPrefix(string[] strgs)
         {
-            foreach (string word in strgs)
+            for (int i = 0; i < strgs.Length; i++)
             {
-                foreach (char x in word)
-                { 
-                    Console.WriteLine(x); 
-                }
+                char[] characterArray = strgs[i].ToCharArray();
+                Console.WriteLine("{0}    {1}", characterArray[0], characterArray[1]);
             }
         }
     }
