@@ -3,14 +3,8 @@ using System.Linq;
 
 namespace LeetCode
 {
-    class Program
+    class FindingLongestCommonPrefix
     {
-        static void Main()
-        {
-            string[] array = {"Steve", "Steves"};
-            LongestCommonPrefix(array);
-        }
-
         static bool allContainsPrefix(string[] array, int arrayLength, string str, int start, int end)
         {
             for (int i = 0; i <= (arrayLength - 1); i++)        // Iterating over array up to arrayLength - 1
@@ -57,19 +51,19 @@ namespace LeetCode
             return prefix;
         }
 
-        static int firstNumAboveTen(int[] numbers)
-        {
-            // int number = -1;
-            // for (int i = 0; i < numbers.Length; i++)
-            // {
-            //     if (numbers[i] > 10)
-            //     {
-            //         return numbers[i]
-            //     }
-            // }
-            // return number;
-
-            return numbers.First(x => x > 10);
-        }
+        // static int firstNumAboveTen(int[] numbers)
+        // {
+        //     // int number = -1;
+        //     // for (int i = 0; i < numbers.Length; i++)
+        //     // {
+        //     //     if (numbers[i] > 10)
+        //     //     {
+        //     //         return numbers[i]
+        //     //     }
+        //     // }
+        //     // return number;
+        //
+        //     return numbers.First(x => x > 10);
+        // }
     }
 }
