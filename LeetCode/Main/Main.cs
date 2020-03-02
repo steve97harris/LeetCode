@@ -6,8 +6,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            string address = "1.1.1.1.1";
-            DefangingAnIPAddress.DefangIPAddress(address);
+            int x = 234;
+            ProductAndSum.SubtractProductAndSum(x);
         }
     }
 }
