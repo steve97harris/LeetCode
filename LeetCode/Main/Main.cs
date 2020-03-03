@@ -1,4 +1,5 @@
-﻿using LeetCode.Main.Solutions;
+﻿using System;
+using LeetCode.Main.Solutions;
 
 namespace LeetCode.Main
 {
@@ -6,16 +7,14 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int[][] jaggedArray = new int[][]
+            int[][] points = new int[][]
             {
-                new int[] {15, 2, -8, 5, 3},
-                new int[] {3, -3, 7},
-                new int[] {9, 1, -16, 13},
-                new int[] {},
-                new int[] {5}
+                new int[] {1,1},
+                new int[] {3,4},
+                new int[] {-1,0}, 
             };
 
-            CountTheNegatives.CountNegatives(jaggedArray);
+            MinTimeToVisitPoints.MinTimeVisitingAllPoints(points);
         }
     }
 }
