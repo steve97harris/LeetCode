@@ -6,17 +6,25 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] DecompressRLEList(int[] nums)
         {
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < (nums.Length + 1) / 2; i++)
             {
-                (int freq, int val) = (nums[2 * i], nums[2 * i + 1]);
-
-                int[] genArray = new int[freq];
+                int freq = nums[2 * i];
+                int val = nums[2 * i + 1];
+                Console.WriteLine("Freq = " + freq);
+                
+                int[] array = new int[freq];
                 
                 for (int j = 0; j < freq; j++)
                 {
-                    genArray[j] = val;
+                    array[j] = val;
+                    Console.WriteLine("Value = " + array[j]);
+                    nums[i] = array[j];
                 }
-                Console.WriteLine(genArray);
+            }
+
+            foreach (var x in nums)
+            {
+                Console.WriteLine(x);
             }
 
             return nums;
