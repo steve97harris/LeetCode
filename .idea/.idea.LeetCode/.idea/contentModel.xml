@@ -11,6 +11,7 @@
           <e p="Main.cs" t="Include" />
           <e p="Solutions" t="Include">
             <e p="CountNegatives.cs" t="Include" />
+            <e p="DecompressRunLengthEncodedList.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />

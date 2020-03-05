@@ -7,14 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int[][] points = new int[][]
-            {
-                new int[] {1,1},
-                new int[] {3,4},
-                new int[] {-1,0}, 
-            };
-
-            MinTimeToVisitPoints.MinTimeVisitingAllPoints(points);
+            int[] nums = {1, 2, 3, 4};
+            DecompressRunLengthEncodedList.DecompressRLEList(nums);
         }
     }
 }
