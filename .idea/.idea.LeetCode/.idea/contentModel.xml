@@ -14,10 +14,12 @@
             <e p="DecompressRunLengthEncodedList_Incomplete.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
+            <e p="ghjf.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="MinTimeToVisitPoints.cs" t="Include" />
             <e p="RangeSumOfBST_Incomplete.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
+            <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />

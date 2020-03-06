@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            string s = "SLKDJkajsd";
-            ToLowerCase.ToLower(s);
+            int[] array = {17, 18, 5, 4, 6, 1};
+            ReplaceElementsWithGreatestElementToRight.ReplaceElements(array);
         }
     }
 }
