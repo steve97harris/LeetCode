@@ -2,7 +2,7 @@
 
 namespace LeetCode.Main.Solutions
 {
-    public class DecompressRunLengthEncodedList
+    public class DecompressRunLengthEncodedListIncomplete
     {
         public static int[] DecompressRLEList(int[] nums)
         {

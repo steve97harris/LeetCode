@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int[] nums = {1, 2, 3, 4};
-            DecompressRunLengthEncodedList.DecompressRLEList(nums);
+            string s = "SLKDJkajsd";
+            ToLowerCase.ToLower(s);
         }
     }
 }

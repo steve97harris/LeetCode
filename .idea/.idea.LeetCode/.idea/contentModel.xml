@@ -11,7 +11,7 @@
           <e p="Main.cs" t="Include" />
           <e p="Solutions" t="Include">
             <e p="CountNegatives.cs" t="Include" />
-            <e p="DecompressRunLengthEncodedList.cs" t="Include" />
+            <e p="DecompressRunLengthEncodedList_Incomplete.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
@@ -20,6 +20,7 @@
             <e p="ReducingNumberToZero.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
+            <e p="ToLowerCase.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">
