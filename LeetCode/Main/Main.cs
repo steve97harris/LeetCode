@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int[] array = {17, 18, 5, 4, 6, 1};
-            ReplaceElementsWithGreatestElementToRight.ReplaceElements(array);
+            int n = 4;
+            StringCharactersWithOddCounts.GenerateTheString(n);
         }
     }
 }
