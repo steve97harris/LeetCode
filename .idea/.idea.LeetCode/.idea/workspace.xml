@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e21a56-7543-40ba-a818-c4962bc8d4c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/DecryptStringFromLettersToNumbers.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/StringCharactersWithOddCounts.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/SumOfArrayEqualZero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/Main/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Main/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/Main/Solutions/ReplaceElementsWithGreatestElementToRight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/ReplaceElementsWithGreatestElementToRight.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.dll" afterDir="false" />
@@ -25,9 +23,11 @@
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DecryptStringFromLettersToNumbers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ToLowerCase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Items/bottle-type_productdata.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SumOfArrayEqualZero.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../yrdesigner/Assets/StreamingAssets/Assets/Content/Flask_printdata.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/yrdesigner/Assets/StreamingAssets/Assets/Content/textdisabled_ada artist_printdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/FindingLongestCommonPrefix.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Items/phone-case-type_productdata.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/FindingLongestCommonPrefix.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SubtractProductAndSum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Main.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/StringSplit_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,9 +39,11 @@
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/MinTimeToVisitPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ReplaceElementsWithGreatestElementToRight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/yrdesignerAlternative/Assets/StreamingAssets/Assets/Items/printdata.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Content/iPhone X-XS_share-a-coke_printdata.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ReducingNumberToZero.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DefangingAnIPAddress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/RangeSumOfBST_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Content/iPhone 11 Max_share-a-coke_printdata.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -65,10 +67,11 @@
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/ReplaceElementswithGreatestElementToRight.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/ghjf.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/ReplaceElementsWithGreatestElementToRight.cs" />
-        <option value="$PROJECT_DIR$/LeetCode/Main/Main.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/StringCharactersWithOddCounts.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/RemoveOuterParentheses.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/DecryptStringFromLettersToNumbers.cs" />
+        <option value="$PROJECT_DIR$/LeetCode/Main/Main.cs" />
+        <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/SumOfArrayEqualZero.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +131,8 @@
       <workItem from="1583165036047" duration="19891000" />
       <workItem from="1583400860418" duration="20225000" />
       <workItem from="1583489420348" duration="10256000" />
-      <workItem from="1583834113817" duration="9403000" />
+      <workItem from="1583834113817" duration="14110000" />
+      <workItem from="1583946731517" duration="2179000" />
     </task>
     <servers />
   </component>
@@ -151,25 +155,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="358" key="GridCell.Tab.0.bottom" timestamp="1583857518998">
+    <state width="2517" height="358" key="GridCell.Tab.0.bottom" timestamp="1583948671560">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="358" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583857518998" />
+    <state width="2517" height="358" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583948671560" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.118.1920.1040/0.0.1920.1160@1920.118.1920.1040" timestamp="1582665944270" />
-    <state width="2517" height="358" key="GridCell.Tab.0.center" timestamp="1583857518998">
+    <state width="2517" height="358" key="GridCell.Tab.0.center" timestamp="1583948671560">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="358" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583857518998" />
+    <state width="2517" height="358" key="GridCell.Tab.0.center/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583948671560" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/1920.118.1920.1040/0.0.1920.1160@1920.118.1920.1040" timestamp="1582665944270" />
-    <state width="2517" height="358" key="GridCell.Tab.0.left" timestamp="1583857518998">
+    <state width="2517" height="358" key="GridCell.Tab.0.left" timestamp="1583948671560">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="358" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583857518998" />
+    <state width="2517" height="358" key="GridCell.Tab.0.left/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583948671560" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/1920.118.1920.1040/0.0.1920.1160@1920.118.1920.1040" timestamp="1582665944270" />
-    <state width="2517" height="358" key="GridCell.Tab.0.right" timestamp="1583857518998">
+    <state width="2517" height="358" key="GridCell.Tab.0.right" timestamp="1583948671560">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="358" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583857518998" />
+    <state width="2517" height="358" key="GridCell.Tab.0.right/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583948671560" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/1920.118.1920.1040/0.0.1920.1160@1920.118.1920.1040" timestamp="1582665944270" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582662128499">
       <screen x="1920" y="118" width="1920" height="1040" />
@@ -243,10 +247,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="141" y="346" key="SettingsEditor/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583164823206" />
-    <state x="984" y="-10" width="722" height="1117" maximized="true" key="dock-window-1" timestamp="1583245447072">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="2531" y="-285" width="1096" height="1387" maximized="true" key="dock-window-1" timestamp="1583923470174">
+      <screen x="2560" y="-263" width="1080" height="1880" />
     </state>
-    <state x="984" y="-10" width="722" height="1117" maximized="true" key="dock-window-1/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583245447072" />
+    <state x="2531" y="-285" width="1096" height="1387" maximized="true" key="dock-window-1/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583923470174" />
     <state x="2578" y="-286" width="1096" height="839" maximized="true" key="dock-window-2" timestamp="1583257663049">
       <screen x="2560" y="-263" width="1080" height="1880" />
     </state>

@@ -8,7 +8,7 @@ namespace LeetCode.Main
         static void Main()
         {
             int n = 4;
-            StringCharactersWithOddCounts.GenerateTheString(n);
+            SumOfArrayEqualZero.SumZero(n);
         }
     }
 }

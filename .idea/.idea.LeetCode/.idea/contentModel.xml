@@ -23,6 +23,7 @@
             <e p="StringCharactersWithOddCounts.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
+            <e p="SumOfArrayEqualZero.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
           </e>
         </e>
