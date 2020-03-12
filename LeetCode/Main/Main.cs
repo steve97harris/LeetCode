@@ -7,7 +7,7 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int n = 4;
+            int n = 7;
             SumOfArrayEqualZero.SumZero(n);
         }
     }
