@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int n = 7;
-            SumOfArrayEqualZero.SumZero(n);
+            string s = "0123410#";
+            DecryptStringFromLettersToNumbers.FreqAlphabets(s);
         }
     }
 }
