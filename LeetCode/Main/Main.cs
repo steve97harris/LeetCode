@@ -7,7 +7,7 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            string s = "0123410#";
+            string s = "11#12";
             DecryptStringFromLettersToNumbers.FreqAlphabets(s);
         }
     }

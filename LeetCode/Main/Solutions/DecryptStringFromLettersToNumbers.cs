@@ -27,38 +27,25 @@ namespace LeetCode.Main.Solutions
                 }
             }
 
-            for (int i = 0; i > numbers.Length; i++)
-            {
-                foreach (string hashNumber in numbers2)
-                {
-                    dictionary.Add(hashNumber, alphabet[i]);
-                }
-            }
-
             for (int i = 0; i < numbers2.Length; i++)
             {
-                if (s.Contains(numbers2[i]))
-                {
-                    dictionary.TryGetValue(numbers2[i], out char value);
-                    result.Add(value.ToString());
-                }
+                dictionary.Add(numbers2[i], alphabet[i + numbers.Length -1]);
             }
 
-            // foreach (char digit in s) 
-            // {
-            //     string stringDigit = digit.ToString();
-            //     
-            //     if (dictionary.TryGetValue(stringDigit, out char value))          
-            //     { 
-            //         stringDigit = value.ToString();
-            //         result.Add(stringDigit);
-            //     }
-            //     else 
-            //     { 
-            //         Console.WriteLine("Invalid entry"); 
-            //     }
-            // }
-            
+            foreach (var x in dictionary)
+            {
+                Console.WriteLine(x);
+            }
+
+            int hashPosition = s.IndexOf('#'); 
+            string hashNumberInS = s.Substring(hashPosition - 2, 3);
+            Console.WriteLine("Hash numbers in String S = " + hashNumberInS);
+
+            if (s.Contains(hashNumberInS))
+            {
+                dictionary.TryGetValue(hashNumberInS, out char hashValue);
+                result.Add(hashValue.ToString());
+            }
 
             s = string.Join("", result);
             
