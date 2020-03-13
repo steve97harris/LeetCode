@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            string s = "11#12";
-            DecryptStringFromLettersToNumbers.FreqAlphabets(s);
+            string moves = "UDU";
+            RobotReturnToOrigin.JudgeCircle(moves);
         }
     }
 }

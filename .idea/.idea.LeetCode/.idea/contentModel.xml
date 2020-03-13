@@ -17,9 +17,11 @@
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="MinTimeToVisitPoints.cs" t="Include" />
+            <e p="MorseCode.cs" t="Include" />
             <e p="RangeSumOfBST_Incomplete.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
+            <e p="RobotReturnToOrigin.cs" t="Include" />
             <e p="SmallerThanCurrent.cs" t="Include" />
             <e p="StringCharactersWithOddCounts.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
