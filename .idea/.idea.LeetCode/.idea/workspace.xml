@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e21a56-7543-40ba-a818-c4962bc8d4c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/MorseCode.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/RobotReturnToOrigin.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/TwoSum.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/Main/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Main/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/bin/Debug/netcoreapp3.1/LeetCode.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.dll" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,33 +25,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DecryptStringFromLettersToNumbers.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/RobotReturnToOrigin.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ToLowerCase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Items/bottle-type_productdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SumOfArrayEqualZero.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../yrdesigner/Assets/StreamingAssets/Assets/Content/Flask_printdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Items/phone-case-type_productdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SubtractProductAndSum.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Main.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/StringSplit_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/CountNegatives.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/JewelsAndStones.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/MinTimeToVisitPoints.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ReducingNumberToZero.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DefangingAnIPAddress.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/RangeSumOfBST_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Content/iPhone 11 Max_share-a-coke_printdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yrdesigner/Assets/StreamingAssets/Assets/Content/textdisabled_ada artist_printdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/FindingLongestCommonPrefix.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Routes/international_routedata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SmallerThanCurrent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DecompressRunLengthEncodedList_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DecryptStringFromLettersToNumbers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/FindingLongestCommonPrefix.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SumOfArrayEqualZero.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/RangeSumOfBST_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/RobotReturnToOrigin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/CountNegatives.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Main.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SmallerThanCurrent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/TwoSum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/SubtractProductAndSum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/DefangingAnIPAddress.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/StringCharactersWithOddCounts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ToLowerCase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/MinTimeToVisitPoints.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ReplaceElementsWithGreatestElementToRight.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yrdesignerAlternative/Assets/StreamingAssets/Assets/Items/printdata.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://D:/yr_UnityRepos/yrus1220-coca_cola-deployment/designer/Designer_Data/StreamingAssets/Assets/Content/iPhone X-XS_share-a-coke_printdata.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/MorseCode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/JewelsAndStones.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/ReducingNumberToZero.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/LeetCode/Main/Solutions/StringSplit_Incomplete.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -79,6 +78,8 @@
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/MorseCode.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/RobotReturnToOrigin.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Main.cs" />
+        <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/TwoSum.cs" />
+        <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" />
       </list>
     </option>
   </component>
@@ -98,7 +99,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
   </component>
   <component name="RunManager">
     <configuration name="LeetCode" type="DotNetProject" factoryName=".NET Project">
@@ -141,6 +148,7 @@
       <workItem from="1583834113817" duration="14110000" />
       <workItem from="1583946731517" duration="27722000" />
       <workItem from="1584099943519" duration="9430000" />
+      <workItem from="1584134448613" duration="2755000" />
     </task>
     <servers />
   </component>
@@ -251,10 +259,12 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="432" key="Rider.ProjectTemplateDialog.Size/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583839244175" />
-    <state x="141" y="346" key="SettingsEditor" timestamp="1583164823206">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="71" y="23" width="982" height="720" key="SettingsEditor" timestamp="1584139233516">
+      <screen x="0" y="23" width="1280" height="720" />
     </state>
+    <state x="71" y="78" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1584135140931" />
     <state x="141" y="346" key="SettingsEditor/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1583164823206" />
+    <state x="71" y="23" width="982" height="720" key="SettingsEditor/0.23.1280.720@0.23.1280.720" timestamp="1584139233516" />
     <state x="2531" y="-285" width="1096" height="1387" maximized="true" key="dock-window-1" timestamp="1583923470174">
       <screen x="2560" y="-263" width="1080" height="1880" />
     </state>
@@ -267,9 +277,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1576" y="334" key="run.anything.popup/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1582823027948" />
-    <state x="303" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1584109347758">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="152" y="183" width="672" height="388" key="search.everywhere.popup" timestamp="1584135492745">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="152" y="183" width="672" height="388" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1584135492745" />
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1584109347758" />
   </component>
 </project>
