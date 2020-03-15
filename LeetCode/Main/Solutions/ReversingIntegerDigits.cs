@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,39 +10,33 @@ namespace LeetCode.Main.Solutions
         {
             string xString = x.ToString();
             List<char> intList = new List<char>();
-            List<char> reverseList = new List<char>();
 
             foreach (char character in xString)
             {
-                intList.Add(character);
+                if (character == '-')
+                {
+                    intList.Remove(character);
+                }
+                else
+                {
+                    intList.Add(character);
+                }
             }
 
-            List<char> leftSide = new List<char>();
-            List<char> rightSide = new List<char>();
+            intList.Reverse();
+            string intListAsString = string.Join("", intList.ToArray());
+
             
-            int midPoint = intList.Count / 2;
-            for (int i = 0; i < midPoint; i++)
+            if (x < 0)
             {
-                leftSide.Add(intList[i]);
+                x =  -Int32.Parse(intListAsString);
             }
-            for (int i = 0; i > midPoint; i++)
+            else
             {
-                rightSide.Add(intList[i]);
-            }
-
-            foreach (char c in rightSide)
-            {
-                reverseList.Add(c);
-            }
-            foreach (char c in leftSide)
-            {
-                reverseList.Add(c);
+                x = Int32.Parse(intListAsString);
             }
 
-            reverseList.ToString();
-            
-            // Append() ??
-
+            Console.WriteLine(x);
             return x;
         }
     }

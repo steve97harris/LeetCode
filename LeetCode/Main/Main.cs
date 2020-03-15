@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int x = 385;
-            ReversingIntegerDigits.ReverseInt(x);
+            int[] A = {1, 2, 3, 4};
+            SortByParity.SortArrayByParity(A);
         }
     }
 }
