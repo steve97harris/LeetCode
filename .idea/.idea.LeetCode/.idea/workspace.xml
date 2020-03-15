@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89e21a56-7543-40ba-a818-c4962bc8d4c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/TwoSum.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LeetCode/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeetCode/Main/Main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Main/Main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/Debug/netcoreapp3.1/LeetCode.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/LeetCode.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +67,8 @@
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/DecryptStringFromLettersToNumbers.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/MorseCode.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/RobotReturnToOrigin.cs" />
-        <option value="$PROJECT_DIR$/LeetCode/Main/Main.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/TwoSum.cs" />
+        <option value="$PROJECT_DIR$/LeetCode/Main/Main.cs" />
         <option value="$PROJECT_DIR$/LeetCode/Main/Solutions/ReversingIntegerDigits.cs" />
       </list>
     </option>
@@ -148,7 +138,7 @@
       <workItem from="1583834113817" duration="14110000" />
       <workItem from="1583946731517" duration="27722000" />
       <workItem from="1584099943519" duration="9430000" />
-      <workItem from="1584134448613" duration="2755000" />
+      <workItem from="1584134448613" duration="4619000" />
     </task>
     <servers />
   </component>
@@ -277,10 +267,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1576" y="334" key="run.anything.popup/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1582823027948" />
-    <state x="152" y="183" width="672" height="388" key="search.everywhere.popup" timestamp="1584135492745">
+    <state x="152" y="183" width="672" height="388" key="search.everywhere.popup" timestamp="1584229485666">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="152" y="183" width="672" height="388" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1584135492745" />
+    <state x="152" y="183" width="672" height="388" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1584229485666" />
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.-263.1080.1880@0.0.2560.1400" timestamp="1584109347758" />
   </component>
 </project>
