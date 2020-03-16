@@ -7,8 +7,8 @@ namespace LeetCode.Main
     {
         static void Main()
         {
-            int[] A = {1, 2, 3, 4};
-            SortByParity.SortArrayByParity(A);
+            int[] array = {23,2435,2,34,234};
+            FindNumbersWithEvenNumberOfDigits.FindNumbers(array);
         }
     }
 }
