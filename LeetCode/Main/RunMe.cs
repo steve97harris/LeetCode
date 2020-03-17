@@ -9,8 +9,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] nums = {1,2,3,4};
-                DecompressRunLengthEncodedListIncomplete.DecompressRLEList(nums);
+                int num = 9669;
+                Max69Number.Maximum69Number(num);
             }
         }
     }

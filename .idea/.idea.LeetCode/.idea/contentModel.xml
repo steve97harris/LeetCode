@@ -19,6 +19,7 @@
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
+            <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />
             <e p="MinTimeToVisitPoints.cs" t="Include" />
