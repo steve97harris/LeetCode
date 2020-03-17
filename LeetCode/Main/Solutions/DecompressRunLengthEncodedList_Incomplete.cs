@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LeetCode.Main.Solutions
 {
@@ -6,27 +7,30 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] DecompressRLEList(int[] nums)
         {
-            for (int i = 0; i < (nums.Length + 1) / 2; i++)
+            List<int> outputList = new List<int>();
+
+            List<int> freqList = new List<int>();
+            List<int> valList = new List<int>();
+
+            for (int i = 0; i < nums.Length - 2; i++)
             {
                 int freq = nums[2 * i];
+                freqList.Add(freq);
                 int val = nums[2 * i + 1];
-                Console.WriteLine("Freq = " + freq);
-                
-                int[] array = new int[freq];
-                
-                for (int j = 0; j < freq; j++)
-                {
-                    array[j] = val;
-                    Console.WriteLine("Value = " + array[j]);
-                    nums[i] = array[j];
-                }
+                valList.Add(val);
             }
 
-            foreach (var x in nums)
+            for (int i = 0; i < freqList.Count; i++)
             {
-                Console.WriteLine(x);
+                int[] newArray = new int[freqList[i]];
+                
             }
-
+            
+            foreach (int ints in outputList)
+            {
+                Console.WriteLine(ints);
+            }
+            
             return nums;
         }
     }

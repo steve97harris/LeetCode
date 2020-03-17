@@ -16,16 +16,16 @@ namespace LeetCode.Main.Solutions
             }
             else if (t2 != null)        // t2 has a value
             {
-                //t3 = new TreeNode(t2.val);
-                //t2.left = MergeTreeNodes(null, t2.left);
-                //t2.right = MergeTreeNodes(null, t2.right);
+                t3 = new TreeNode(t2.val);
+                t2.left = MergeTreeNodes(null, t2.left);
+                t2.right = MergeTreeNodes(null, t2.right);
                 return t2;
             }
             else if (t1 != null)        // t1 has a value
             {
-                //t3 = new TreeNode(t1.val);
-                //t1.left = MergeTreeNodes(t1.left, null);
-                //t1.right = MergeTreeNodes(t1.right, null);
+                t3 = new TreeNode(t1.val);
+                t1.left = MergeTreeNodes(t1.left, null);
+                t1.right = MergeTreeNodes(t1.right, null);
                 return t1;
             }
             else         // both null
