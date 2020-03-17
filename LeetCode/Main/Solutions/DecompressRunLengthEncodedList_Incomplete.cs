@@ -7,30 +7,49 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] DecompressRLEList(int[] nums)
         {
-            List<int> outputList = new List<int>();
-
             List<int> freqList = new List<int>();
             List<int> valList = new List<int>();
-
-            for (int i = 0; i < nums.Length - 2; i++)
+            
+            List<int> result = new List<int>();
+            
+            if (nums.Length > 2)
             {
-                int freq = nums[2 * i];
-                freqList.Add(freq);
-                int val = nums[2 * i + 1];
-                valList.Add(val);
+                for (int i = 0; i < (nums.Length - 1) / 2; i++)
+                {
+                    int freq = nums[2 * i];
+                    freqList.Add(freq);
+                    int val = nums[2 * i + 1];
+                    valList.Add(val);
+                }
+            }
+            else if (nums.Length <= 2) 
+            {
+                for (int i = 0; i < nums.Length - 1; i++)
+                {
+                    int freq = nums[2 * i];
+                    freqList.Add(freq);
+                    int val = nums[2 * i + 1];
+                    valList.Add(val);
+                }   
             }
 
             for (int i = 0; i < freqList.Count; i++)
             {
                 int[] newArray = new int[freqList[i]];
-                
+                for (int j = 0; j < newArray.Length; j++)
+                {
+                    newArray[j] = valList[i];
+                    // Console.WriteLine("newArray[j] = " + newArray[j]);
+                    result.Add(newArray[j]);
+                }
             }
-            
-            foreach (int ints in outputList)
+
+            nums = result.ToArray();
+            foreach (int num in nums)
             {
-                Console.WriteLine(ints);
+                Console.WriteLine(num);
             }
-            
+
             return nums;
         }
     }

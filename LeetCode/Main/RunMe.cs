@@ -1,4 +1,5 @@
-﻿using LeetCode.Main.Solutions;
+﻿using System;
+using LeetCode.Main.Solutions;
 
 namespace LeetCode.Main
 {
@@ -8,7 +9,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] nums = {1, 2, 3, 4};
+                int[] nums = {1,2,3,4};
                 DecompressRunLengthEncodedListIncomplete.DecompressRLEList(nums);
             }
         }
