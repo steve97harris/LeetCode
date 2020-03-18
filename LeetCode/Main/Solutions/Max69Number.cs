@@ -9,25 +9,32 @@ namespace LeetCode.Main.Solutions
         public static int Maximum69Number(int num)
         {
             List<int> intList = new List<int>();
-            string numString = num.ToString();
+            string numString = num.ToString();  
 
-            for (int i = 0; i < numString.Length; i++)
-            {
-                
-                if (numString[i] == '9')
-                {
-                    numString.Remove(i);
-                    numString.Insert(i, "6");
-                }
-                else // if == 6
-                {
-                    numString.Remove(i);
-                    numString.Insert(i, "9");
-                }
-                intList.Add(Int32.Parse(numString));
-                Console.WriteLine(intList[i]);
-            }
+            //
+            // for (int i = 0; i < numString.Length; i++)
+            // {
+            //     for (int j = 0; j < 1; j++)
+            //     {
+            //         if (numString[j] == '9') 
+            //         {
+            //             numString = numString.Replace(numString[j], '6');
+            //             intList.Add(Int32.Parse(numString));
+            //         }
+            //         else
+            //         {
+            //             numString = numString.Replace(numString[j], '9');
+            //             intList.Add(Int32.Parse(numString));
+            //         }
+            //     }
+            // }
+
             
+
+            foreach (int i in intList)
+            {
+                Console.WriteLine(i);
+            }
             
             return num;
         }

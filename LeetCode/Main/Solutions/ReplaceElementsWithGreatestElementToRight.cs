@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LeetCode.Main.Solutions
@@ -7,11 +8,23 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] ReplaceElements(int[] array)
         {
+            List<int> maxList = new List<int>();
+            
 
-            foreach (int x in array)
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine(x);
+                IEnumerable<int> skipRight = array.Skip(i).Take(array.Length);
+                
+                int max = skipRight.Max();
+                maxList.Add(max);
             }
+
+            foreach (int i in maxList)
+            {
+                Console.WriteLine(i);
+            }
+
+
             return array;
         }
     }

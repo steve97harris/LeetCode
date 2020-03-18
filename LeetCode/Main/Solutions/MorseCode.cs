@@ -31,6 +31,8 @@ namespace LeetCode.Main.Solutions
                 }
             }
 
+            
+
             foreach (KeyValuePair<char,string> xPair in morseDictionary)
             {
                 Console.WriteLine(xPair);

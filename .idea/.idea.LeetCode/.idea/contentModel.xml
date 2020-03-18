@@ -16,6 +16,7 @@
             <e p="DecryptStringFromLettersToNumbers.cs" t="Include" />
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
+            <e p="DIString.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
@@ -42,6 +43,7 @@
             <e p="SumOfArrayEqualZero.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
             <e p="TwoSum.cs" t="Include" />
+            <e p="UniqueNumberOfOccurrences.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">

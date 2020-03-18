@@ -9,8 +9,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int num = 9669;
-                Max69Number.Maximum69Number(num);
+                int[] x = {1, 2, 2, 1, 1, 3};
+                UniqueNumberOfOccurrences.UniqueOccurrences(x);
             }
         }
     }
