@@ -9,8 +9,15 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] x = {1, 2, 2, 1, 1, 3};
-                UniqueNumberOfOccurrences.UniqueOccurrences(x);
+                int[][] x =
+                    {
+                        new [] { 1,1,0,0,0 }, 
+                        new [] { 1,1,1,1,0 }, 
+                        new [] { 1,0,0,0,0 }, 
+                        new [] { 1,1,0,0,0 },
+                        new [] { 1,1,1,1,1 }
+                    };
+                KWeakestRowsInMatrix.KWeakestRows(x, 3);
             }
         }
     }
