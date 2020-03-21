@@ -9,15 +9,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[][] x =
-                    {
-                        new [] { 1,1,0,0,0 }, 
-                        new [] { 1,1,1,1,0 }, 
-                        new [] { 1,0,0,0,0 }, 
-                        new [] { 1,1,0,0,0 },
-                        new [] { 1,1,1,1,1 }
-                    };
-                KWeakestRowsInMatrix.KWeakestRows(x, 3);
+                string[] x = {"9001 discuss.leetcode.com"};
+                SubdomainVisitCount.SubdomainVisits(x);
             }
         }
     }
