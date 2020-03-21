@@ -17,10 +17,18 @@ namespace LeetCode.Main.Solutions
                 keys[i + 1] = keys[i] + 1;
                 soldierRows.Add(keys[i], mat[i].Sum());
             }
-
-            foreach (KeyValuePair<int,int> xPair in soldierRows)
+            
+            Dictionary<int,int> sortedSoldiers = new Dictionary<int, int>(soldierRows.OrderBy(x => x.Value));
+            List<int> result = new List<int>(sortedSoldiers.Keys);
+            int[] arrayResult = new int[k];
+            for (int i = 0; i < k; i++)
             {
-                Console.WriteLine("{0},{1}", xPair.Key,xPair.Value);
+                arrayResult[i] = result[i];
+            }
+
+            foreach (int i in arrayResult)
+            {
+                Console.WriteLine(i);
             }
             
             return keys;
