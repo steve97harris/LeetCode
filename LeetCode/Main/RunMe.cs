@@ -9,7 +9,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                Codec.Encode("https://leetcode.com/problems/design-tinyurl");
+                int[] nums = {0, 1, 2, 3, 4};
+                int[] index = {0, 1, 2, 2, 1};
+                CreateTargetArrayInGivenOrder.CreateTargetArray(nums, index);
             }
         }
     }
