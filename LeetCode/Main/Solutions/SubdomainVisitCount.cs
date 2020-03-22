@@ -17,11 +17,6 @@ namespace LeetCode.Main
                 domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + SubSubDomain(xCpdomain));
             }
 
-            for (int i = 0; i < cpdomains.Length; i++)
-            {
-                   
-            }
-
             foreach (var x in domainsList)
             {
                 Console.WriteLine(x);

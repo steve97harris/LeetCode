@@ -9,8 +9,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                string[] x = {"9001 discuss.leetcode.com"};
-                SubdomainVisitCount.SubdomainVisits(x);
+                Codec.Encode("https://leetcode.com/problems/design-tinyurl");
             }
         }
     }
