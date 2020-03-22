@@ -9,9 +9,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] nums = {0, 1, 2, 3, 4};
-                int[] index = {0, 1, 2, 2, 1};
-                CreateTargetArrayInGivenOrder.CreateTargetArray(nums, index);
+                string[] slkd = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
+                SubdomainVisitCount.SubdomainVisits(slkd);
             }
         }
     }

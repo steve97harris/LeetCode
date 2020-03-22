@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main
 {
@@ -11,10 +12,26 @@ namespace LeetCode.Main
             foreach (string xCpdomain in cpdomains)
             {
                 domainsList.Add(xCpdomain);
-
-                domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + Subdomain(xCpdomain));
                 
-                domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + SubSubDomain(xCpdomain));
+                int numberOfDots = 0;
+                foreach (char x in xCpdomain)
+                {
+                    if (x == '.')
+                    {
+                        ++numberOfDots;
+                    }
+                }
+                
+                if (numberOfDots >= 2)
+                {
+                    domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + Subdomain(xCpdomain));
+                
+                    domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + SubSubDomain(xCpdomain));
+                }
+                else if (xCpdomain.Contains("."))
+                {
+                    domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + Subdomain(xCpdomain));
+                }
             }
 
             foreach (var x in domainsList)
