@@ -14,25 +14,19 @@ namespace LeetCode.Main.Solutions
             string generateID;
             
             generateID = TinyURL_ID(7);
-            if (!tinyURL_IDs.Contains(generateID))
+            if (!tinyURL_IDs.Contains(generateID) && longURL.Length > 25)
             {
                 tinyURL_IDs.Add(generateID);
-            }
-            // else
-            // {
-            //     generateID = TinyURL_ID(7);
-            // }
-
-            if (longURL.Length > 25)
-            {
-                int n = 7;
-
                 shortURL = "https://tinyurl.com/" + generateID;
+                urlDictionary.Add(longURL,shortURL);
             }
+            
             Console.WriteLine("shortURL = " + shortURL);
 
-
-
+            foreach (KeyValuePair<string,string> xPair in urlDictionary)
+            {
+                Console.WriteLine(xPair.Key +" "+ xPair.Value);
+            }
             return shortURL;
         }
 

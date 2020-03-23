@@ -9,8 +9,11 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                string[] slkd = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
-                SubdomainVisitCount.SubdomainVisits(slkd);
+                // string[] slkd = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
+                // SubdomainVisitCount.SubdomainVisits(slkd);
+
+                string s = "Let's take LeetCode contest";
+                ReverseWordsInStringIII.ReverseWords(s);
             }
         }
     }

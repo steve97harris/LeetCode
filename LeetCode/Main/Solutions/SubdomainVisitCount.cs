@@ -9,6 +9,7 @@ namespace LeetCode.Main
         public static IList<string> SubdomainVisits(string[] cpdomains)
         {
             IList<string> domainsList = new List<string>();
+            
             foreach (string xCpdomain in cpdomains)
             {
                 domainsList.Add(xCpdomain);
@@ -34,6 +35,7 @@ namespace LeetCode.Main
                 }
             }
 
+            Console.WriteLine("----Domains List-----");
             foreach (var x in domainsList)
             {
                 Console.WriteLine(x);
