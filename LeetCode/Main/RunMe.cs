@@ -12,8 +12,12 @@ namespace LeetCode.Main
                 // string[] slkd = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
                 // SubdomainVisitCount.SubdomainVisits(slkd);
 
-                string s = "Let's take LeetCode contest";
-                ReverseWordsInStringIII.ReverseWords(s);
+                string[] emails =
+                {
+                    "test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com",
+                    "testemail+david@lee.tcode.com"
+                };
+                NoOfUniqueEmails.NumUniqueEmails(emails);
             }
         }
     }
