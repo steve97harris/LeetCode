@@ -29,8 +29,14 @@ namespace LeetCode.Main.Solutions
                     leftOvers.Add(arr1[i]);
                 }
             }
-
             
+            leftOvers.Sort();
+            result = result.Concat(leftOvers).ToList();
+
+            foreach (var x in result)
+            {
+                Console.WriteLine(x);
+            }
 
             return arr1;
         }
