@@ -7,7 +7,7 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] DailyTemps(int[] T)
         {
-            int daysUntilWarmer = 0;
+            // int daysUntilWarmer = 0;
             List<int> tList = new List<int>();
             List<int> output = new List<int>();
 

@@ -4,13 +4,8 @@ using System.Collections;
 namespace LeetCode
 {
     public static class ReducingNumberToZero
-    {
-        static void MainOLD()
-        {
-            NumberOfSteps(14);
-        }
-
-        static int NumberOfSteps(int number)
+    { 
+        public static int NumberOfSteps(int number)
         {
             int steps = 0;
             
@@ -32,10 +27,10 @@ namespace LeetCode
             }
             Console.WriteLine(steps);
             return steps;
-            return number;
+            // return number;
         }
 
-        public static bool IsOdd(int value)
+        private static bool IsOdd(int value)
         {
             return value % 2 != 0;
         }

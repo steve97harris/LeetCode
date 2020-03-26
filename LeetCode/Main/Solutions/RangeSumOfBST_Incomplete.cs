@@ -1,13 +1,10 @@
 ﻿namespace LeetCode.Main.Solutions
 {
-    public class RangeSumOfBST
+    public class RangeSumOfBst
     {
-        public static int RangeSumBST(TreeNode root, int L, int R)
+        public static int RangeSumBst(TreeNode root, int L, int R)
         {
-            int sumOfValues;
-            
-            
-            return sumOfValues =1;
+            return 1;
         }
     }
 

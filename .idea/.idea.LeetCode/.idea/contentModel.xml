@@ -27,6 +27,7 @@
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />
+            <e p="MinNumOfStepsForAnagram.cs" t="Include" />
             <e p="MinTimeToVisitPoints.cs" t="Include" />
             <e p="MorseCode.cs" t="Include" />
             <e p="MovingZeroesToEnd.cs" t="Include" />
@@ -37,10 +38,12 @@
             <e p="RelativelySortArray.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="ReverseLinkedList.cs" t="Include" />
+            <e p="ReverseString.cs" t="Include" />
             <e p="ReverseWordsInStringIII.cs" t="Include" />
             <e p="ReversingIntegerDigits.cs" t="Include" />
             <e p="RobotReturnToOrigin.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
+            <e p="ShortestDistanceToACharacter.cs" t="Include" />
             <e p="SingleNumberInArray.cs" t="Include" />
             <e p="SmallerThanCurrent.cs" t="Include" />
             <e p="SortArrayByParityII.cs" t="Include" />
