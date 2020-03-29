@@ -10,6 +10,7 @@ namespace LeetCode.Main.Solutions
         {
             List<string> goodWords = new List<string>();
             List<string> badWords = new List<string>();
+            
             foreach (var word in words)
             {
                 goodWords.Add(word);

@@ -15,17 +15,13 @@ namespace LeetCode.Main.Solutions
                 sList.Add(character);
             }
 
-            s = sList.ToArray().Reverse() as char[];
-
-            foreach (var c in s)
+            sList.Reverse();
+            s = sList.ToArray();
+            for (int i = 0; i < sList.Count; i++)
             {
-                Console.WriteLine(c);
+                // s[i] = sList[i];
+                Console.WriteLine(s[i]);
             }
-            // for (int i = 0; i < sList.Count; i++)
-            // {
-            //     s[i] = sList[i];
-            //     Console.WriteLine(s[i]);
-            // }
         }
     }
 }

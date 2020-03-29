@@ -8,52 +8,33 @@ namespace LeetCode.Main
     {
         public static IList<string> SubdomainVisits(string[] cpdomains)
         {
-            IList<string> domainsList = new List<string>();
-            
-            foreach (string xCpdomain in cpdomains)
+            Dictionary<string, string> subDomainsWithVisits = new Dictionary<string, string>();
+            IList<string> subDomains = new List<string>();
+
+            for (int i = 0; i < cpdomains.Length; i++)
             {
-                domainsList.Add(xCpdomain);
-                
-                int numberOfDots = 0;
-                foreach (char x in xCpdomain)
+                String[] numStringSplit = cpdomains[i].Split(' ');
+                subDomainsWithVisits.Add(numStringSplit[0],numStringSplit[1]);
+            }
+
+            int numOfDots = 0;
+            List<string> x = new List<string>();
+            foreach (KeyValuePair<string,string> pair in subDomainsWithVisits)
+            {
+                for (int i = 0; i < pair.Value.Length; i++)
                 {
-                    if (x == '.')
+                    if (pair.Value[i] == '.')
                     {
-                        ++numberOfDots;
+                        ++numOfDots;
                     }
                 }
-                
-                if (numberOfDots >= 2)
-                {
-                    domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + Subdomain(xCpdomain));
-                
-                    domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + SubSubDomain(xCpdomain));
-                }
-                else if (xCpdomain.Contains("."))
-                {
-                    domainsList.Add(xCpdomain.Substring(0,xCpdomain.IndexOf(" ")) + " " + Subdomain(xCpdomain));
-                }
             }
 
-            Console.WriteLine("----Domains List-----");
-            foreach (var x in domainsList)
+            for (int i = 0; i < x.Count; i++)
             {
-                Console.WriteLine(x);
+                Console.WriteLine(x[i]);
             }
-
-            return domainsList;
-        }
-
-        public static string Subdomain(string x)
-        {
-            x = x.Substring(x.IndexOf(".") + 1, x.Length - x.IndexOf(".") - 1);
-            return x;
-        }
-
-        public static string SubSubDomain(string x)
-        {
-            x = x.Substring(x.LastIndexOf(".") + 1, x.Length - x.LastIndexOf(".") - 1);
-            return x;
+            return subDomains;
         }
     }
 }

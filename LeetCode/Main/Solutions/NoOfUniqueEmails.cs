@@ -9,21 +9,23 @@ namespace LeetCode.Main.Solutions
         {
             List<string> uniqueEmailsList = new List<string>();
 
-            for (int i = 0; i < emails[i].Length; i++) 
-            { 
-                while (i < emails[i].IndexOf('@')) 
-                { 
-                    if (emails[i].Contains('+')) 
-                    { 
-                        uniqueEmailsList.Add(emails[i].Remove(emails[i].IndexOf('+'), emails[i].IndexOf('@') - emails[i].IndexOf('+')));
-                    }
-                } 
-            }
+            for (int i = 0; i < emails.Length; i++)
+            {
+                int atIndex = emails[i].IndexOf('@');
+                string local = emails[i].Substring(0, atIndex);
+                string domain = emails[i].Substring(atIndex);
 
-            // foreach (var xEmail in emails)
-            // {
-            //     uniqueEmailsList.Add(xEmail);
-            // }
+                if (local.Contains('+'))
+                {
+                    local = local.Substring(0, local.IndexOf('+'));
+                }
+
+                local = local.Replace(".", "");
+                if (!uniqueEmailsList.Contains(local + domain))
+                {
+                    uniqueEmailsList.Add(local + domain);
+                }
+            }
 
             foreach (var x in uniqueEmailsList)
             {
