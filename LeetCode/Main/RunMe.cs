@@ -26,8 +26,9 @@ namespace LeetCode.Main
                 // string s = "loveleetcode";
                 // char c = 'e';
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
-                
-                
+
+                int n = 3;
+                FactorialTrailingZeros.TrailingZeroes(n);
             }
         }
     }
