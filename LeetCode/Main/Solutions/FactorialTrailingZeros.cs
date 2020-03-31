@@ -7,32 +7,16 @@ namespace LeetCode.Main
     {
         public static int TrailingZeroes(int n)
         {
-            int nFactorial = 1;
+            if (n <= 0)
+                return 0;
 
-            for (int i = 1; i <= n; i++)
-            {
-                nFactorial = nFactorial * (n - i);
-                Console.WriteLine(nFactorial);
-            }
-            //Console.WriteLine("nFac = " + nFactorial);
-            
             int trailingZeros = 0;
-
-            string nFacString = nFactorial.ToString();
-
-            for (int i = nFacString.Length - 1; i >= 0; i--)
+            while (n > 0)
             {
-                if (nFacString[i] == '0')
-                {
-                    ++trailingZeros;
-                }
-                else
-                {
-                    break;
-                }
+                trailingZeros += n / 5;
+                n /= 5;
             }
 
-            // Console.WriteLine(trailingZeros);
             return trailingZeros;
         }
     }
