@@ -27,7 +27,7 @@ namespace LeetCode.Main
                 // char c = 'e';
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
 
-                string[] A = { "bella","label","roller" };
+                string[] A = { "cool","lock","cook" };
                 FindCommonCharacters.CommonChars(A);
             }
         }

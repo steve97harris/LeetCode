@@ -8,19 +8,32 @@ namespace LeetCode.Main.Solutions
     {
         public static IList<string> CommonChars(string[] A)
         {
+            List<string> aList = new List<string>();
             IList<string> result = new List<string>();
-            
-            foreach (var word in A)
+
+            for (int i = 1; i < A.Length; i++)
             {
-                for (int j = 0; j < word.Length; j++)
+                aList.Add(A[i]);
+            }
+
+            foreach (var c in A[0])
+            {
+                result.Add(c.ToString());
+
+                foreach (var word in aList)
                 {
-                    if (word.Contains(word[j]))
+                    if (!word.Contains(c))
                     {
-                        result.Add(word[j].ToString());
+                        result.Remove(c.ToString());
+                    }
+                    else if (word.Contains(c) && word.IndexOf(c) != word.LastIndexOf(c))
+                    {
+                        result.Remove(c.ToString());
                     }
                 }
             }
 
+            
             foreach (var word in result)
             {
                 Console.WriteLine(word);
