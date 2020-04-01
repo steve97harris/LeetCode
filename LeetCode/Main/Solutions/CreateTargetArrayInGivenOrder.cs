@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main.Solutions
 {
@@ -7,19 +8,19 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] CreateTargetArray(int[] nums, int[] index)
         {
-            Dictionary<int,int> dic = new Dictionary<int, int>();
+            List<int> result = new List<int>();
             
             for (int i = 0; i < nums.Length; i++)
             {
-                dic.Add(nums[i], index[i]);
+                result.Insert(index[i], nums[i]);
             }
 
-            foreach (int xNum in nums)
+            Console.WriteLine("result:");
+            foreach (var i in result)
             {
-                Console.WriteLine(xNum);
+                Console.WriteLine(i);
             }
-
-            return nums;
+            return result.ToArray();
         }
     }
 }

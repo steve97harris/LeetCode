@@ -2,22 +2,32 @@
 
 namespace LeetCode.Main.Solutions
 {
-    public class StringSplit
+    public static class StringSplit
     {
         public static int BalancedStringSplit(string s)
         {
-            int numberOfRLs = 0;
-            
+            int numberOfBalancedStrings = 0;
+            const char r = 'R';
+            const char l = 'L';
+
             for (int i = 0; i < s.Length; i++)
             {
-                if (s[i] != s[i + 1] && s[i] == 'R')
+                switch (s[i])   
                 {
-                    Console.WriteLine("RL");
-                    // ++numberOfRLs;
+                    case r:
+                        ++numberOfBalancedStrings;
+                        continue;
+                    case l: 
+                        --numberOfBalancedStrings;
+                        continue;
+                    default:
+                        continue;
                 }
             }
+
+
             // Console.WriteLine(numberOfRLs);
-            return numberOfRLs;
+            return numberOfBalancedStrings;
         }
     }
 }
