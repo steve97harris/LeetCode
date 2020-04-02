@@ -26,9 +26,8 @@ namespace LeetCode.Main
                 // string s = "loveleetcode";
                 // char c = 'e';
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
-
-                string s = "RLLLLRRRLR";
-                StringSplit.BalancedStringSplit(s);
+                
+                HappyNumber.IsHappy(19);
             }
         }
     }
