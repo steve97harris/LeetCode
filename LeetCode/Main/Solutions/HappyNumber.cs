@@ -24,15 +24,14 @@ namespace LeetCode.Main
                 ans = (int) (Math.Pow(nArray[i], 2) + Math.Pow(nArray[i+1], 2));
                 Console.WriteLine("Answer: " + ans);
                 
-                if (ans != 1)
-                {
-                    IsHappy(ans);
-                }
+                
                 if (ans == 1)
                 {
-                    Console.WriteLine("true");
-                    return true;
+                    isHappy = true;
+                    break;
                 }
+
+                IsHappy(ans);
             }
             
             Console.WriteLine(isHappy);
