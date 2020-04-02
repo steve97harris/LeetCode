@@ -14,6 +14,7 @@
             <e p="CountNegatives.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
             <e p="DailyTemperatures.cs" t="Include" />
+            <e p="DayOfTheWeek.cs" t="Include" />
             <e p="DecompressRunLengthEncodedList_Incomplete.cs" t="Include" />
             <e p="DecryptStringFromLettersToNumbers.cs" t="Include" />
             <e p="DeepestLeavesSum.cs" t="Include" />
@@ -50,6 +51,7 @@
             <e p="RobotReturnToOrigin.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="ShortestDistanceToACharacter.cs" t="Include" />
+            <e p="SingleNumber.cs" t="Include" />
             <e p="SingleNumberInArray.cs" t="Include" />
             <e p="SmallerThanCurrent.cs" t="Include" />
             <e p="SortArrayByParityII.cs" t="Include" />

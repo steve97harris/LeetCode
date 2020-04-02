@@ -28,6 +28,7 @@ namespace LeetCode.Main
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
                 
                 HappyNumber.IsHappy(19);
+
             }
         }
     }

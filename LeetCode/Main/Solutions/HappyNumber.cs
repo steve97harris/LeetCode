@@ -18,22 +18,23 @@ namespace LeetCode.Main
                 nArray[i] = Int32.Parse(nString[i].ToString());
                 Console.WriteLine(nArray[i]);
             }
-
-            for (int i = 0; i < nArray.Length - 1; i++)
+            
+            for (int i = 0; i < nArray.Length - 1; i++) 
             {
-                ans = (int) (Math.Pow(nArray[i], 2) + Math.Pow(nArray[i+1], 2));
+                ans = (int) (Math.Pow(nArray[i], 2) + Math.Pow(nArray[i + 1], 2));
                 Console.WriteLine("Answer: " + ans);
-                
-                
-                if (ans == 1)
+
+                if (ans != 1)
+                {
+                    IsHappy(ans);
+                }
+                else
                 {
                     isHappy = true;
                     break;
                 }
-
-                IsHappy(ans);
             }
-            
+
             Console.WriteLine(isHappy);
             return isHappy;
         }
