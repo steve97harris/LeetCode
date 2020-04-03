@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace LeetCode.Main
@@ -7,36 +8,25 @@ namespace LeetCode.Main
     {
         public static bool IsHappy(int n)
         {
-            bool isHappy = false;
-            string nString = n.ToString();
-            int ans = 0;
-
-            int[] nArray = new int[nString.Length];
-
-            for (int i = 0; i < nString.Length; i++)
+            List<int> cache = new List<int>();
+            int sum = 0;
+            while (n != 1)
             {
-                nArray[i] = Int32.Parse(nString[i].ToString());
-                Console.WriteLine(nArray[i]);
-            }
-            
-            for (int i = 0; i < nArray.Length - 1; i++) 
-            {
-                ans = (int) (Math.Pow(nArray[i], 2) + Math.Pow(nArray[i + 1], 2));
-                Console.WriteLine("Answer: " + ans);
-
-                if (ans != 1)
+                if (cache.Contains(n))
                 {
-                    IsHappy(ans);
+                    return false;
                 }
-                else
+                cache.Add(n);
+                while (n != 0)
                 {
-                    isHappy = true;
-                    break;
+                    int digit = n % 10;
+                    sum += digit * digit;
+                    n /= 10;
                 }
+                n = sum;
+                sum = 0;
             }
-
-            Console.WriteLine(isHappy);
-            return isHappy;
+            return true;   
         }
     }
 }
