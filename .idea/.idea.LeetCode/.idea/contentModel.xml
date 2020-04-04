@@ -25,6 +25,7 @@
             <e p="FindCommonCharacters.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
+            <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
             <e p="HappyNumber.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
@@ -36,6 +37,7 @@
             <e p="MinNumOfStepsForAnagram.cs" t="Include" />
             <e p="MinTimeToVisitPoints.cs" t="Include" />
             <e p="MorseCode.cs" t="Include" />
+            <e p="MoveZeroes.cs" t="Include" />
             <e p="MovingZeroesToEnd.cs" t="Include" />
             <e p="NoOfUniqueEmails.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
