@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main.Solutions
 {
@@ -7,36 +8,39 @@ namespace LeetCode.Main.Solutions
     {
         public static bool BackspaceCompare(string s, string t)
         {
-            bool isEqual = false;
+            if (s == null || t == null)
+                return false;
 
-            for (int i = 0; i < s.Length; i++)
+            var sBackspace = ApplyBackspace(s);
+            var tBackspace = ApplyBackspace(t);
+
+            return String.Compare(sBackspace, tBackspace, StringComparison.Ordinal) == 0;
+        }
+
+        private static string ApplyBackspace(string s)
+        {
+            if (string.IsNullOrEmpty(s))
+                return s;
+            
+            var stack = new Stack<char>();
+
+            foreach (var c in s)
             {
-                if (s[i] == '#')
+                var isBackspace = c == '#';        // isBackspace is true if c is #
+
+                if (!isBackspace)
                 {
-                    s = s.Remove(i - 1, 2);
+                    stack.Push(c);        // insert c at top of stack
+                    continue;
                 }
-                else if (s[i] == '#' && s[i+1] == '#')
+
+                if (stack.Count > 0)
                 {
-                    
+                    stack.Pop();        // removes and returns object at top of stack.
                 }
             }
-
-            for (int i = 0; i < t.Length; i++)
-            {
-                if (t[i] == '#')
-                {
-                    t = t.Remove(i - 1, 2);
-                }
-            }
-
             
-            if (s == t)
-                isEqual = true;
-            
-            Console.WriteLine("s = " + s);
-            Console.WriteLine("t = " + t);
-            Console.WriteLine("Is Equal: " + isEqual);
-            return isEqual;
+            return new string(stack.ToArray());
         }
     }
 }
