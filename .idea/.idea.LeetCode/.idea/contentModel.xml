@@ -9,6 +9,10 @@
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
             <e p="ArrayPartitionI.cs" t="Include" />
+            <e p="BackspaceStringCompare.cs" t="Include" />
+            <e p="BaseballGame.cs" t="Include" />
+            <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
+            <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
             <e p="DailyTemperatures.cs" t="Include" />
@@ -25,9 +29,11 @@
             <e p="FindCommonCharacters.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
+            <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
             <e p="HappyNumber.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
+            <e p="KeyboardRow.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
@@ -40,6 +46,7 @@
             <e p="MoveZeroes.cs" t="Include" />
             <e p="MovingZeroesToEnd.cs" t="Include" />
             <e p="NoOfUniqueEmails.cs" t="Include" />
+            <e p="OccurencesAfterBigram.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
             <e p="RangeSumOfBST_Incomplete.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
