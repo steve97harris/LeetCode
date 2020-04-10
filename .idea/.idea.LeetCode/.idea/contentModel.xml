@@ -42,6 +42,7 @@
             <e p="MaximumSubArray.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />
             <e p="MinAbsoluteDifference.cs" t="Include" />
+            <e p="MinimumElementInStack.cs" t="Include" />
             <e p="MinNumOfStepsForAnagram.cs" t="Include" />
             <e p="MinTimeToVisitPoints.cs" t="Include" />
             <e p="MorseCode.cs" t="Include" />
