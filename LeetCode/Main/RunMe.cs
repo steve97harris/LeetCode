@@ -31,10 +31,7 @@ namespace LeetCode.Main
 
                 // string[] strings = { "5","-2","4","C","D","9","+","+" };
                 // BaseballGame.CalPoints(strings);
-
-                // ab#c ab##
-                string s = "a##c", t = "#a#c";
-                BackspaceStringCompare.BackspaceCompare(s, t);
+                
             }
         }
     }

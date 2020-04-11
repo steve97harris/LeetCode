@@ -23,7 +23,7 @@ namespace LeetCode.Main
         }
     }
 
-    public class ListNode
+    public abstract class ListNode
     {
         public int val;
         public ListNode next;
