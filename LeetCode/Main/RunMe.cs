@@ -30,10 +30,11 @@ namespace LeetCode.Main
                 // string[] words = {"Hello", "Alaska", "Dad", "Peace"};
                 // KeyboardRow.KeyWords(words);
 
-                string[] strings = { "5","-2","4","C","D","9","+","+" };
-                BaseballGame.CalPoints(strings);
-                
-                
+                // string[] strings = { "5","-2","4","C","D","9","+","+" };
+                // BaseballGame.CalPoints(strings); 
+
+                int[] stones = {10,4,2,10};
+                LastStoneWeight.LastWeight(stones);
             }
         }
     }
