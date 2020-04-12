@@ -32,9 +32,8 @@ namespace LeetCode.Main
 
                 // string[] strings = { "5","-2","4","C","D","9","+","+" };
                 // BaseballGame.CalPoints(strings); 
-
-                int[] stones = {10,4,2,10};
-                LastStoneWeight.LastWeight(stones);
+                
+                
             }
         }
     }
