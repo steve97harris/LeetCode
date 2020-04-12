@@ -21,6 +21,7 @@
             <e p="DecryptStringFromLettersToNumbers.cs" t="Include" />
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
+            <e p="DiameterOfBinaryTree.cs" t="Include" />
             <e p="DIString.cs" t="Include" />
             <e p="EncodeDecodeTinyURL.cs" t="Include" />
             <e p="FactorialTrailingZeros.cs" t="Include" />
@@ -78,6 +79,10 @@
             <e p="TwoSum.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
             <e p="WordsThatCanBeFormedByCharacters.cs" t="Include" />
+          </e>
+          <e p="VersatileClasses" t="Include">
+            <e p="ListNode.cs" t="Include" />
+            <e p="TreeNode.cs" t="Include" />
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">

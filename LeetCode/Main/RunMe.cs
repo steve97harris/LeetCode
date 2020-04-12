@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using LeetCode.Main.Solutions;
 
 namespace LeetCode.Main
@@ -29,8 +30,9 @@ namespace LeetCode.Main
                 // string[] words = {"Hello", "Alaska", "Dad", "Peace"};
                 // KeyboardRow.KeyWords(words);
 
-                // string[] strings = { "5","-2","4","C","D","9","+","+" };
-                // BaseballGame.CalPoints(strings);
+                string[] strings = { "5","-2","4","C","D","9","+","+" };
+                BaseballGame.CalPoints(strings);
+                
                 
             }
         }
