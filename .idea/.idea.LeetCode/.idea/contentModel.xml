@@ -14,11 +14,13 @@
             <e p="BackspaceStringCompare.cs" t="Include" />
             <e p="BaseballGame.cs" t="Include" />
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
+            <e p="ContiguousArray.cs" t="Include" />
             <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
             <e p="DailyTemperatures.cs" t="Include" />
             <e p="DayOfTheWeek.cs" t="Include" />
+            <e p="DayOfTheYear.cs" t="Include" />
             <e p="DecompressRunLengthEncodedList_Incomplete.cs" t="Include" />
             <e p="DecryptStringFromLettersToNumbers.cs" t="Include" />
             <e p="DeepestLeavesSum.cs" t="Include" />
@@ -39,6 +41,7 @@
             <e p="KeyboardRow.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
+            <e p="LetterCasePermutation.cs" t="Include" />
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
             <e p="MaximumSubArray.cs" t="Include" />

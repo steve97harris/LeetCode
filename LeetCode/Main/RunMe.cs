@@ -32,8 +32,13 @@ namespace LeetCode.Main
 
                 // string[] strings = { "5","-2","4","C","D","9","+","+" };
                 // BaseballGame.CalPoints(strings); 
-                
-                
+
+                // int[] nums1 = { 4,1,2 };
+                // int[] nums2 = { 1,3,4,2 };
+                // NextGreaterElementI.NextGreaterElement(nums1, nums2);
+
+                string s = "a1b2";
+                LetterCasePermutation.CasePermutation(s);
             }
         }
     }
