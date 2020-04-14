@@ -24,8 +24,8 @@ namespace LeetCode.Main
                 // char c = 'e';
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
                 
-                // int[] nums = {3,3,3,3,3,1,3};
-                // GroupPeopleDependingOnGroupSize.GroupPeople(nums);
+                int[] nums = {3,3,3,3,3,1,3};
+                GroupPeopleDependingOnGroupSize.GroupPeople(nums);
 
                 // string[] words = {"Hello", "Alaska", "Dad", "Peace"};
                 // KeyboardRow.KeyWords(words);
@@ -37,8 +37,7 @@ namespace LeetCode.Main
                 // int[] nums2 = { 1,3,4,2 };
                 // NextGreaterElementI.NextGreaterElement(nums1, nums2);
 
-                string s = "a1b2";
-                LetterCasePermutation.CasePermutation(s);
+                
             }
         }
     }

@@ -18,28 +18,30 @@ namespace LeetCode.Main
             
             var sortedDic = from entry in groupsDic orderby entry.Value ascending select entry;
 
-            IList<int> tempGroup = new List<int>();
-            foreach (var pair in sortedDic)
+            var groupedSortedDic = sortedDic.GroupBy(x => x.Value)
+                .ToDictionary(t => t.Key, t => t.Select(r => r.Key).ToList());
+            
+            var notCurrentlyCorrect = new Dictionary<int,List<int>>();
+            foreach (var (key, value) in groupedSortedDic)
             {
-                if (pair.Value > tempGroup.Count && !tempGroup.Contains(pair.Key))
+                if (key == value.Count)
                 {
-                    tempGroup.Add(pair.Key);
+                    result.Add(value);
                 }
+                else
+                    notCurrentlyCorrect.Add(key,value); 
             }
             
-            
-            Console.WriteLine("Sorted Dictionary:");
-            foreach (var pair in sortedDic)
+            foreach (var pair in notCurrentlyCorrect)
             {
-                Console.WriteLine("{0},{1}", pair.Key,pair.Value);
+                var currentList = pair.Value;
+                var x = currentList.Select((x, i) => new {Index = i, Value = x})
+                    .GroupBy(x => x.Index / pair.Key)
+                    .Select(x => x.Select(v => v.Value).ToList())
+                    .ToList();
+                foreach (var list in x) result.Add(list);
             }
 
-            Console.WriteLine("TempGroup:");
-            foreach (var i in tempGroup)
-            {
-                Console.WriteLine(i);
-            }
-            
             Console.WriteLine("Result:");
             foreach (var list in result)
             {
