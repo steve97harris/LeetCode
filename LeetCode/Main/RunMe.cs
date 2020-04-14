@@ -23,9 +23,6 @@ namespace LeetCode.Main
                 // string s = "loveleetcode";
                 // char c = 'e';
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
-                
-                int[] nums = {3,3,3,3,3,1,3};
-                GroupPeopleDependingOnGroupSize.GroupPeople(nums);
 
                 // string[] words = {"Hello", "Alaska", "Dad", "Peace"};
                 // KeyboardRow.KeyWords(words);
@@ -37,6 +34,22 @@ namespace LeetCode.Main
                 // int[] nums2 = { 1,3,4,2 };
                 // NextGreaterElementI.NextGreaterElement(nums1, nums2);
 
+                // var root = new TreeNode(1);
+                // root.left = new TreeNode(2);
+                // root.right = new TreeNode(3);
+                // root.left.left = new TreeNode(4);
+                // root.left.right = new TreeNode(5);
+                // root.right.right = new TreeNode(6);
+                // root.left.left.left = new TreeNode(7);
+                // root.right.right.right = new TreeNode(8);
+                // DeepestLeavesSum.DeepestSum(root);
+
+                // string A =
+                //         "mrbr laxcfv sibua csf ytk ul lefjh kn val w val qzlkqf slgpcfx oicqcq laxcfv w ul spo kpxq oyaspyt lefjh ubi w rtstn mrbr klhblwv f oyaspyt lefjh hqwijm lzz dx xfy spo hqwijm dx lefjh laxcfv val w",
+                //     B =
+                //         "luiesmz e hqwijm mrbr rtstn dkjlxto ytk f p cokfad ytk vdze oyaspyt klhblwv pznznkh ubi dkjlxto spo slgpcfx rwovl ubi wfax iieyr ws qmu re f lzz hqwijm j w kivo cyxnutx dkjlxto csf orjdywl mrbr w e";
+                // UncommonWordsInSentences.UncommonWords(A, B);
+                
                 
             }
         }

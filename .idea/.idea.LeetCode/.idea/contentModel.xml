@@ -83,6 +83,7 @@
             <e p="ToLowerCase.cs" t="Include" />
             <e p="TreePostorderTraversal.cs" t="Include" />
             <e p="TwoSum.cs" t="Include" />
+            <e p="UncommonWordsInSentences.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
             <e p="WordsThatCanBeFormedByCharacters.cs" t="Include" />
           </e>
