@@ -50,8 +50,9 @@ namespace LeetCode.Main
                 //         "luiesmz e hqwijm mrbr rtstn dkjlxto ytk f p cokfad ytk vdze oyaspyt klhblwv pznznkh ubi dkjlxto spo slgpcfx rwovl ubi wfax iieyr ws qmu re f lzz hqwijm j w kivo cyxnutx dkjlxto csf orjdywl mrbr w e";
                 // UncommonWordsInSentences.UncommonWords(A, B);
 
-                const string x = "The quick brown fox jumped over the lazy dog";
-                GoatLatin.ToGoatLatin(x);
+                int[] a = {1, 2, 3, 4};
+                int[][] qs = {new[] {1, 0}, new[] {-3, 1}, new[] {-4, 0}, new[] {2, 3}};
+                SumOfEvenNumbersAfterQueries.SumEvenAfterQueries(a, qs);
             }
         }
     }

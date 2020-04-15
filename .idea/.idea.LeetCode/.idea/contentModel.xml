@@ -84,6 +84,7 @@
             <e p="SubdomainVisitCount.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
             <e p="SumOfArrayEqualZero.cs" t="Include" />
+            <e p="SumOfEvenNumbersAfterQueries.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
             <e p="TreePostorderTraversal.cs" t="Include" />
             <e p="TwoSum.cs" t="Include" />
