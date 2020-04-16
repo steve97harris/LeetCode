@@ -8,25 +8,24 @@ namespace LeetCode.Main
     {
         public static int[] SumEvenAfterQueries(int[] A, int[][] queries)
         {
-            var result = new List<int>();
-            for (int i = 0; i < queries.Length; i++)
+            var result = new List<int[]>();
+            foreach (var array in queries)
             {
-                A[queries[i][1]] = queries[i][0];
-                // Console.WriteLine(A[i]);
-                
-                var tempEvens = new List<int>();
-                if (IsEven(A[i]))
-                {
-                    tempEvens.Add(A[i]);
-                    Console.WriteLine(A[i]);
-                }
-
-                var sumOfEvens = tempEvens.Sum();
-                //Console.WriteLine(sumOfEvens);
-                result.Add(sumOfEvens);
+                var val = array[0];
+                var index = array[1];
+                A[index] += val;
+                result.Add(A);
             }
-            
-            A = result.ToArray();
+
+            foreach (var array in result)
+            {
+                Console.WriteLine("---");
+                foreach (var i in array)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            // A = result.ToArray();
             return A;
         }
         
