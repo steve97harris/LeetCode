@@ -50,9 +50,15 @@ namespace LeetCode.Main
                 //         "luiesmz e hqwijm mrbr rtstn dkjlxto ytk f p cokfad ytk vdze oyaspyt klhblwv pznznkh ubi dkjlxto spo slgpcfx rwovl ubi wfax iieyr ws qmu re f lzz hqwijm j w kivo cyxnutx dkjlxto csf orjdywl mrbr w e";
                 // UncommonWordsInSentences.UncommonWords(A, B);
 
-                int[] a = {1, 2, 3, 4};
-                int[][] qs = {new[] {1, 0}, new[] {-3, 1}, new[] {-4, 0}, new[] {2, 3}};
-                SumOfEvenNumbersAfterQueries.SumEvenAfterQueries(a, qs);
+                // string s = "(()*)(()((())()))(*)((((())*())))()(((()((()(*()))";
+                // ValidParenthesisString.CheckValidString(s);
+                
+                var root = new TreeNode(3);
+                root.left = new TreeNode(9);
+                root.right = new TreeNode(20);
+                root.right.left = new TreeNode(15);
+                root.right.right = new TreeNode(7);
+                AverageLevelsInBinaryTree.AverageOfLevels(root);
             }
         }
     }
