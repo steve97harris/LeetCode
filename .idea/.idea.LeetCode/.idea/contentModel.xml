@@ -35,6 +35,7 @@
             <e p="FindCommonCharacters.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
+            <e p="FizzFizzBuzzBuzz.cs" t="Include" />
             <e p="GoatLatin.cs" t="Include" />
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />

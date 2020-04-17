@@ -6,42 +6,58 @@ namespace LeetCode.Main.Solutions
 {
     public static class AverageLevelsInBinaryTree
     {
-        private static IList<List<int>> levels = new List<List<int>>();
-        private static List<int> values = new List<int>();
+        private static Dictionary<int,List<int>> levelDic = new Dictionary<int, List<int>>();
+        private static int levelCount = 0;
         public static IList<double> AverageOfLevels(TreeNode root)
         {
             if (root == null)
                 return null;
-            
+
             var value = root.val;
-            values.Add(value); 
-            levels.Add(values);
+            var values = new List<int> {value};
+            if (!levelDic.ContainsKey(levelCount))
+            {
+                levelDic.Add(levelCount, values);
+            }
+            else
+            {
+                levelDic[levelCount].Add(value);
+            }
             
             if (root.left != null && root.right != null)
             {
+                levelCount++;
                 AverageOfLevels(root.left);
                 AverageOfLevels(root.right);
             }
             
             if (root.left != null && root.right == null)
             {
+                levelCount++;
                 AverageOfLevels(root.left);
             }
             
             if (root.left == null && root.right != null)
             {
+                levelCount++;
                 AverageOfLevels(root.right);
             }
 
-            var averages = new List<double>();
-            if (root.left != null || root.right != null) return averages;
-            foreach (var level in levels)
+            IList<double> averages = new List<double>();
+            if (root.left == null && root.right == null)
             {
-                var average = level.Sum() / level.Count;
-                Console.WriteLine(average);
-                averages.Add(average);
-            }
+                foreach (var level in levelDic)
+                {
+                    double average = (float) level.Value.Sum() / level.Value.Count;
+                    if (!averages.Contains(average))
+                        averages.Add(average);
+                }
 
+                foreach (var d in averages)
+                {
+                    Console.WriteLine(d);
+                }
+            }
             return averages;
         }
     }
