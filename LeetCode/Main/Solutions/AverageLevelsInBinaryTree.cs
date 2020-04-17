@@ -1,49 +1,48 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main.Solutions
 {
     public static class AverageLevelsInBinaryTree
     {
+        private static IList<List<int>> levels = new List<List<int>>();
+        private static List<int> values = new List<int>();
         public static IList<double> AverageOfLevels(TreeNode root)
         {
-            var average = 0;
-            var averagesList = new List<double>();
-
             if (root == null)
                 return null;
             
+            var value = root.val;
+            values.Add(value); 
+            levels.Add(values);
+            
             if (root.left != null && root.right != null)
             {
-                average = (root.left.val + root.right.val) / 2;
-                averagesList.Add(average);
                 AverageOfLevels(root.left);
                 AverageOfLevels(root.right);
             }
-            else if (root.left != null && root.right == null)
+            
+            if (root.left != null && root.right == null)
             {
-                average = root.left.val;
-                averagesList.Add(average);
                 AverageOfLevels(root.left);
             }
-            else if (root.left == null && root.right != null)
+            
+            if (root.left == null && root.right != null)
             {
-                average = root.right.val;
-                averagesList.Add(average);
                 AverageOfLevels(root.right);
             }
-            else
+
+            var averages = new List<double>();
+            if (root.left != null || root.right != null) return averages;
+            foreach (var level in levels)
             {
-                average = root.val;
-                averagesList.Add(average);
+                var average = level.Sum() / level.Count;
+                Console.WriteLine(average);
+                averages.Add(average);
             }
 
-            foreach (var d in averagesList)
-            {
-                Console.WriteLine(d);
-            }
-
-            return averagesList;
+            return averages;
         }
     }
 }

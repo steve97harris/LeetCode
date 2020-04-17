@@ -34,7 +34,7 @@ namespace LeetCode.Main
                         break;
                 }
 
-                var x = new []{leftIndex, rightIndex};
+                var x = new [] { leftIndex, rightIndex };
                 list.Add(x);
             }
 

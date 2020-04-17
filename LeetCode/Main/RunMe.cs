@@ -50,15 +50,25 @@ namespace LeetCode.Main
                 //         "luiesmz e hqwijm mrbr rtstn dkjlxto ytk f p cokfad ytk vdze oyaspyt klhblwv pznznkh ubi dkjlxto spo slgpcfx rwovl ubi wfax iieyr ws qmu re f lzz hqwijm j w kivo cyxnutx dkjlxto csf orjdywl mrbr w e";
                 // UncommonWordsInSentences.UncommonWords(A, B);
 
-                // string s = "(()*)(()((())()))(*)((((())*())))()(((()((()(*()))";
-                // ValidParenthesisString.CheckValidString(s);
+                string s = "(()*)(()((())()))(*)((((())*())))()(((()((()(*()))";
+                string t = "(*()";
+                ValidParenthesisString.CheckValidString(t);
                 
-                var root = new TreeNode(3);
-                root.left = new TreeNode(9);
-                root.right = new TreeNode(20);
-                root.right.left = new TreeNode(15);
-                root.right.right = new TreeNode(7);
-                AverageLevelsInBinaryTree.AverageOfLevels(root);
+                // var root = new TreeNode(3);
+                // root.left = new TreeNode(9);
+                // root.right = new TreeNode(20);
+                // root.right.left = new TreeNode(15);
+                // root.right.right = new TreeNode(7);
+                // AverageLevelsInBinaryTree.AverageOfLevels(root);
+
+                // var grid = new []
+                // {
+                //     new[] {'1', '1', '0', '0', '0'}, 
+                //     new[] {'1', '1', '0', '0', '0'}, 
+                //     new[] {'0', '0', '1', '0', '0'},
+                //     new[] {'0', '0', '0', '1', '1'}
+                // };
+                // NumberOfIslands.NumOfIslands(grid);
             }
         }
     }
