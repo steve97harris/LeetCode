@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main
 {
@@ -10,61 +11,40 @@ namespace LeetCode.Main
             if (s == null)
                 return true;
 
-            var leftCount = 0;
-            var rightCount = 0;
-            var specialCount = 0;
-            var leftIndex = 0;
-            var rightIndex = 0;
-            var list = new List<int[]>();
-            
+            var left = 0;
+            var needRight = 0;
+            var special = 0;
+
             for (int i = 0; i < s.Length; i++)
             {
                 switch (s[i])
                 {
                     case '(':
-                        ++leftCount;
-                        leftIndex = i;
+                        left++;
+                        needRight++;
                         break;
                     case ')':
-                        ++rightCount;
-                        rightIndex = i;
+                        if (left > 0)
+                        {
+                            left--;
+                            if (needRight > 0)
+                                needRight--;
+                        }
+                        else if (special > 0)
+                            special--;
+                        else
+                            return false;
                         break;
                     case '*':
-                        ++specialCount;
+                        special++;
+                        if (needRight > 0)
+                            needRight--;
                         break;
                 }
-
-                var x = new [] { leftIndex, rightIndex };
-                list.Add(x);
             }
-
-            foreach (var array in list)
-            {
-                if (array[1] < array[0])
-                {
-                    Console.WriteLine("false*");
-                    return false;
-                }
-            }
-
-            for (int i = 0; i < specialCount; i++)
-            {
-                if (leftCount < rightCount)
-                    leftCount += 1;
-                else if (rightCount < leftCount)
-                    rightCount += 1;
-                else
-                {
-                    Console.WriteLine("true");
-                    return true;
-                }
-            }
-
-            Console.WriteLine("Left: " + leftCount);
-            Console.WriteLine("Right: " + rightCount);
-            Console.WriteLine(rightCount == leftCount ? "true" : "false");
-
-            return rightCount == leftCount;
+            
+            return needRight == 0 ? true : false; 
+            // return true if bracket count is 0, else return false 
         }
     }
 }
