@@ -66,8 +66,7 @@ namespace LeetCode.Main
                 // };
                 // NumberOfIslands.NumOfIslands(grid);
 
-                int x = 15;
-                FizzFizzBuzzBuzz.FizzBuzz(x);
+                
             }
         }
     }
