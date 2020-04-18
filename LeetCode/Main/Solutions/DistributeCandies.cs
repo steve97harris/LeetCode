@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main
 {
@@ -6,19 +8,23 @@ namespace LeetCode.Main
     {
         public static int DistributeDeCandies(int[] candies)
         {
-            var bro = new List<int>();
             var sis = new List<int>();
 
-            var candyLength = candies.Length;
-            for (int i = 0; i < candyLength; i++)
+            for (int i = 0; i < candies.Length - 1; i++)
             {
-                if (i < candyLength/2)
-                    bro.Add(candies[i]);
-                else
+                if (candies[i] != candies[i + 1] && sis.Count <= candies.Length / 2)
                     sis.Add(candies[i]);
             }
 
-            return sis.Count;
+            foreach (var i in sis)
+            {
+                Console.WriteLine(i);
+            }
+
+            var result = sis.Distinct().ToArray();
+
+            //Console.WriteLine(result.Length);
+            return result.Length;
         }
     }
 }
