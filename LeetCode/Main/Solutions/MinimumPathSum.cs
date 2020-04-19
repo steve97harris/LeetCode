@@ -7,27 +7,37 @@ namespace LeetCode.Main.Solutions
         // static int n = grid.length (n=3, 3x3 grid)
         public static int MinPathSum(int[][] grid)
         {
-            for (int r = grid.Length - 2; r >= 0; --r)
+            var n = grid.Length;
+            if (n == 0)
+                return 0;
+
+            var m = grid[0].Length;
+            var dp = new int[n, m];
+
+            for (int i = 0; i < n; i++)
             {
-                for (int c = 0; c < grid.Length; ++c)
+                for (int j = 0; j < m; j++)
                 {
-                    int best = grid[r + 1][c];
-                    if (c > 0)
-                        best = Math.Min(best, grid[r + 1][c - 1]);
-                    if (c + 1 < grid.Length)
-                        best = Math.Min(best, grid[r + 1][c + 1]);
-                    grid[r][c] = grid[r][c] + best;
+                    if (i == 0 && j == 0)
+                    {
+                        dp[i, j] = grid[i][j];
+                    }
+                    else if (i == 0)
+                    {
+                        dp[i, j] = dp[i, j - 1] + grid[i][j];
+                    }
+                    else if (j == 0)
+                    {
+                        dp[i, j] = dp[i - 1, j] + grid[i][j];
+                    }
+                    else
+                    {
+                        dp[i, j] = Math.Min(dp[i - 1, j], dp[i, j - 1]) + grid[i][j];
+                    }
                 }
             }
 
-            int result = int.MaxValue;
-            for (int i = 0; i < grid.Length; ++i)
-            {
-                result = Math.Min(result, grid[0][i]);
-            }
-
-            Console.WriteLine(result);
-            return result;
+            return dp[n - 1, m - 1];
         }
     }
 }

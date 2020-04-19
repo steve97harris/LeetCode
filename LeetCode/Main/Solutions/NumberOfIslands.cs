@@ -5,41 +5,49 @@ namespace LeetCode.Main.Solutions
 {
     public static class NumberOfIslands
     {
-        private static int row = 5;
-        private static int col = 5;
+        private static int m = 0;
+        private static int n = 0;
         public static int NumOfIslands(char[][] grid)
         {
-            var islandCount = 0;
-            var horizontalLength = grid.GetLength(1);
-            var verticalLength = grid.GetLength(0);
+            n = grid.Length;
+            if (n == 0) return 0;
+            m = grid[0].Length;
 
-            for (int i = 0; i < verticalLength; i++)
-            {
-                for (int j = 0; j < horizontalLength; j++)
-                {
-                    if (grid[i][j] == '1') 
-                        continue;
-                    grid[i][j] = '2';
-                    
-                    // Queue - First in first out collection of objects
-                    Queue<int[]> queue = new Queue<int[]>();
-                    
-                    queue.Enqueue(new int[2] {i,j});        // Add obj to end of queue
+            var isVisited = new bool[n, m];
 
-                    while (queue.Count != 0)
-                    {
-                        int[] islandUnit = queue.Dequeue();        // Removes and returns obj at beginning of queue
+            var count = 0;
 
-                        if (islandUnit[0] < verticalLength - 1 && grid[islandUnit[0] + 1][islandUnit[1]] == '1')
-                        {
-                            grid[islandUnit[0] + 1][islandUnit[1]] = '2';
-                            queue.Enqueue(new int[2] {islandUnit[0] + 1, islandUnit[1]});
-                        }
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    if (!isVisited[i, j] && grid[i][j] == '1') {
+                        DFS(grid, i, j, isVisited);
+                        count++;
                     }
                 }
             }
 
-            return islandCount;
+            return count;
+        }
+        
+        // Depth First Search:
+        private static void DFS(char[][] grid, int x, int y, bool[,] isVisited) {
+            if (x >= n || x < 0 || y >= m || y < 0) {
+                return;
+            }
+
+            if (isVisited[x, y]) return;
+            if (grid[x][y] == '0') return;
+
+            isVisited[x, y] = true;
+
+            var directions = new (int, int)[] { (0, 1), (0, -1), (1, 0), (-1, 0) };
+
+            foreach (var direction in directions) {
+                var nextX = x + direction.Item1;
+                var nextY = y + direction.Item2;
+
+                DFS(grid, nextX, nextY, isVisited);
+            }
         }
     }
 }

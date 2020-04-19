@@ -57,20 +57,11 @@ namespace LeetCode.Main
                 // root.right.right = new TreeNode(7);
                 // AverageLevelsInBinaryTree.AverageOfLevels(root);
 
-                // var grid = new []
-                // {
-                //     new[] {'1', '1', '0', '0', '0'}, 
-                //     new[] {'1', '1', '0', '0', '0'}, 
-                //     new[] {'0', '0', '1', '0', '0'},
-                //     new[] {'0', '0', '0', '1', '1'}
-                // };
-                // NumberOfIslands.NumOfIslands(grid);
-                
                 // int[] candies = {1, 1, 2, 2, 3, 3};
                 // DistributeCandies.DistributeDeCandies(candies);
 
-                int[][] grid = new[] {new[] {1, 3, 1}, new[] {1, 5, 1}, new[] {4, 2, 1}};
-                MinimumPathSum.MinPathSum(grid);
+                // int[][] grid = new[] {new[] {1, 3, 1}, new[] {1, 5, 1}, new[] {4, 2, 1}};
+                // MinimumPathSum.MinPathSum(grid);
             }
         }
     }

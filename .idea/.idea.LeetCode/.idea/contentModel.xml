@@ -76,6 +76,7 @@
             <e p="ReversingIntegerDigits.cs" t="Include" />
             <e p="RobotReturnToOrigin.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
+            <e p="SearchInRotatedSortedArray.cs" t="Include" />
             <e p="ShortestDistanceToACharacter.cs" t="Include" />
             <e p="SingleNumber.cs" t="Include" />
             <e p="SingleNumberInArray.cs" t="Include" />
