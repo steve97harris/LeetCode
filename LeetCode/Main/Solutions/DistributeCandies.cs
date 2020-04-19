@@ -10,11 +10,14 @@ namespace LeetCode.Main
         {
             var sis = new List<int>();
 
-            for (int i = 0; i < candies.Length - 1; i++)
-            {
-                if (candies[i] != candies[i + 1] && sis.Count <= candies.Length / 2)
-                    sis.Add(candies[i]);
+            var distinctCandies = candies.Distinct().ToArray();
+            
+            for (int i = 0; i < candies.Length/2; i++) 
+            { 
+                if (sis.Count <= candies.Length/2) 
+                    sis.Add(distinctCandies[i]);
             }
+            
 
             foreach (var i in sis)
             {
