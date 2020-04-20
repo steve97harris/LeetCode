@@ -10,6 +10,28 @@ namespace LeetCode.Main.Solutions
         private static int levelCount = 0;
         public static IList<double> AverageOfLevels(TreeNode root)
         {
+            GenerateLevelsDictionary(root);
+            
+            IList<double> averages = new List<double>();
+            if (root.left == null && root.right == null)
+            {
+                foreach (var level in levelDic)
+                {
+                    double average = (float) level.Value.Sum() / level.Value.Count;
+                    if (!averages.Contains(average))
+                        averages.Add(average);
+                }
+
+                foreach (var d in averages)
+                {
+                    Console.WriteLine(d);
+                }
+            }
+            return averages;
+        }
+
+        private static TreeNode GenerateLevelsDictionary(TreeNode root)
+        {
             if (root == null)
                 return null;
 
@@ -43,22 +65,7 @@ namespace LeetCode.Main.Solutions
                 AverageOfLevels(root.right);
             }
 
-            IList<double> averages = new List<double>();
-            if (root.left == null && root.right == null)
-            {
-                foreach (var level in levelDic)
-                {
-                    double average = (float) level.Value.Sum() / level.Value.Count;
-                    if (!averages.Contains(average))
-                        averages.Add(average);
-                }
-
-                foreach (var d in averages)
-                {
-                    Console.WriteLine(d);
-                }
-            }
-            return averages;
+            return root;
         }
     }
 }

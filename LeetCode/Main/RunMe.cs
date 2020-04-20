@@ -34,15 +34,15 @@ namespace LeetCode.Main
                 // int[] nums2 = { 1,3,4,2 };
                 // NextGreaterElementI.NextGreaterElement(nums1, nums2);
 
-                // var root = new TreeNode(1);
-                // root.left = new TreeNode(2);
-                // root.right = new TreeNode(3);
-                // root.left.left = new TreeNode(4);
-                // root.left.right = new TreeNode(5);
-                // root.right.right = new TreeNode(6);
-                // root.left.left.left = new TreeNode(7);
-                // root.right.right.right = new TreeNode(8);
-                // DeepestLeavesSum.DeepestSum(root);
+                var root = new TreeNode(1);
+                root.left = new TreeNode(2);
+                root.right = new TreeNode(3);
+                root.left.left = new TreeNode(4);
+                root.left.right = new TreeNode(5);
+                root.right.right = new TreeNode(6);
+                root.left.left.left = new TreeNode(7);
+                root.right.right.right = new TreeNode(8);
+                DeepestLeavesSum.DeepestSum(root);
 
                 // string A =
                 //         "mrbr laxcfv sibua csf ytk ul lefjh kn val w val qzlkqf slgpcfx oicqcq laxcfv w ul spo kpxq oyaspyt lefjh ubi w rtstn mrbr klhblwv f oyaspyt lefjh hqwijm lzz dx xfy spo hqwijm dx lefjh laxcfv val w",
@@ -63,8 +63,14 @@ namespace LeetCode.Main
                 // int[][] grid = new[] {new[] {1, 3, 1}, new[] {1, 5, 1}, new[] {4, 2, 1}};
                 // MinimumPathSum.MinPathSum(grid);
 
-                int lo = 12, hi = 15, k = 2;
-                SortIntegersByPowerValue.GetKthElement(lo, hi, k);
+                // TreeNode root = new TreeNode(1);
+                // root.left = new TreeNode(7);
+                // root.right = new TreeNode(0);
+                // root.left.left = new TreeNode(7);
+                // root.left.right = new TreeNode(-8);
+                // MaximumLevelSumOfBinaryTree.MaxLevelSum(root);
+                
+                
             }
         }
     }
