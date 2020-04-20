@@ -1,32 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace LeetCode.Main.Solutions
+namespace LeetCode.Main
 {
-    public static class AverageLevelsInBinaryTree
+    public class NodeLevelPair
     {
-        public static IList<double> AverageOfLevels(TreeNode root)
+        public TreeNode node;
+        public int level;
+
+        public NodeLevelPair(TreeNode node, int level)
         {
-            var x = GetLevels(root);
-            
-            IList<double> averages = new List<double>();
-            
-            foreach (var level in x)
-            {
-                double average = (float) level.Value.Sum() / level.Value.Count;
-                averages.Add(average);
-            }
-
-            foreach (var d in averages)
-            {
-                Console.WriteLine(d);
-            }
-            
-            return averages;
+            this.node = node;
+            this.level = level;
         }
-
-        private static Dictionary<int,List<int>> GetLevels(TreeNode root)
+    }
+    
+    public static class GetTreeNodeLevels
+    {
+        public static Dictionary<int,List<int>> GetLevels(TreeNode root)
         {
             if (root == null)
                 return null;

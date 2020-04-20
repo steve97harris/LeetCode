@@ -42,6 +42,7 @@
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
             <e p="HappyNumber.cs" t="Include" />
+            <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
@@ -104,6 +105,8 @@
             <e p="WordsThatCanBeFormedByCharacters.cs" t="Include" />
           </e>
           <e p="VersatileClasses" t="Include">
+            <e p="BinaryTree.cs" t="Include" />
+            <e p="GetTreeNodeLevels.cs" t="Include" />
             <e p="ListNode.cs" t="Include" />
             <e p="TreeNode.cs" t="Include" />
           </e>
