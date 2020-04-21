@@ -8,25 +8,27 @@ namespace LeetCode.Main
     {
         public static int DistributeDeCandies(int[] candies)
         {
-            var sis = new List<int>();
-
-            var distinctCandies = candies.Distinct().ToArray();
+            var distinctCandies = candies.Distinct().ToList();
+            var leftOverCandies = candies.ToList();
             
-            for (int i = 0; i < candies.Length/2; i++) 
-            { 
-                if (sis.Count <= candies.Length/2) 
-                    sis.Add(distinctCandies[i]);
-            }
-            
-
-            foreach (var i in sis)
+            foreach (var candy in distinctCandies)
             {
-                Console.WriteLine(i);
+                leftOverCandies.Remove(candy);
+            }
+            
+            if (distinctCandies.Count >= candies.Length / 2)
+            {
+                distinctCandies.RemoveRange(0, distinctCandies.Count - candies.Length/2);
+            }
+            else
+            {
+                for (int i = 0; i < candies.Length/2 - distinctCandies.Count; i++)
+                {
+                    distinctCandies.Add(leftOverCandies[i]);
+                }
             }
 
-            var result = sis.Distinct().ToArray();
-
-            //Console.WriteLine(result.Length);
+            var result = distinctCandies.Distinct().ToArray();
             return result.Length;
         }
     }

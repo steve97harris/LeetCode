@@ -10,7 +10,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                int[][] grid = {new[] {59, 88, 44}, new[] {3, 18, 38}, new[] {21, 26, 51}};
+                MaxIncreaseToKeepCitySkyline.MaxIncreaseKeepingSkyline(grid);
             }
 
             #region Incomplete
@@ -51,14 +52,16 @@ namespace LeetCode.Main
                 // root.right.left = new TreeNode(15);
                 // root.right.right = new TreeNode(7);
                 // AverageLevelsInBinaryTree.AverageOfLevels(root);
-
-                // int[] candies = {1, 1, 2, 3};
-                // DistributeCandies.DistributeDeCandies(candies);
-
-                // int[][] grid = new[] {new[] {1, 3, 1}, new[] {1, 5, 1}, new[] {4, 2, 1}};
-                // MinimumPathSum.MinPathSum(grid);
-
-            #endregion
+                
+                // TreeNode root = new TreeNode(7);
+                // root.left = new TreeNode(4);
+                // root.right = new TreeNode(3);
+                // root.right.left = new TreeNode(6);
+                // root.right.right = new TreeNode(19);
+                // TreeNode clone = root;
+                // TreeNode target = root.right;        // Val = 3
+                // CorrespondingNodeOfBinaryTreeInACloneOfThatTree.GetTargetCopy(root, clone, target);
+                #endregion
         }
     }
 }
