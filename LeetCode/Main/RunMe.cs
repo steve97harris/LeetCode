@@ -10,8 +10,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[][] grid = {new[] {59, 88, 44}, new[] {3, 18, 38}, new[] {21, 26, 51}};
-                MaxIncreaseToKeepCitySkyline.MaxIncreaseKeepingSkyline(grid);
+                int[] queries = {3, 1, 2, 1};
+                QueriesOnAPermutationWithKey.ProcessQueries(queries, 5);
             }
 
             #region Incomplete

@@ -71,8 +71,9 @@
             <e p="OccurencesAfterBigram.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
             <e p="ProductOfArrayExceptSelf.cs" t="Include" />
+            <e p="QueriesOnAPermutationWithKey.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
-            <e p="RangeSumOfBST_Incomplete.cs" t="Include" />
+            <e p="RangeSumOfBST.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
             <e p="RelativelySortArray.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
@@ -94,6 +95,7 @@
             <e p="SquaresOfSortedArray.cs" t="Include" />
             <e p="StringCharactersWithOddCounts.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
+            <e p="SubArraySumEqualsK.cs" t="Include" />
             <e p="SubdomainVisitCount.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
             <e p="SumOfArrayEqualZero.cs" t="Include" />
@@ -110,6 +112,7 @@
             <e p="BinaryTree.cs" t="Include" />
             <e p="GetTreeNodeLevels.cs" t="Include" />
             <e p="ListNode.cs" t="Include" />
+            <e p="ListOfTreeNodes.cs" t="Include" />
             <e p="TreeNode.cs" t="Include" />
           </e>
         </e>
