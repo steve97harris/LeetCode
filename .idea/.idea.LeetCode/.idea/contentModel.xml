@@ -30,6 +30,7 @@
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="DiameterOfBinaryTree.cs" t="Include" />
             <e p="DistributeCandies.cs" t="Include" />
+            <e p="DistributeCandiesToPeople.cs" t="Include" />
             <e p="DIString.cs" t="Include" />
             <e p="EncodeDecodeTinyURL.cs" t="Include" />
             <e p="FactorialTrailingZeros.cs" t="Include" />
