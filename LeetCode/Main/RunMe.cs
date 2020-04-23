@@ -10,7 +10,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                int[] x = {2, 5, 3, 4, 1};
+                CountNumberOfTeams.NumTeams(x);
             }
 
             #region Incomplete
