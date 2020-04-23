@@ -9,15 +9,23 @@ namespace LeetCode.Main
         {
             var candyDistribution = new int[num_people];
 
-            
-            for (int i = 0; i < candyDistribution.Length - 1; i++)
+            int index = 0;
+            while (candyDistribution.Sum() < candies)
             {
-                candyDistribution[i] = i + 1;
+                candyDistribution[index] = index + 1;
+                index++;
             }
-            candyDistribution[num_people] = candies - candyDistribution.Sum();
 
-            
+            if (candyDistribution.Sum() > candies)
+            {
+                candyDistribution[num_people - 1] -= candyDistribution.Sum() - candies;
+            }
 
+
+            foreach (var i in candyDistribution)
+            {
+                Console.WriteLine(i);
+            }
             return candyDistribution;
         }
     }

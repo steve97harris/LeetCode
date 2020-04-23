@@ -10,8 +10,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int candies = 7;
-                int peeps = 4;
+                int candies = 10;
+                int peeps = 3;
                 DistributeCandiesToPeople.DistributeDeCandies(candies, peeps);
             }
 
