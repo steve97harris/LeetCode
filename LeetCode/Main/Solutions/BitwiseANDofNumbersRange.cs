@@ -35,7 +35,7 @@ namespace LeetCode.Main.Solutions
                 m -= msbValue;
                 n -= msbValue;
             }
-
+            
             return result;
         }
 

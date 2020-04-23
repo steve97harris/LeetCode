@@ -23,7 +23,7 @@ namespace LeetCode.Main
                 var indexOfQuery = p.IndexOf(query);
                 list.Add(indexOfQuery);
                 
-                p.Prepend(query);
+                p = p.Prepend(query).ToList();
                 p.RemoveAt(indexOfQuery + 1);
             }
 
@@ -33,7 +33,7 @@ namespace LeetCode.Main
             }
 
             
-            return p.ToArray();
+            return list.ToArray();
         }
     }
 }

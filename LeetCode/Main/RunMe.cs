@@ -10,7 +10,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                BitwiseANDofNumbersRange.RangeBitwiseAnd(10, 15);
+                
             }
 
             #region Incomplete
@@ -60,10 +60,7 @@ namespace LeetCode.Main
                 // TreeNode clone = root;
                 // TreeNode target = root.right;        // Val = 3
                 // CorrespondingNodeOfBinaryTreeInACloneOfThatTree.GetTargetCopy(root, clone, target);
-                
-                // int[] queries = {3, 1, 2, 1};
-                // QueriesOnAPermutationWithKey.ProcessQueries(queries, 5);
-                
+
                 // int candies = 60;
                 // int peeps = 4;
                 // DistributeCandiesToPeople.DistributeDeCandies(candies, peeps);
