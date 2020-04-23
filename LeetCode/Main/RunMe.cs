@@ -10,7 +10,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                BitwiseANDofNumbersRange.RangeBitwiseAnd(5, 7);
+                BitwiseANDofNumbersRange.RangeBitwiseAnd(10, 15);
             }
 
             #region Incomplete
