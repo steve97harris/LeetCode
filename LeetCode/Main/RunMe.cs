@@ -10,9 +10,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int candies = 10;
-                int peeps = 3;
-                DistributeCandiesToPeople.DistributeDeCandies(candies, peeps);
+                BitwiseANDofNumbersRange.RangeBitwiseAnd(5, 7);
             }
 
             #region Incomplete
@@ -65,6 +63,10 @@ namespace LeetCode.Main
                 
                 // int[] queries = {3, 1, 2, 1};
                 // QueriesOnAPermutationWithKey.ProcessQueries(queries, 5);
+                
+                // int candies = 60;
+                // int peeps = 4;
+                // DistributeCandiesToPeople.DistributeDeCandies(candies, peeps);
                 #endregion
         }
     }
