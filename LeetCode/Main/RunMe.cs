@@ -10,8 +10,16 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] x = {2, 5, 3, 4, 1};
-                CountNumberOfTeams.NumTeams(x);
+                LeastRecentlyUsedCache cache = new LeastRecentlyUsedCache(2);
+                cache.Put(1, 1);
+                cache.Put(2, 2);
+                cache.Get(1);       // returns 1
+                cache.Put(3, 3);    // evicts key 2        // invalidate the least recently used item
+                cache.Get(2);       // returns -1 (not found)
+                cache.Put(4, 4);    // evicts key 1        // invalidate the least recently used item
+                cache.Get(1);       // returns -1 (not found)
+                cache.Get(3);       // returns 3
+                cache.Get(4);       // returns 4 
             }
 
             #region Incomplete
@@ -65,6 +73,9 @@ namespace LeetCode.Main
                 // int candies = 60;
                 // int peeps = 4;
                 // DistributeCandiesToPeople.DistributeDeCandies(candies, peeps);
+                
+                // int[] x = {2, 5, 3, 4, 1};
+                // CountNumberOfTeams.NumTeams(x);
                 #endregion
         }
     }
