@@ -10,16 +10,12 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                AddAndSearchWordDataStructureDesign wordDictionary = new AddAndSearchWordDataStructureDesign();
-                
-                wordDictionary.AddWord("bad");
-                wordDictionary.AddWord("dad");
-                wordDictionary.AddWord("mad");
-                wordDictionary.Search("pad");
-                wordDictionary.Search("bad");
-                wordDictionary.Search(".ad");
-                wordDictionary.Search("b..");
-                
+                MyQueue queue = new MyQueue();
+                queue.Push(1);
+                queue.Push(2);
+                queue.Peek();
+                queue.Pop();
+                queue.Empty();
             }
 
             #region Incomplete
@@ -76,6 +72,12 @@ namespace LeetCode.Main
                 
                 // int[] x = {2, 5, 3, 4, 1};
                 // CountNumberOfTeams.NumTeams(x);
+                
+                // Time Limit Exceeded:
+                // AddAndSearchWordDataStructureDesign wordDictionary = new AddAndSearchWordDataStructureDesign();
+                // wordDictionary.AddWord("a");
+                // wordDictionary.AddWord("ab");
+                // wordDictionary.Search("a.");
                 #endregion
         }
     }

@@ -4,7 +4,7 @@ namespace LeetCode.Main.Solutions
 {
     public static class MinimumElementInStack
     {
-        public static List<List<int>> list = new List<List<int>>();
+        private static List<List<int>> list = new List<List<int>>();
         
         static MinimumElementInStack()
         {

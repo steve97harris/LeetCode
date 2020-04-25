@@ -26,6 +26,7 @@ namespace LeetCode.Main
                 Console.WriteLine(word + " -> true");
                 return true;
             }
+            
 
             var charList = word.ToList();
             if (charList.Contains('.'))
@@ -42,31 +43,29 @@ namespace LeetCode.Main
                     }
                 }
 
-                foreach (var item in wordList)
+                var items = wordList.Select(item => item).Where(item => item.Length == word.Length).ToArray();
+                foreach (var item in items)
                 {
-                    if (!item.Contains(searchWordWithoutDot)) continue;
-                    
                     var itemAsCharList = item.ToList();
-
-                    if (indexOfDots.Count >= 2)
+                    
+                    if (indexOfDots.Count >= 2) ////
                     {
                         for (int i = 0; i < indexOfDots.Count; i++)
                         {
                             itemAsCharList.RemoveAt(indexOfDots[i] - i);
-                        } 
+                        }
                     }
                     else
                     {
-                        itemAsCharList.RemoveAt(indexOfDots[0]);
+                        itemAsCharList.RemoveAt(indexOfDots[0]); 
+                        Console.Write(itemAsCharList);
                     }
-                    
-                    
+
+
                     var result = new string(itemAsCharList.ToArray());
-                    if (result == searchWordWithoutDot)
-                    {
-                        Console.WriteLine(word + " -> true*");
-                        return true;
-                    }
+                    if (result != searchWordWithoutDot) continue;
+                    Console.WriteLine(word + " -> true*");
+                    return true;
                 }
             }
             

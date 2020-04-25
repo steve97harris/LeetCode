@@ -8,7 +8,13 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="LeetCode.csproj" t="IncludeRecursive" />
         <e p="Main" t="Include">
-          <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
+          <e p="DataStructureDesignSolutions" t="Include">
+            <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
+            <e p="LeastRecentlyUsedCache.cs" t="Include" />
+            <e p="MinimumElementInStack.cs" t="Include" />
+            <e p="MyQueue.cs" t="Include" />
+            <e p="Trie.cs" t="Include" />
+          </e>
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
             <e p="ArrayPartitionI.cs" t="Include" />
@@ -49,10 +55,10 @@
             <e p="HappyNumber.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
+            <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
-            <e p="LeastRecentlyUsedCache.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
@@ -62,7 +68,6 @@
             <e p="MergeTrees.cs" t="Include" />
             <e p="MiddleOfLinkedList.cs" t="Include" />
             <e p="MinAbsoluteDifference.cs" t="Include" />
-            <e p="MinimumElementInStack.cs" t="Include" />
             <e p="MinimumPathSum.cs" t="Include" />
             <e p="MinimumSubsequenceInNonIncreasingOrder.cs" t="Include" />
             <e p="MinNumOfStepsForAnagram.cs" t="Include" />
