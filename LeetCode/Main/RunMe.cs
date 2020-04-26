@@ -10,7 +10,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                BinaryGapSol.BinaryGap(8);
             }
 
             #region Incomplete
