@@ -10,12 +10,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                MyQueue queue = new MyQueue();
-                queue.Push(1);
-                queue.Push(2);
-                queue.Peek();
-                queue.Pop();
-                queue.Empty();
+                
             }
 
             #region Incomplete

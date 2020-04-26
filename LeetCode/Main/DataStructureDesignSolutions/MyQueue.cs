@@ -30,14 +30,14 @@ namespace LeetCode.Main
         public int Peek()                // Get the front element
         {
             if (_stackHelper.Count != 0)
-                return _stackHelper.Peek();
+                return _stackHelper.Peek();        // return front of helper if helper count not zero
 
             while (_stackQueue.Count != 0)
             {
-                _stackHelper.Push(_stackQueue.Pop());
+                _stackHelper.Push(_stackQueue.Pop());        // while queue count is not zero, push the element at the front of the queue to the helper stack
             }
             
-            return _stackHelper.Peek();
+            return _stackHelper.Peek();            // return front of helper
         }
 
         public bool Empty()            // Returns whether the queue is empty
