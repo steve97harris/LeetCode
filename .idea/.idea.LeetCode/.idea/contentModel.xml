@@ -23,6 +23,7 @@
             <e p="BaseballGame.cs" t="Include" />
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
             <e p="BinaryGap.cs" t="Include" />
+            <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
             <e p="ConstructBinaryTreeFromPostorderTraversal.cs" t="Include" />
             <e p="ContiguousArray.cs" t="Include" />
@@ -65,6 +66,7 @@
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
             <e p="MaximumLevelSumOfBinaryTree.cs" t="Include" />
+            <e p="MaximumSquare.cs" t="Include" />
             <e p="MaximumSubArray.cs" t="Include" />
             <e p="MaxIncreaseToKeepCitySkyline.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />

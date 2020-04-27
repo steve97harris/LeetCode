@@ -9,18 +9,11 @@ namespace LeetCode.Main
         private static List<int[]> allSubsets = new List<int[]>();
         public static int NumTeams(int[] rating)
         {
-            var indexRatings = new Dictionary<int, int>();        // {index, rating}
-            for (int i = 0; i < rating.Length; i++)
-            {
-                indexRatings.Add(i, rating[i]);
-            }
-            
             GetSubsets(rating, rating.Length, 3);
 
             var validRatings = allSubsets.Where(subset => subset[0] < subset[1] && subset[1] < subset[2] || subset[0] > subset[1] && subset[1] > subset[2]).ToList();
-            
-
-            return 0;
+            allSubsets.Clear();
+            return validRatings.Count;
         }
 
         private static void GetSubsets(int[] arr, int n, int r)

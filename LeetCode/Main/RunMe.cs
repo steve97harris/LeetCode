@@ -10,7 +10,16 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                BinaryGapSol.BinaryGap(8);
+                var root = new TreeNode(4);
+                root.left = new TreeNode(1);
+                root.right = new TreeNode(6);
+                root.left.left = new TreeNode(0);
+                root.left.right = new TreeNode(2);
+                root.left.right.right = new TreeNode(3);
+                root.right.left = new TreeNode(5);
+                root.right.right = new TreeNode(7);
+                root.right.right.right = new TreeNode(8);
+                BinarySearchTreeToGreaterSumTree.BstToGst(root);
             }
 
             #region Incomplete
@@ -64,10 +73,7 @@ namespace LeetCode.Main
                 // int candies = 60;
                 // int peeps = 4;
                 // DistributeCandiesToPeople.DistributeDeCandies(candies, peeps);
-                
-                // int[] x = {2, 5, 3, 4, 1};
-                // CountNumberOfTeams.NumTeams(x);
-                
+
                 // Time Limit Exceeded:
                 // AddAndSearchWordDataStructureDesign wordDictionary = new AddAndSearchWordDataStructureDesign();
                 // wordDictionary.AddWord("a");
