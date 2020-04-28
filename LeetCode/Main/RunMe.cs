@@ -11,16 +11,14 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] A = {1, 2, 10};
-                int[] P = {2, 2};
-                CodingTest.GetUnorderedQueueTimeWithPrinters(A,P);
+                
             }
 
             #region CodeTests
 
-            // int[] A = {10, 5, 7};
-            // int[] P = {2, 3};
-            // CodingTest.GetQueueTimeWithPrinters(A,P);
+            // int[] A = {1, 2, 10};
+            // int[] P = {2, 2};
+            // CodingTest.GetUnorderedQueueTimeWithPrinters(A,P);
 
             #endregion
 
@@ -82,9 +80,7 @@ namespace LeetCode.Main
                 // wordDictionary.AddWord("ab");
                 // wordDictionary.Search("a.");
                 
-                // FirstUnique firstUnique = new FirstUnique(new int[] {2,3,5});
-                // firstUnique.Add(7);
-                // firstUnique.ShowFirstUnique();
+                
                 #endregion
         }
     }
