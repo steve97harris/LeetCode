@@ -8,6 +8,9 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="LeetCode.csproj" t="IncludeRecursive" />
         <e p="Main" t="Include">
+          <e p="CodingTestYR" t="Include">
+            <e p="CodingTest.cs" t="Include" />
+          </e>
           <e p="DataStructureDesignSolutions" t="Include">
             <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
             <e p="LeastRecentlyUsedCache.cs" t="Include" />

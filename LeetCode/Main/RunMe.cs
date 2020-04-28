@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using LeetCode.Main.CodingTestYR;
 using LeetCode.Main.Solutions;
 
 namespace LeetCode.Main
@@ -10,16 +11,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var root = new TreeNode(4);
-                root.left = new TreeNode(1);
-                root.right = new TreeNode(6);
-                root.left.left = new TreeNode(0);
-                root.left.right = new TreeNode(2);
-                root.left.right.right = new TreeNode(3);
-                root.right.left = new TreeNode(5);
-                root.right.right = new TreeNode(7);
-                root.right.right.right = new TreeNode(8);
-                BinarySearchTreeToGreaterSumTree.BstToGst(root);
+                int[] A = {10, 5, 7};
+                int[] P = {2, 3};
+                CodingTest.GetQueueTimeWithPrinters(A,P);
             }
 
             #region Incomplete
