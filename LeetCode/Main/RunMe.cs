@@ -11,9 +11,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                FirstUnique firstUnique = new FirstUnique(new int[] {2,3,5});
-                firstUnique.Add(7);
-                firstUnique.ShowFirstUnique();
+                int[] A = {1, 2, 10};
+                int[] P = {2, 2};
+                CodingTest.GetUnorderedQueueTimeWithPrinters(A,P);
             }
 
             #region CodeTests
@@ -81,6 +81,10 @@ namespace LeetCode.Main
                 // wordDictionary.AddWord("a");
                 // wordDictionary.AddWord("ab");
                 // wordDictionary.Search("a.");
+                
+                // FirstUnique firstUnique = new FirstUnique(new int[] {2,3,5});
+                // firstUnique.Add(7);
+                // firstUnique.ShowFirstUnique();
                 #endregion
         }
     }

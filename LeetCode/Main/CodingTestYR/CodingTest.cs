@@ -117,6 +117,31 @@ namespace LeetCode.Main.CodingTestYR
 
         public static int GetUnorderedQueueTimeWithPrinters(int[] A, int[] P)
         {
+            var optimalA = 0;
+            var maxPrintTime = 0;
+
+            var printers = new int[2];
+            
+            for (int i = 0; i < A.Length; i++)
+            {
+                printers = new int[2];
+                for (int j = 0; j < P.Length; j++)
+                {
+                    var printTimePerOrder = (int) Math.Ceiling((decimal) A[i] / P[j]);
+
+                    if (printTimePerOrder > maxPrintTime)
+                    {
+                        maxPrintTime = printTimePerOrder;
+                        optimalA = A[i];
+                    }
+
+                    if (A[i] == optimalA)
+                        printers[j] = printTimePerOrder;
+                }
+            }
+            Console.WriteLine(printers[0]);
+            Console.WriteLine(printers[1]);
+            
             return 0;
         }
     }
