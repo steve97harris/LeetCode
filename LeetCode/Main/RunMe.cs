@@ -11,10 +11,18 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] A = {10, 5, 7};
-                int[] P = {2, 3};
-                CodingTest.GetQueueTimeWithPrinters(A,P);
+                FirstUnique firstUnique = new FirstUnique(new int[] {2,3,5});
+                firstUnique.Add(7);
+                firstUnique.ShowFirstUnique();
             }
+
+            #region CodeTests
+
+            // int[] A = {10, 5, 7};
+            // int[] P = {2, 3};
+            // CodingTest.GetQueueTimeWithPrinters(A,P);
+
+            #endregion
 
             #region Incomplete
 

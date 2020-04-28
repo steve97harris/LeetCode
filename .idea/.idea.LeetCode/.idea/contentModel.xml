@@ -13,6 +13,7 @@
           </e>
           <e p="DataStructureDesignSolutions" t="Include">
             <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
+            <e p="FirstUnique.cs" t="Include" />
             <e p="LeastRecentlyUsedCache.cs" t="Include" />
             <e p="MinimumElementInStack.cs" t="Include" />
             <e p="MyQueue.cs" t="Include" />

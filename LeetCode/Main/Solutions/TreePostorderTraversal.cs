@@ -17,7 +17,7 @@ namespace LeetCode.Main
         }
     }
 
-    public class Node
+    public abstract partial class Node
     {
         public int val;
         public IList<Node> children;

@@ -112,7 +112,7 @@ namespace LeetCode.Main.CodingTestYR
             Console.WriteLine("P[1] finishes at: " + totalTimeForPrinter1);
             
             
-            return 0;
+            return Math.Max(totalTimeForPrinter0,totalTimeForPrinter1); 
         }
 
         public static int GetUnorderedQueueTimeWithPrinters(int[] A, int[] P)
