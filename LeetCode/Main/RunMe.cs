@@ -11,7 +11,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                var words = new string[] {"blue","green","bu"};
+                StringMatchingInAnArray.StringMatching(words);
             }
 
             #region CodeTests
