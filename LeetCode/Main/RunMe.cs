@@ -11,8 +11,10 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var words = new string[] {"leetcoder", "leetcode", "od", "hamlet", "am"};
-                StringMatchingInAnArray.StringMatching(words);
+                StevesHashSet set = new StevesHashSet();
+                set.Add(1);
+                set.Add(2);
+                set.PrintFirst5();
             }
 
             #region CodeTests

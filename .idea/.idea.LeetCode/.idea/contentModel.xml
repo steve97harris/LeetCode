@@ -16,6 +16,7 @@
             <e p="MinimumElementInStack.cs" t="Include" />
             <e p="MyQueue.cs" t="Include" />
             <e p="StevesHashMap.cs" t="Include" />
+            <e p="StevesHashSet.cs" t="Include" />
             <e p="Trie.cs" t="Include" />
           </e>
           <e p="RunMe.cs" t="Include" />
@@ -29,6 +30,7 @@
             <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
+            <e p="ComplementOfBase10Integer.cs" t="Include" />
             <e p="ConstructBinaryTreeFromPostorderTraversal.cs" t="Include" />
             <e p="ContiguousArray.cs" t="Include" />
             <e p="CorrespondingNodeOfBinaryTreeInACloneOfThatTree.cs" t="Include" />

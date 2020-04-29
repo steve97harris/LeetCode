@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -54,6 +55,11 @@ namespace LeetCode.Main
         public void Remove(int key)        // removes mapping of specified value key
         {
             keyValues[key] = -1;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
