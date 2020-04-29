@@ -11,7 +11,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                ElementAppearingMoreThan25InSortedArray.FindSpecialInteger(new int[] {1, 2, 2, 6, 6, 6, 6, 7, 10});
+                var words = new string[] {"leetcoder", "leetcode", "od", "hamlet", "am"};
+                StringMatchingInAnArray.StringMatching(words);
             }
 
             #region CodeTests
@@ -80,8 +81,6 @@ namespace LeetCode.Main
                 // wordDictionary.AddWord("ab");
                 // wordDictionary.Search("a.");
                 
-                // var words = new string[] {"blue","green","bu"};
-                // StringMatchingInAnArray.StringMatching(words);
                 #endregion
         }
     }

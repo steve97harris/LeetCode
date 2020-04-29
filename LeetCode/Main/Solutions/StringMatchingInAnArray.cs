@@ -9,23 +9,14 @@ namespace LeetCode.Main
         public static IList<string> StringMatching(string[] words)
         {
             var wordsInTheWords = new List<string>();
-            var list = new List<string[]>();
-            foreach (var str in words)
-            {
-                wordsInTheWords.Add(str);
-                var x = words.Select(word => word)
-                    .Where(word => word.Contains(str) && word != str).ToArray();
-                list.Add(x);
-            }
-            foreach (var s in list.SelectMany(arr => arr))
-            {
-                if (wordsInTheWords.Contains(s))
-                    wordsInTheWords.Remove(s);
-            }
 
-            foreach (var w in wordsInTheWords)
+            for (int i = 0; i < words.Length; i++)
             {
-                Console.WriteLine(w);
+                for (int j = 0; j < words.Length; j++)
+                {
+                    if (words[i].Contains(words[j]) && !wordsInTheWords.Contains(words[j]) && words[i] != words[j])
+                        wordsInTheWords.Add(words[j]);
+                }
             }
             
             return wordsInTheWords.Count == words.Length ? new List<string>() : wordsInTheWords;
