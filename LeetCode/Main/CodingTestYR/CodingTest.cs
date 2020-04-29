@@ -33,9 +33,12 @@ namespace LeetCode.Main.CodingTestYR
 
             var totalTimeForPrinter0 = 0;
             var totalTimeForPrinter1 = 0;
+            var printerFinishingTimes = new int[2];
+            var totalTimeForPrinter = 0;
 
             var minPrintTimeAtPrinter0 = 0;
             var minPrintTimeAtPrinter1 = 0;
+            var minPrintTimeAtPrinter = 0;
 
             for (int i = 0; i < A.Length; i++)
             {
@@ -73,7 +76,7 @@ namespace LeetCode.Main.CodingTestYR
                 if (minPrintTimeIndex == 0)
                 {
                     minPrintTimeAtPrinter0 = minPrintTime;
-                    
+
                     if (totalTimeForPrinter0 < minPrintTimeAtPrinter0 + i)
                         totalTimeForPrinter0 = minPrintTimeAtPrinter0 + i;         // !!??
                 }
@@ -85,7 +88,7 @@ namespace LeetCode.Main.CodingTestYR
                         totalTimeForPrinter1 = minPrintTimeAtPrinter1 + i;        // !!??
                 }
 
-                
+
                 if (minPrintTimeAtPrinter0 > 0)
                 {
                     minPrintTimeAtPrinter0 -= 1;

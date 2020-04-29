@@ -11,9 +11,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] A = {1, 2, 10};
-                int[] P = {2, 2};
-                CodingTest.GetUnorderedQueueTimeWithPrinters(A,P);
+                int[] A = {10, 5, 7};
+                int[] P = {2, 3};
+                CodingTest.GetQueueTimeWithPrinters(A,P);
             }
 
             #region CodeTests
