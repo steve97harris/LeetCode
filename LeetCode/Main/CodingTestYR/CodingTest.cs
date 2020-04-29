@@ -39,41 +39,35 @@ namespace LeetCode.Main.CodingTestYR
 
             for (int i = 0; i < A.Length; i++)
             {
-                Console.WriteLine("Second " + i);
                 var printers = new int[2];
+                var minPrintTime = 0;
+                
+                Console.WriteLine("Second " + i);
+                
                 for (int j = 0; j < P.Length; j++)
                 {
-                    var printTime = Math.Ceiling((decimal) A[i] / P[j]);
-                    printers[j] = (int) printTime;
+                    var printTimePerOrder = Math.Ceiling((decimal) A[i] / P[j]);
+                    printers[j] = (int) printTimePerOrder;
                     
                     if (i == 0)
                     {
                         Console.WriteLine("B[{0}] = {1}",j,printers[j]);
-                        Console.WriteLine("printTime = " + printTime);
+                        Console.WriteLine("printTime = " + printTimePerOrder);
                         Console.WriteLine();
                     }
 
                     if (i < 1) continue;
                     var waitTime = 0;
-                    if (j == 0)
-                    {
-                        waitTime = minPrintTimeAtPrinter0 > 0 ? minPrintTimeAtPrinter0 : 0;
+                    minPrintTime = j == 0 ? minPrintTimeAtPrinter0 : minPrintTimeAtPrinter1;
 
-                        printers[j] = (int) printTime + waitTime;
-                    }
-                    else
-                    {
-                        waitTime = minPrintTimeAtPrinter1 > 0 ? minPrintTimeAtPrinter1 : 0;
-
-                        printers[j] = (int) printTime + waitTime;
-                    }
-                        
+                    waitTime = minPrintTime > 0 ? minPrintTime : 0;
+                    printers[j] = (int) printTimePerOrder + waitTime;
 
                     Console.WriteLine("B[{0}] = {1}",j,printers[j]);
-                    Console.WriteLine("printTime = " + printTime + ", waitTime = " + waitTime);
+                    Console.WriteLine("printTime = " + printTimePerOrder + ", waitTime = " + waitTime);
                     Console.WriteLine();
                 }
-                var minPrintTime = printers.Min();
+                minPrintTime = printers.Min();
 
                 var minPrintTimeIndex = printers[0] == minPrintTime ? 0 : 1;
                 if (minPrintTimeIndex == 0)
@@ -117,32 +111,96 @@ namespace LeetCode.Main.CodingTestYR
 
         public static int GetUnorderedQueueTimeWithPrinters(int[] A, int[] P)
         {
-            var optimalA = 0;
-            var maxPrintTime = 0;
+            var listA = A.ToList();
 
-            var printers = new int[2];
+            var totalTimeForPrinter0 = 0;
+            var totalTimeForPrinter1 = 0;
+
+            var minPrintTimeAtPrinter0 = 0;
+            var minPrintTimeAtPrinter1 = 0;
             
-            for (int i = 0; i < A.Length; i++)
+            var second = 0;
+            while (listA.Count != 0)
             {
-                printers = new int[2];
+                var minPrintTime = 0;
+                
+                var maxInA = listA.Max();
+                var indexOfMaxA = 0;
+                
+                for (int i = 0; i < A.Length; i++)
+                {
+                    if (A[i] == maxInA)
+                        indexOfMaxA = i;
+                }
+                    
+                var printers = new int[2];
                 for (int j = 0; j < P.Length; j++)
                 {
-                    var printTimePerOrder = (int) Math.Ceiling((decimal) A[i] / P[j]);
-
-                    if (printTimePerOrder > maxPrintTime)
+                    var printTimePerOrder = Math.Ceiling((decimal) A[indexOfMaxA] / P[j]);
+                    printers[j] = (int) printTimePerOrder;
+                    
+                    if (second == 0)
                     {
-                        maxPrintTime = printTimePerOrder;
-                        optimalA = A[i];
+                        Console.WriteLine("B[{0}] = {1}",j,printers[j]);
+                        Console.WriteLine("printTime = " + printTimePerOrder);
+                        Console.WriteLine();
                     }
 
-                    if (A[i] == optimalA)
-                        printers[j] = printTimePerOrder;
+                    if (second < 1) continue;
+                    var waitTime = 0;
+                    minPrintTime = j == 0 ? minPrintTimeAtPrinter0 : minPrintTimeAtPrinter1;
+
+                    waitTime = minPrintTime > 0 ? minPrintTime : 0;
+                    printers[j] = (int) printTimePerOrder + waitTime;
+                        
+
+                    Console.WriteLine("B[{0}] = {1}",j,printers[j]);
+                    Console.WriteLine("printTime = " + printTimePerOrder + ", waitTime = " + waitTime);
+                    Console.WriteLine();
                 }
+                
+                minPrintTime = printers.Min();
+
+                var minPrintTimeIndex = printers[0] == minPrintTime ? 0 : 1;
+                if (minPrintTimeIndex == 0)
+                {
+                    minPrintTimeAtPrinter0 = minPrintTime;
+                    
+                    if (totalTimeForPrinter0 < minPrintTimeAtPrinter0 + second)
+                        totalTimeForPrinter0 = minPrintTimeAtPrinter0 + second;         // !!??
+                }
+                else
+                {
+                    minPrintTimeAtPrinter1 = minPrintTime;
+                    
+                    if (totalTimeForPrinter1 < minPrintTimeAtPrinter1 + second)
+                        totalTimeForPrinter1 = minPrintTimeAtPrinter1 + second;        // !!??
+                }
+
+                
+                if (minPrintTimeAtPrinter0 > 0)
+                {
+                    minPrintTimeAtPrinter0 -= 1;
+                }
+
+                if (minPrintTimeAtPrinter1 > 0)
+                {
+                    minPrintTimeAtPrinter1 -= 1;
+                }
+                
+                
+                Console.WriteLine("Send order to printer at index: " + minPrintTimeIndex);
+                Console.WriteLine("** minPrintTime = " + minPrintTime);
+                Console.WriteLine("------");
+                    
+                listA.Remove(maxInA);
+                second++;
             }
-            Console.WriteLine(printers[0]);
-            Console.WriteLine(printers[1]);
             
-            return 0;
+            Console.WriteLine("P0 finishes at second: " + totalTimeForPrinter0);
+            Console.WriteLine("P1 finishes at second: " + totalTimeForPrinter1);
+
+            return Math.Max(totalTimeForPrinter0,totalTimeForPrinter1);
         }
     }
 }

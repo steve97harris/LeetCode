@@ -11,15 +11,14 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var words = new string[] {"blue","green","bu"};
-                StringMatchingInAnArray.StringMatching(words);
+                int[] A = {1, 2, 10};
+                int[] P = {2, 2};
+                CodingTest.GetUnorderedQueueTimeWithPrinters(A,P);
             }
 
             #region CodeTests
 
-            // int[] A = {1, 2, 10};
-            // int[] P = {2, 2};
-            // CodingTest.GetUnorderedQueueTimeWithPrinters(A,P);
+            
 
             #endregion
 
@@ -81,7 +80,8 @@ namespace LeetCode.Main
                 // wordDictionary.AddWord("ab");
                 // wordDictionary.Search("a.");
                 
-                
+                // var words = new string[] {"blue","green","bu"};
+                // StringMatchingInAnArray.StringMatching(words);
                 #endregion
         }
     }
