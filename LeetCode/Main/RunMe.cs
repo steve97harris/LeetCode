@@ -11,14 +11,14 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] A = {10, 5, 7};
-                int[] P = {2, 3};
-                CodingTest.GetQueueTimeWithPrinters(A,P);
+                ElementAppearingMoreThan25InSortedArray.FindSpecialInteger(new int[] {1, 2, 2, 6, 6, 6, 6, 7, 10});
             }
 
             #region CodeTests
 
-            
+            // int[] A = {10, 5, 7};
+            // int[] P = {2, 3};
+            // CodingTest.GetQueueTimeWithPrinters(A,P);
 
             #endregion
 

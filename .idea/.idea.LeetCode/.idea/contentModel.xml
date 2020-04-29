@@ -29,6 +29,7 @@
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
             <e p="BinaryGap.cs" t="Include" />
             <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
+            <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
             <e p="ConstructBinaryTreeFromPostorderTraversal.cs" t="Include" />
             <e p="ContiguousArray.cs" t="Include" />
@@ -48,6 +49,7 @@
             <e p="DistributeCandies.cs" t="Include" />
             <e p="DistributeCandiesToPeople.cs" t="Include" />
             <e p="DIString.cs" t="Include" />
+            <e p="ElementAppearingMoreThan25%InSortedArray.cs" t="Include" />
             <e p="EncodeDecodeTinyURL.cs" t="Include" />
             <e p="FactorialTrailingZeros.cs" t="Include" />
             <e p="FibonacciNumber.cs" t="Include" />
@@ -60,6 +62,7 @@
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
             <e p="HappyNumber.cs" t="Include" />
+            <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="JumpGame.cs" t="Include" />
