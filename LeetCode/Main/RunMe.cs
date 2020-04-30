@@ -11,10 +11,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                StevesHashSet set = new StevesHashSet();
-                set.Add(1);
-                set.Add(2);
-                set.PrintFirst5();
+                var x = new int[] {3, 2, 1, 6, 0, 5};
+                MaximumBinaryTree.ConstructMaximumBinaryTree(x);
             }
 
             #region CodeTests
