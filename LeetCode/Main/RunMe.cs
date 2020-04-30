@@ -11,7 +11,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                ElementAppearingMoreThan25InSortedArray.FindSpecialInteger(new int[] {1, 2, 2, 6, 6, 6, 6, 7, 10});
+                
             }
 
             #region CodeTests
