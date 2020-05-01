@@ -20,7 +20,7 @@
       "outputPath": "/Users/Steve/Documents/GitHub/LeetCode/LeetCode/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Steve/.config/NuGet/NuGet.Config"
+        "/Users/Steve/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

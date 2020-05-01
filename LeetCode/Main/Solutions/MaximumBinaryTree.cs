@@ -6,11 +6,13 @@ namespace LeetCode.Main.Solutions
 {
     public static class MaximumBinaryTree
     {
+        private static TreeNode head;
         static List<int> leftSubarray = new List<int>();
         static List<int> rightSubarray = new List<int>();
         public static TreeNode ConstructMaximumBinaryTree(int[] nums)
         {
             var root = new TreeNode(nums.Max());
+            head = root;
             
             var indexOfNumsMax = 0;
             for (int i = 0; i < nums.Length; i++)
@@ -32,25 +34,40 @@ namespace LeetCode.Main.Solutions
             rightSubarray.Sort();
             rightSubarray.Reverse();
 
-            GenerateTree(root);
+            GenerateTreeLeft(root);
+            GenerateTreeRight(root);
             
             DisplayNodes(root, "root");
 
             return root;
         }
-
-        private static void GenerateTree(TreeNode root)
+        
+        private static void GenerateTreeLeft(TreeNode root)
         {
-            var indexOfLeft = 0;
-            while (indexOfLeft <= leftSubarray.Count)
-            {
-                if (root != null)
-                    root.left = new TreeNode(leftSubarray[indexOfLeft]);
-                
-                indexOfLeft++;
-                if (root != null && root.left == null)
-                    GenerateTree(root);
-            }
+            if (root == null || leftSubarray.Count == 0) return;
+            
+            if (head.left == null)
+                root.left = new TreeNode(leftSubarray[0]);
+            else
+                root.right = new TreeNode(leftSubarray[0]);
+            
+            leftSubarray.Remove(leftSubarray[0]);
+            
+            GenerateTreeLeft(root.left);
+        }
+        
+        private static void GenerateTreeRight(TreeNode root)
+        {
+            if (root == null || rightSubarray.Count == 0) return;
+            
+            if (head.right == null)
+                root.right = new TreeNode(rightSubarray[0]);
+            else
+                root.left = new TreeNode(rightSubarray[0]);
+            
+            rightSubarray.Remove(rightSubarray[0]);
+            
+            GenerateTreeRight(root.right);
         }
 
         private static TreeNode DisplayNodes(TreeNode root, string leftRight)
