@@ -32,21 +32,44 @@ namespace LeetCode.Main.Solutions
             rightSubarray.Sort();
             rightSubarray.Reverse();
 
-            while (leftSubarray.Count != 0)
-            {
-                GenerateTreeLeft(root);
-            }
+            GenerateTree(root);
+            
+            DisplayNodes(root, "root");
 
             return root;
         }
 
-        private static void GenerateTreeLeft(TreeNode root)
+        private static void GenerateTree(TreeNode root)
         {
-            root.left = new TreeNode(leftSubarray[0]);
+            var indexOfLeft = 0;
+            while (indexOfLeft <= leftSubarray.Count)
+            {
+                if (root != null)
+                    root.left = new TreeNode(leftSubarray[indexOfLeft]);
                 
-            leftSubarray.Remove(leftSubarray[0]);
-                
-            GenerateTreeLeft(root.left);
+                indexOfLeft++;
+                if (root != null && root.left == null)
+                    GenerateTree(root);
+            }
+        }
+
+        private static TreeNode DisplayNodes(TreeNode root, string leftRight)
+        {
+            if (root == null)
+                return null;
+            Console.WriteLine($"{leftRight} - " + root.val);
+
+            if (root.left != null)
+            {
+                DisplayNodes(root.left, "L");
+            }
+
+            if (root.right != null)
+            {
+                DisplayNodes(root.right, "R");
+            }
+
+            return root;
         }
     }
 }
