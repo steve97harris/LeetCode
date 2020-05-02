@@ -4,45 +4,38 @@ using System.Linq;
 
 namespace LeetCode.Main.Solutions
 {
-    public class WordsThatCanBeFormedByCharacters
+    public static class WordsThatCanBeFormedByCharacters
     {
         public static int CountCharacters(string[] words, string chars)
         {
-            List<string> goodWords = new List<string>();
-            List<string> badWords = new List<string>();
+            var count = 0;
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (CanCreateStr2(chars, words[i]))
+                    count += words[i].Length;
+            }
             
-            foreach (var word in words)
+            Console.WriteLine(count);
+            return count;
+        }
+
+        private static bool CanCreateStr2(string chars, string str2)
+        {
+            var count = new int[256];
+
+            for (int i = 0; i < chars.Length; i++)
             {
-                goodWords.Add(word);
-                foreach (var character in word)
-                {
-                    if (!chars.Contains(character) && !badWords.Contains(word))
-                    {
-                        badWords.Add(word);
-                    }
-                }
+                count[chars[i]]++;
             }
 
-            foreach (var badWord in badWords)
+            for (int i = 0; i < str2.Length; i++)
             {
-                if (goodWords.Contains(badWord))
-                {
-                    goodWords.Remove(badWord);
-                }
+                if (count[str2[i]] == 0)
+                    return false;
+                count[str2[i]]--;
             }
 
-            int charCount = 0;
-            foreach (var goodWord in goodWords)
-            {
-                Console.WriteLine(goodWord);
-                foreach (var character in goodWord)
-                {
-                    ++charCount;
-                }
-            }
-
-            Console.WriteLine(charCount);
-            return charCount;
+            return true;
         }
     }
 }

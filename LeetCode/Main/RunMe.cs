@@ -11,8 +11,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var x = new int[] {3, 2, 1, 6, 0, 5};
-                MaximumBinaryTree.ConstructMaximumBinaryTree(x);
+                string[] words = {"hello","world","leetcode"};
+                string chars = "welldonehoneyr";
+                WordsThatCanBeFormedByCharacters.CountCharacters(words, chars);   
             }
 
             #region CodeTests
@@ -24,14 +25,7 @@ namespace LeetCode.Main
             #endregion
 
             #region Incomplete
-
-                // string[] slkd = {"900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"};
-                // SubdomainVisitCount.SubdomainVisits(slkd);
-
-                // string[] words = {"hello","world","leetcode"};
-                // string chars = "welldonehoneyr";
-                // WordsThatCanBeFormedByCharacters.CountCharacters(words, chars);
-
+                
                 // string s = "anagram", t = "mangaar";
                 // MinNumOfStepsForAnagram.MinSteps(s, t);
                 

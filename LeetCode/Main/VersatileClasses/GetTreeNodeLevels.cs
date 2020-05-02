@@ -34,7 +34,7 @@ namespace LeetCode.Main
                 pair = queue.First.Value;
                 queue.RemoveFirst();
                 
-                //Console.WriteLine("Level of " + pair.node.val + " is " + pair.level);
+                Console.WriteLine("Level of " + pair.node.val + " is " + pair.level);
                 if (pair.node.left != null)
                     queue.AddLast(new NodeLevelPair(pair.node.left, pair.level + 1));
                 if (pair.node.right != null)
