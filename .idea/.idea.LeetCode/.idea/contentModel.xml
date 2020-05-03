@@ -28,6 +28,7 @@
             <e p="BaseballGame.cs" t="Include" />
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
             <e p="BinaryGap.cs" t="Include" />
+            <e p="BinaryNumberWithAlternatingBits.cs" t="Include" />
             <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
@@ -103,6 +104,7 @@
             <e p="RelativelySortArray.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="ReshapeTheMatrix.cs" t="Include" />
+            <e p="RevealCardsInIncreasingOrder.cs" t="Include" />
             <e p="ReverseLinkedList.cs" t="Include" />
             <e p="ReverseString.cs" t="Include" />
             <e p="ReverseWordsInStringIII.cs" t="Include" />
