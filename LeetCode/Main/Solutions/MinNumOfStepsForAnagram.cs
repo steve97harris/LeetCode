@@ -9,50 +9,45 @@ namespace LeetCode.Main.Solutions
     {
         public static int MinSteps(string s, string t)
         {
-            int minSteps = 0;
+            var sortedS = SortString(s);
+            var sortedT = SortString(t);
 
-            Dictionary<char, int> sameChars = new Dictionary<char, int>();
+            if (sortedS == sortedT)
+                return 0;
             
-            // {Key, Value} pair = {Key, Count}
-            // Group by character, select new grouping: {Key, Count}
-            var sCount = s.GroupBy(c => c).Select(g => new {g.Key, Count = g.Count()});
-            var tCount = t.GroupBy(c => c).Select(g => new {g.Key, Count = g.Count()});
+            Console.WriteLine(sortedS);
+            Console.WriteLine(sortedT);
+
+            var dictionaryS = StringToDictionary(s);
+            var dictionaryT = StringToDictionary(t);
             
-            Console.WriteLine("s: [key,count]");
-            foreach (var sPair in sCount)
+            var count = 0;
+
+            foreach (var pair in dictionaryS)
             {
-                Console.WriteLine("[ {0} , {1} ]", sPair.Key, sPair.Count);
-
-                foreach (var tPair in tCount)
-                {
-                    if (sPair.Key == tPair.Key)
-                    {
-                        sameChars.Add(sPair.Key, sPair.Count);
-                    }
-                }
+                if (dictionaryT.ContainsKey(pair.Key) && dictionaryT[pair.Key] != dictionaryS[pair.Key])
+                    count += Math.Abs(dictionaryS[pair.Key] - dictionaryT[pair.Key]);
+                if (!dictionaryT.ContainsKey(pair.Key))
+                    count++;
             }
-
-
-            int tSum = 0;
-            Console.WriteLine("t: [key,count]");
-            foreach (var tPair in tCount)
-            {
-                Console.WriteLine("[ {0} , {1} ]", tPair.Key, tPair.Count);
-                tSum = tSum + tPair.Count;
-            }
-
             
-            Console.WriteLine("sameChars , sChar count: ");
-            foreach (var c in sameChars)
-            {
-                Console.WriteLine("[ {0} , {1} ]", c.Key, c.Value);
-            }
+            Console.WriteLine(count);
+            return count;
+        }
 
-            minSteps = tSum - sameChars.Count;
-            
-            
-            Console.WriteLine(minSteps);
-            return minSteps;
+        private static string SortString(string x)
+        {
+            var sortedListX = x.ToList();
+            sortedListX.Sort();
+            var sortedX = new string(sortedListX.ToArray());
+            return sortedX;
+        }
+
+        private static Dictionary<char, int> StringToDictionary(string x)
+        {
+            var charDictionary = x.GroupBy(c => c)
+                .ToDictionary(g => g.Key, g => g.Count());
+            return charDictionary;
         }
     }
 }

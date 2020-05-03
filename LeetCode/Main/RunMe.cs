@@ -11,9 +11,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                string[] words = {"hello","world","leetcode"};
-                string chars = "welldonehoneyr";
-                WordsThatCanBeFormedByCharacters.CountCharacters(words, chars);   
+                string s = "aba", t = "bab";
+                MinNumOfStepsForAnagram.MinSteps(s, t);
             }
 
             #region CodeTests
@@ -25,10 +24,7 @@ namespace LeetCode.Main
             #endregion
 
             #region Incomplete
-                
-                // string s = "anagram", t = "mangaar";
-                // MinNumOfStepsForAnagram.MinSteps(s, t);
-                
+            
                 // string s = "loveleetcode";
                 // char c = 'e';
                 // ShortestDistanceToACharacter.ShortestToChar(s, c);
