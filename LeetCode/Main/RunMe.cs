@@ -11,8 +11,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                string s = "aba", t = "bab";
-                MinNumOfStepsForAnagram.MinSteps(s, t);
+                
             }
 
             #region CodeTests

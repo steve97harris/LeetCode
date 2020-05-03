@@ -9,30 +9,49 @@ namespace LeetCode.Main.Solutions
     {
         public static int MinSteps(string s, string t)
         {
-            var sortedS = SortString(s);
-            var sortedT = SortString(t);
-
-            if (sortedS == sortedT)
-                return 0;
+            var sCount = new int[26];
+            var tCount = new int[26];
             
-            Console.WriteLine(sortedS);
-            Console.WriteLine(sortedT);
-
-            var dictionaryS = StringToDictionary(s);
-            var dictionaryT = StringToDictionary(t);
+            for (int i = 0; i < s.Length; i++)
+            {
+                sCount[s[i] - 'a']++;
+                tCount[t[i] - 'a']++;
+            }
             
             var count = 0;
-
-            foreach (var pair in dictionaryS)
+            for (int i = 0; i < 26; i++)
             {
-                if (dictionaryT.ContainsKey(pair.Key) && dictionaryT[pair.Key] != dictionaryS[pair.Key])
-                    count += Math.Abs(dictionaryS[pair.Key] - dictionaryT[pair.Key]);
-                if (!dictionaryT.ContainsKey(pair.Key))
-                    count++;
+                if (sCount[i] > tCount[i])
+                    count += sCount[i] - tCount[i];
             }
             
             Console.WriteLine(count);
+            
             return count;
+            
+            
+            // var sortedS = SortString(s);
+            // var sortedT = SortString(t);
+            //
+            // if (sortedS == sortedT)
+            //     return 0;
+            //
+            // Console.WriteLine(sortedS);
+            // Console.WriteLine(sortedT);
+            //
+            // var dictionaryS = StringToDictionary(s);
+            // var dictionaryT = StringToDictionary(t);
+            //
+            // var count = 0;
+            //
+            // foreach (var pair in dictionaryS)
+            // {
+            //     if (dictionaryT.ContainsKey(pair.Key) && dictionaryS[pair.Key] > dictionaryT[pair.Key])
+            //         count += Math.Abs(dictionaryS[pair.Key] - dictionaryT[pair.Key]);
+            // }
+            //
+            // Console.WriteLine(count);
+            // return count;
         }
 
         private static string SortString(string x)
