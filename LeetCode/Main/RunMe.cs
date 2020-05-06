@@ -11,7 +11,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                RevealCardsInIncreasingOrder.DeckRevealedIncreasing(new int[] {17, 13, 11, 2, 3, 5, 7});
+                // RevealCardsInIncreasingOrder.DeckRevealedIncreasing(new int[] {17, 13, 11, 2, 3, 5, 7});
+                TheMajorityElement.MajorityElement(new int[] {2, 2, 3, 3, 2, 2, 2, 3, 4, 5});
             }
 
             #region CodeTests

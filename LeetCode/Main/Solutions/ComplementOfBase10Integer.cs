@@ -5,9 +5,9 @@ namespace LeetCode.Main.Solutions
 {
     public static class ComplementOfBase10Integer
     {
-        public static int BitwiseComplement(int N)
+        public static int BitwiseComplement(int num)
         {
-            var nBase2 = Convert.ToString(N, 2).ToArray();
+            var nBase2 = Convert.ToString(num, 2).ToArray();
             for (int i = 0; i < nBase2.Length; i++)
             {
                 if (nBase2[i] == '1')
@@ -16,9 +16,9 @@ namespace LeetCode.Main.Solutions
                     nBase2[i] = '1';
             }
             
-            N = Convert.ToInt32(new string(nBase2), 2);
+            num = Convert.ToInt32(new string(nBase2), 2);
             
-            return N;
+            return num;
         }
     }
 }
