@@ -2,7 +2,7 @@
 {
     public class BinaryTree
     {
-        public int GetLevelHelper(TreeNode node, int val, int level)
+        private int GetLevelHelper(TreeNode node, int val, int level)
         // Returns level of the value if the value exists in tree, otherwise returns 0;
         {
             if (node == null)
