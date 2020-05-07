@@ -19,10 +19,8 @@ namespace LeetCode.Main
                     right = new TreeNode(3)
                 };
                 root.left.left = new TreeNode(4);
-                
-                var x = 4;
-                var y = 3;
-                CousinsInBinaryTree.IsCousins(root, x, y);
+                // root.right.right = new TreeNode(5);
+                CousinsInBinaryTree.IsCousins(root, 4, 3);
             }
 
             #region CodeTests

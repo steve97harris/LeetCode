@@ -4,48 +4,53 @@ namespace LeetCode.Main.Solutions
 {
     public static class CousinsInBinaryTree
     {
-        private static int depthLeft = 0;
-        private static int depthRight = 0;
-        private static int cousinA = 0;
-        private static int cousinB = 0;
+        private static TreeNode parentNode;
         public static bool IsCousins(TreeNode root, int x, int y)
         {
             // cousins - same depth, but different parent.
-            var nodeLevel = GetNodeLevel(root, root.val);
 
+            var levelOfX = GetNodeDepth(root, x,0);
+            Console.WriteLine(levelOfX);
+            var parentOfXVal = parentNode;
+            
+            var levelOfY = GetNodeDepth(root, y, 0);
+            Console.WriteLine(levelOfY);
+            var parentOfYVal = parentNode;
+
+            if (levelOfX == levelOfY && parentOfXVal != parentOfYVal)
+            {
+                Console.WriteLine("T");
+                return true;
+            }
+
+            Console.WriteLine("F");
+            return false;
+        }
+
+        private static int GetNodeDepth(TreeNode root, int valOfNode, int level)
+        {
+            if (root.val == valOfNode)
+            {
+                Console.WriteLine(root.val);
+                // Console.WriteLine("level: " + level);
+                return level;
+            }
+            
             if (root.left != null)
             {
-                depthLeft++;
-                IsCousins(root.left, x, y);
+                if (root.left.val == valOfNode)
+                    parentNode = root;
+                GetNodeDepth(root.left, valOfNode, level + 1);
             }
 
             if (root.right != null)
             {
-                depthRight++;
-                IsCousins(root.right, x, y);
+                if (root.right.val == valOfNode)
+                    parentNode = root;
+                GetNodeDepth(root.right, valOfNode, level + 1);
             }
-
-            Console.WriteLine(cousinA);
-            Console.WriteLine(cousinB);
-            return cousinA > 0 && cousinB > 0;
-        }
-
-        private static int GetNodeLevel(TreeNode node, int val)
-        {
-            return GetNodeLevelHelper(node, val, 1);
-        }
-
-        private static int GetNodeLevelHelper(TreeNode node, int val, int level)
-        {
-            if (node == null)
-                return 0;
-            if (node.val == val)
-                return level;
-            var downLevel = GetNodeLevelHelper(node.left, val, level + 1);
-            if (downLevel != 0)
-                return downLevel;
-            downLevel = GetNodeLevelHelper(node.right, val, level + 1);
-            return downLevel;
+            
+            return -1;
         }
     }
 }
