@@ -11,9 +11,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var root1 = new TreeNode(2) {left = new TreeNode(1), right = new TreeNode(4)};
-                var root2 = new TreeNode(1) {left = new TreeNode(0), right = new TreeNode(3)};
-                AllElementsInTwoBinarySearchTrees.GetAllElements(root1, root2);
+                var l1 = new ListNode(2) {next = new ListNode(4) {next = new ListNode(3)}};
+                var l2 = new ListNode(5) {next = new ListNode(6) {next = new ListNode(4)}};
+                Add2Numbers.AddTwoNumbers(l1, l2);
             }
 
             #region CodeTests
