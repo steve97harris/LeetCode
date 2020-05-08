@@ -11,16 +11,9 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                // RevealCardsInIncreasingOrder.DeckRevealedIncreasing(new int[] {17, 13, 11, 2, 3, 5, 7});
-
-                var root = new TreeNode(1)
-                {
-                    left = new TreeNode(2), 
-                    right = new TreeNode(3)
-                };
-                root.left.left = new TreeNode(4);
-                // root.right.right = new TreeNode(5);
-                CousinsInBinaryTree.IsCousins(root, 4, 3);
+                var root1 = new TreeNode(2) {left = new TreeNode(1), right = new TreeNode(4)};
+                var root2 = new TreeNode(1) {left = new TreeNode(0), right = new TreeNode(3)};
+                AllElementsInTwoBinarySearchTrees.GetAllElements(root1, root2);
             }
 
             #region CodeTests

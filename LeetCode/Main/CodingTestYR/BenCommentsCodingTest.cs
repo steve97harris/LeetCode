@@ -120,7 +120,7 @@ namespace LeetCode.Main.CodingTestYR
 
                 // Ben - I'm being picky here, but something like 'Time elapsed' may be better? Slightly more
                 // descriptive!
-                Console.WriteLine("Second " + i); 
+                Console.WriteLine("Time Elapsed " + i); 
 
                 // Ben - again, just a comment here to let reader know what is being iterated over is nice
                 for (int j = 0; j < P.Length; j++)

@@ -5,16 +5,19 @@ namespace LeetCode.Main.Solutions
     public static class CousinsInBinaryTree
     {
         private static TreeNode parentNode;
+        private static int nodeLevel;
         public static bool IsCousins(TreeNode root, int x, int y)
         {
             // cousins - same depth, but different parent.
 
-            var levelOfX = GetNodeDepth(root, x,0);
-            Console.WriteLine(levelOfX);
+            GetNodeDepth(root, x,0);
+            var levelOfX = nodeLevel;
+            Console.WriteLine("Level X: " + levelOfX);
             var parentOfXVal = parentNode;
             
-            var levelOfY = GetNodeDepth(root, y, 0);
-            Console.WriteLine(levelOfY);
+            GetNodeDepth(root, y, 0);
+            var levelOfY = nodeLevel;
+            Console.WriteLine("Level Y: " + levelOfY);
             var parentOfYVal = parentNode;
 
             if (levelOfX == levelOfY && parentOfXVal != parentOfYVal)
@@ -27,15 +30,8 @@ namespace LeetCode.Main.Solutions
             return false;
         }
 
-        private static int GetNodeDepth(TreeNode root, int valOfNode, int level)
+        private static void GetNodeDepth(TreeNode root, int valOfNode, int level)
         {
-            if (root.val == valOfNode)
-            {
-                Console.WriteLine(root.val);
-                // Console.WriteLine("level: " + level);
-                return level;
-            }
-            
             if (root.left != null)
             {
                 if (root.left.val == valOfNode)
@@ -49,8 +45,9 @@ namespace LeetCode.Main.Solutions
                     parentNode = root;
                 GetNodeDepth(root.right, valOfNode, level + 1);
             }
-            
-            return -1;
+
+            if (root.val != valOfNode) return;
+            nodeLevel = level;
         }
     }
 }

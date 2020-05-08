@@ -13,66 +13,34 @@ namespace LeetCode.Main.Solutions
                 2; If there are still cards in the deck, put the next top card of the deck at the bottom of the deck.
                 3; If there are still unrevealed cards, go back to step 1.  Otherwise, stop.
                 4; Return an ordering of the deck that would reveal the cards in increasing order. */
-            
-            
-            var sortedDeck = deck.ToList();
-            sortedDeck.Sort();
 
-            var j = 0;
-            deck[0] = sortedDeck[0];
-            for (int i = 0; i < deck.Length; i++)
+            if (deck.Length <= 1)
+                return deck;
+            
+            Array.Sort(deck);
+            
+            var newDeck = new Queue<int>();
+            for (int i = deck.Length - 1; i >= 0; i--)
             {
-                deck[i] = 0;
-                if (i % 2 == 0)
-                {
-                    deck[i] = sortedDeck[j];       
-                    j++;
-                }
+                RevealCards(newDeck,deck[i]);
             }
+            newDeck = new Queue<int>(newDeck.Reverse());
 
-            sortedDeck.RemoveRange(0,j);
-
-            for (int i = 0; i < deck.Length; i++)
+            foreach (var i in newDeck.ToArray())
             {
-                if (deck[deck.Length-1] != 0)
-                {
-                    if (i % 2 != 0)
-                    {
-                        // deck[i] = ;
-                    }
-                }
+                Console.WriteLine(i);
             }
-
-            for (int i = 0; i < deck.Length; i++)
-            {
-                // Console.WriteLine(deck[i]);
-            }
-            
-            // var deckQueue = new Queue<int>();
-            // for (int i = 0; i < deck.Length; i++)
-            // {
-            //     deckQueue.Enqueue(deck[i]);
-            // }
-            
-            // RevealCards(deckQueue);
-
-            
-
-            
-            return deck;
+            return newDeck.ToArray();
         }
 
-        private static void RevealCards(Queue<int> queue)
+        private static void RevealCards(Queue<int> queue, int card)
         {
-            queue.Dequeue();     // removes and returns object at beginning of queue (reveal and remove from deck)
-            if (queue.Count > 0)
+            if (queue.Count >= 2)
             {
-                var topCard = queue.Dequeue();    // removes and returns again if count > 0
-                queue.Enqueue(topCard);    // place top card at end of queue
+                var topCard = queue.Dequeue();
+                queue.Enqueue(topCard);
             }
-            if (queue.Count > 0)
-                RevealCards(queue);
-            return;
+            queue.Enqueue(card);
         }
     }
 }

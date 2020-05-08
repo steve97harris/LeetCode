@@ -45,11 +45,11 @@ namespace LeetCode.Main.CodingTestYR
                 var printers = new int[2];
                 var minPrintTime = 0;
                 
-                Console.WriteLine("Second " + i);
+                Console.WriteLine("Time Elapsed " + i);
                 
                 for (int j = 0; j < P.Length; j++)
                 {
-                    var printTimePerOrder = Math.Ceiling((decimal) A[i] / P[j]);
+                    var printTimePerOrder = CeilingIntDivision(A[i], P[j]);
                     printers[j] = (int) printTimePerOrder;
                     
                     if (i == 0)
@@ -58,6 +58,8 @@ namespace LeetCode.Main.CodingTestYR
                         Console.WriteLine("printTime = " + printTimePerOrder);
                         Console.WriteLine();
                     }
+                    
+                    //// Up to here with Bens comments /////
 
                     if (i < 1) continue;
                     var waitTime = 0;
@@ -110,6 +112,11 @@ namespace LeetCode.Main.CodingTestYR
             
             
             return Math.Max(totalTimeForPrinter0,totalTimeForPrinter1); 
+        }
+
+        private static decimal CeilingIntDivision(int a, int b)
+        {
+            return Math.Ceiling((decimal) a / b);
         }
 
         public static int GetUnorderedQueueTimeWithPrinters(int[] A, int[] P)
