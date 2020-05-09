@@ -12,7 +12,7 @@ namespace LeetCode.Main
             static void Main()
             {
                 
-            }
+            }        
 
             #region CodeTests
 
