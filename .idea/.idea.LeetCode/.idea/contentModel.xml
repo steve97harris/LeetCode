@@ -29,6 +29,7 @@
             <e p="ArrayPartitionI.cs" t="Include" />
             <e p="AverageLevelsInBinaryTree.cs" t="Include" />
             <e p="BackspaceStringCompare.cs" t="Include" />
+            <e p="BalanceABinaryTree.cs" t="Include" />
             <e p="BaseballGame.cs" t="Include" />
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
             <e p="BinaryGap.cs" t="Include" />
