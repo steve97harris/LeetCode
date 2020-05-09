@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 
 namespace LeetCode.Main
 {
@@ -52,12 +53,12 @@ namespace LeetCode.Main
             }
         }
 
-        private static int ConvertNodesToNumberAndReverse(ListNode root)
+        private static BigInteger ConvertNodesToNumberAndReverse(ListNode root)
         {
             GetNodes(root);
             nodeValuesList.Reverse();
             var str = string.Join("", nodeValuesList);
-            var num = int.Parse(str);
+            var num = BigInteger.Parse(str);
             Console.WriteLine(num);
             nodeValuesList.Clear();
             return num;

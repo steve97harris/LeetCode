@@ -11,9 +11,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var l1 = new ListNode(2) {next = new ListNode(4) {next = new ListNode(3)}};
-                var l2 = new ListNode(5) {next = new ListNode(6) {next = new ListNode(4)}};
-                Add2Numbers.AddTwoNumbers(l1, l2);
+                ZigZagConversion.Convert("PAYPALISHIRING", 4);
             }
 
             #region CodeTests

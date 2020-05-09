@@ -24,6 +24,7 @@
           </e>
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
+            <e p="AddTwoNumbers.cs" t="Include" />
             <e p="AllElementsInTwoBinarySearchTrees.cs" t="Include" />
             <e p="ArrayPartitionI.cs" t="Include" />
             <e p="AverageLevelsInBinaryTree.cs" t="Include" />
@@ -80,6 +81,7 @@
             <e p="LastStoneWeight.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
             <e p="LongestCommonSubsequence.cs" t="Include" />
+            <e p="LongestSubstringWithoutRepeatingCharacters.cs" t="Include" />
             <e p="MajorityElement.cs" t="Include" />
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
@@ -143,8 +145,10 @@
             <e p="UncommonWordsInSentences.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
             <e p="ValidParenthesisString.cs" t="Include" />
+            <e p="ValidPerfectSquare.cs" t="Include" />
             <e p="VersionControl.cs" t="Include" />
             <e p="WordsThatCanBeFormedByCharacters.cs" t="Include" />
+            <e p="ZigZagConversion.cs" t="Include" />
           </e>
           <e p="VersatileClasses" t="Include">
             <e p="BinaryTree.cs" t="Include" />
