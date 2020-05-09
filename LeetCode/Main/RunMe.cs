@@ -11,7 +11,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                ZigZagConversion.Convert("PAYPALISHIRING", 4);
+                
             }
 
             #region CodeTests
@@ -69,6 +69,8 @@ namespace LeetCode.Main
                 // wordDictionary.AddWord("a");
                 // wordDictionary.AddWord("ab");
                 // wordDictionary.Search("a.");
+                
+                // ZigZagConversion.Convert("PAYPALISHIRING", 4);
                 
                 #endregion
         }
