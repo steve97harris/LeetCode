@@ -11,11 +11,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var root = new TreeNode(1)
-                {
-                    right = new TreeNode(2) {right = new TreeNode(3) {right = new TreeNode(4)}}
-                };
-                BalanceABinaryTree.BalanceBST(root);
+                SumOfArrayEqualZero.SumZero(10);
             }        
 
             #region CodeTests

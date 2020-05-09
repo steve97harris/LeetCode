@@ -8,38 +8,36 @@ namespace LeetCode.Main.Solutions
     {
         public static int[] SumZero(int n)
         {
-            int[] array = new int[n];
-            for (int i = 0; i < n; i++)
-            {
-                array[i] = new Random().Next(-10, 10);
-            }
+            var result = new int[n];
+            var mid = n/2;
 
-            List<int> arrayList = new List<int>();
-            foreach (int x in array)
+            if (n % 2 == 0)
             {
-                if (!arrayList.Contains(x))
+                for (int i = 0; i <= mid; i++)
                 {
-                    arrayList.Add(x);
+                    result[mid - i] = -i;
                 }
-                else
+                for (int i = 1; i < mid; i++)
                 {
-                    int newNumber = new Random().Next(-10,10);
-                    arrayList.Add(newNumber);
+                    result[mid + i] = i;
+                }
+                result[n-1] -= result.Sum();
+            }
+            else
+            {
+                for (int i = 0; i <= mid; i++)
+                {
+                    result[mid + i] = i;
+                    result[mid - i] = -i;
                 }
             }
-
-            int arraySum = arrayList.Sum();
-            if (arraySum > 0 || arraySum < 0)
+            
+            foreach (var i in result)
             {
-                int zeroDifference = -arraySum;
-                arrayList[0] += zeroDifference;
+                Console.WriteLine(i);
             }
-
-            array = arrayList.ToArray();
-                
-            Console.WriteLine("Sum = " + array.Sum());
-
-            return array;
+            
+            return result;
         }
     }
 }
