@@ -11,7 +11,15 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
+                // PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
+                
+                StevesStack stack = new StevesStack();
+                stack.Push(1);
+                stack.Push(2);
+                stack.Push(3);
+                stack.Top();
+                stack.Pop();
+                stack.DisplayQueues();
             }        
 
             #region CodeTests

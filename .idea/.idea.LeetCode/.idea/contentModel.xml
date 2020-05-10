@@ -12,7 +12,7 @@
             <e p="BenCommentsCodingTest.cs" t="Include" />
             <e p="CodingTest.cs" t="Include" />
           </e>
-          <e p="DataStructureDesignSolutions" t="Include">
+          <e p="DesignSolutions" t="Include">
             <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
             <e p="BinarySearchTreeIterator.cs" t="Include" />
             <e p="FirstUnique.cs" t="Include" />
@@ -21,6 +21,7 @@
             <e p="MyQueue.cs" t="Include" />
             <e p="StevesHashMap.cs" t="Include" />
             <e p="StevesHashSet.cs" t="Include" />
+            <e p="StevesStack.cs" t="Include" />
             <e p="Trie.cs" t="Include" />
           </e>
           <e p="Notes" t="Include">
