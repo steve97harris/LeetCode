@@ -14,6 +14,7 @@
           </e>
           <e p="DataStructureDesignSolutions" t="Include">
             <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
+            <e p="BinarySearchTreeIterator.cs" t="Include" />
             <e p="FirstUnique.cs" t="Include" />
             <e p="LeastRecentlyUsedCache.cs" t="Include" />
             <e p="MinimumElementInStack.cs" t="Include" />
@@ -21,6 +22,9 @@
             <e p="StevesHashMap.cs" t="Include" />
             <e p="StevesHashSet.cs" t="Include" />
             <e p="Trie.cs" t="Include" />
+          </e>
+          <e p="Notes" t="Include">
+            <e p="BigO_Notation" t="Include" />
           </e>
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
@@ -67,8 +71,10 @@
             <e p="FindCommonCharacters.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
+            <e p="FindTheTownJudge.cs" t="Include" />
             <e p="FirstUniqueCharInString.cs" t="Include" />
             <e p="FizzFizzBuzzBuzz.cs" t="Include" />
+            <e p="FlippingAnImage.cs" t="Include" />
             <e p="GoatLatin.cs" t="Include" />
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
@@ -105,6 +111,7 @@
             <e p="NoOfUniqueEmails.cs" t="Include" />
             <e p="NumberOfIslands.cs" t="Include" />
             <e p="OccurencesAfterBigram.cs" t="Include" />
+            <e p="PartitionLabels.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
             <e p="ProductOfArrayExceptSelf.cs" t="Include" />
             <e p="QueriesOnAPermutationWithKey.cs" t="Include" />

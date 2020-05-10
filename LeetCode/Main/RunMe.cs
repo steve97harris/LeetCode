@@ -11,7 +11,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                SumOfArrayEqualZero.SumZero(10);
+                PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
             }        
 
             #region CodeTests
@@ -71,6 +71,26 @@ namespace LeetCode.Main
                 // wordDictionary.Search("a.");
                 
                 // ZigZagConversion.Convert("PAYPALISHIRING", 4);
+                
+                // var root = new TreeNode(7)
+                // {
+                //     left = new TreeNode(3),
+                //     right = new TreeNode(15) 
+                //     {
+                //         left = new TreeNode(9), 
+                //         right = new TreeNode(20)
+                //     }
+                // };
+                // var iterator = new BinarySearchTreeIterator(root);
+                // iterator.Next();    // return 3
+                // iterator.Next();    // return 7
+                // iterator.HasNext(); // return true
+                // iterator.Next();    // return 9
+                // iterator.HasNext(); // return true
+                // iterator.Next();    // return 15
+                // iterator.HasNext(); // return true
+                // iterator.Next();    // return 20
+                // iterator.HasNext();
                 
                 #endregion
         }

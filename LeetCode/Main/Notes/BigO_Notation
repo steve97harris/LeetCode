@@ -1,0 +1,8 @@
+﻿
+Order of Complexity:
+
+O(1) => The runtime of the solution takes a constant time, 
+e.g: 14 nanoseconds, no matter the amount of data in the set. 
+
+O(n) => The runtime takes an amount of time linear to the size of the data set, 
+e.g: a data set twice the size will take twice the time.
