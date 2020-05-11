@@ -19,6 +19,7 @@ namespace LeetCode.Main
                 stack.Push(3);
                 stack.Top();
                 stack.Pop();
+                stack.Push(4);
                 stack.DisplayQueues();
             }        
 
