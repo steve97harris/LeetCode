@@ -76,6 +76,7 @@
             <e p="FirstUniqueCharInString.cs" t="Include" />
             <e p="FizzFizzBuzzBuzz.cs" t="Include" />
             <e p="FlippingAnImage.cs" t="Include" />
+            <e p="FloodFill.cs" t="Include" />
             <e p="GoatLatin.cs" t="Include" />
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />

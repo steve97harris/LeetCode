@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LeetCode.Main.CodingTestYR;
+using LeetCode.Main.DesignSolutions;
 using LeetCode.Main.Solutions;
 
 namespace LeetCode.Main
@@ -12,15 +13,14 @@ namespace LeetCode.Main
             static void Main()
             {
                 // PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
-                
-                StevesStack stack = new StevesStack();
-                stack.Push(1);
-                stack.Push(2);
-                stack.Push(3);
-                stack.Top();
-                stack.Pop();
-                stack.Push(4);
-                stack.DisplayQueues();
+
+                var image = new int[][]
+                {
+                    new int[] {0, 0, 0},
+                    new int[] {0, 1, 1},
+                    // new int[] {1, 0, 1}
+                };
+                FloodFiller.FloodFill(image, 1, 1, 1);
             }        
 
             #region CodeTests
