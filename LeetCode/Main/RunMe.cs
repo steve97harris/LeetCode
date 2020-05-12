@@ -12,7 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                string[] strings = { "5","-2","4","C","D","9","+","+" };
+                string[] strings = { "36","28","70","65","C","+","33","-46","84","C" };
                 BaseballGame.CalPoints(strings); 
             }        
 
