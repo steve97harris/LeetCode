@@ -6,57 +6,32 @@ namespace LeetCode.Main.Solutions
 {
     public static class AverageLevelsInBinaryTree
     {
+        private static Dictionary<int, List<int>> nodeLevels = new Dictionary<int, List<int>>();
         public static IList<double> AverageOfLevels(TreeNode root)
         {
-            var x = GetLevels(root);
-            
-            IList<double> averages = new List<double>();
-            
-            foreach (var level in x)
-            {
-                double average = (float) level.Value.Sum() / level.Value.Count;
-                averages.Add(average);
-            }
-
-            foreach (var d in averages)
-            {
-                Console.WriteLine(d);
-            }
-            
-            return averages;
+            AverageOfLevelsHelper(root,1);
+            return nodeLevels.Select(pair => pair.Value.Average()).ToList();
         }
 
-        private static Dictionary<int,List<int>> GetLevels(TreeNode root)
+        private static void AverageOfLevelsHelper(TreeNode node, int level)
         {
-            if (root == null)
-                return null;
-            
-            LinkedList<NodeLevelPair> queue = new LinkedList<NodeLevelPair>();
-            var dictionary = new Dictionary<int,List<int>>();
-        
-            queue.AddLast(new NodeLevelPair(root, 1));
-        
-            NodeLevelPair pair;
-        
-            while (queue.Count > 0)
+            if (node == null)
+                return;
+
+            if (nodeLevels.ContainsKey(level))
+                nodeLevels[level].Add(node.val);
+            else
+                nodeLevels.Add(level, new List<int>() {node.val});
+
+            if (node.left != null)
             {
-                pair = queue.First.Value;
-                queue.RemoveFirst();
-                
-                //Console.WriteLine("Level of " + pair.node.val + " is " + pair.level);
-                if (pair.node.left != null)
-                    queue.AddLast(new NodeLevelPair(pair.node.left, pair.level + 1));
-                if (pair.node.right != null)
-                    queue.AddLast(new NodeLevelPair(pair.node.right, pair.level + 1));
-                
-                var list = new List<int>() {pair.node.val};
-                if (!dictionary.ContainsKey(pair.level))
-                    dictionary.Add(pair.level, list);
-                else
-                    dictionary[pair.level].Add(pair.node.val);
+                AverageOfLevelsHelper(node.left, level + 1);
             }
-        
-            return dictionary;
+
+            if (node.right != null)
+            {
+                AverageOfLevelsHelper(node.right,level + 1);
+            }
         }
     }
 }

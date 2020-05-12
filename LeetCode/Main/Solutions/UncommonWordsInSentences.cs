@@ -6,56 +6,27 @@ namespace LeetCode.Main
 {
     public static class UncommonWordsInSentences
     {
-        
+        private static List<string> result = new List<string>();
         public static string[] UncommonWords(string A, string B)
         {
-            var notTheSame = new List<string>();
-            var tempList = new List<string>();
-            var splitA = A.Split(' ');
-            var splitB = B.Split(' ');
+            ScanWords(A,B);
+            ScanWords(B,A);
+            return result.ToArray();
+        }
 
-            foreach (var s in splitA)
-            {
-                if (!splitB.Contains(s))
-                {
-                    if (notTheSame.Contains(s))
-                    {
-                        notTheSame.Remove(s);
-                        tempList.Add(s);
-                    }
-                    else
-                        notTheSame.Add(s);
-                }
-            }
-            
-            foreach (var s in splitB)
-            {
-                if (!splitA.Contains(s))
-                {
-                    if (notTheSame.Contains(s))
-                    {
-                        notTheSame.Remove(s);
-                        tempList.Add(s);
-                    }
-                    else
-                        notTheSame.Add(s);
-                }
-            }
+        private static void ScanWords(string str1, string str2)
+        {
+            var wordsOfString1 = str1.Split(' ');
+            var groupWords = wordsOfString1.GroupBy(s => s)
+                .ToDictionary(g => g.Key, g => g.Count());
 
-            for (int i = 0; i < notTheSame.Count; i++)
+            var wordsOfString2 = str2.Split(' ');
+            foreach (var groupWord in groupWords)
             {
-                for (int j = 0; j < tempList.Count; j++)
-                {
-                    if (tempList[j] == notTheSame[i])
-                        notTheSame.Remove(notTheSame[i]);
-                }
+                Console.WriteLine(groupWord.Key + ", " + groupWord.Value);
+                if (groupWord.Value == 1 && !wordsOfString2.Contains(groupWord.Key))
+                    result.Add(groupWord.Key);
             }
-            
-            foreach (var s in notTheSame)
-            {
-                Console.WriteLine(s);
-            }
-            return notTheSame.ToArray();
         }
     }
 }

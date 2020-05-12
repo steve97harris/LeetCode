@@ -12,8 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                string[] strings = { "36","28","70","65","C","+","33","-46","84","C" };
-                BaseballGame.CalPoints(strings); 
+                
             }        
 
             #region CodeTests
@@ -26,23 +25,9 @@ namespace LeetCode.Main
 
             #region Incomplete
             
-                // int[] nums1 = { 4,1,2 };
-                // int[] nums2 = { 1,3,4,2 };
-                // NextGreaterElementI.NextGreaterElement(nums1, nums2);
+                // string[] strings = { "36","28","70","65","C","+","33","-46","84","C" };
+                // BaseballGame.CalPoints(strings);
 
-                // string A =
-                //         "mrbr laxcfv sibua csf ytk ul lefjh kn val w val qzlkqf slgpcfx oicqcq laxcfv w ul spo kpxq oyaspyt lefjh ubi w rtstn mrbr klhblwv f oyaspyt lefjh hqwijm lzz dx xfy spo hqwijm dx lefjh laxcfv val w",
-                //     B =
-                //         "luiesmz e hqwijm mrbr rtstn dkjlxto ytk f p cokfad ytk vdze oyaspyt klhblwv pznznkh ubi dkjlxto spo slgpcfx rwovl ubi wfax iieyr ws qmu re f lzz hqwijm j w kivo cyxnutx dkjlxto csf orjdywl mrbr w e";
-                // UncommonWordsInSentences.UncommonWords(A, B);
-
-                // var root = new TreeNode(3);
-                // root.left = new TreeNode(9);
-                // root.right = new TreeNode(20);
-                // root.right.left = new TreeNode(15);
-                // root.right.right = new TreeNode(7);
-                // AverageLevelsInBinaryTree.AverageOfLevels(root);
-                
                 // TreeNode root = new TreeNode(7);
                 // root.left = new TreeNode(4);
                 // root.right = new TreeNode(3);
