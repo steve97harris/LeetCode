@@ -8,46 +8,27 @@ namespace LeetCode.Main
     {
         public static int[] ShortestToChar(string s, char c)
         {
-            List<int> indexToC = new List<int>();
-            List<int> distanceToChars = new List<int>();
-            List<List<int>> listOfLists = new List<List<int>>();
-            List<int> result = new List<int>();
-            
+            var cIndexes = new List<int>();
             for (int i = 0; i < s.Length; i++)
             {
                 if (s[i] == c)
-                {
-                    indexToC.Add(i);
-                }
+                    cIndexes.Add(i);
             }
 
+            var result = new int[s.Length];
             for (int i = 0; i < s.Length; i++)
             {
-                for (int j = 0; j < indexToC.Count; j++)
-                {
-                    int x = indexToC[j] - i;
-                    distanceToChars.Add(x);
+                var temp = new List<int>();
+                for (int j = 0; j < cIndexes.Count; j++)
+                { 
+                    temp.Add(Math.Abs(i - cIndexes[j]));
                 }
+
+                result[i] = temp.Min();
+                Console.WriteLine(result[i]);
             }
 
-            for (int i = 0; i < distanceToChars.Count; i = i + 4)
-            {
-                listOfLists.Add(distanceToChars.Skip(i).Take(4).ToList());
-            }
-
-            
-            for (int i = 0; i < listOfLists.Count; i++)
-            {
-                int minAboveZero = listOfLists[i].Min();
-                result.Add(minAboveZero);
-            }
-
-            foreach (var i in result)
-            {
-                Console.WriteLine(i);
-            }
-
-            return indexToC.ToArray();
+            return result;
         }
     }
 }

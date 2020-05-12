@@ -12,29 +12,20 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                int[] A = {10, 5, 7};
-                int[] P = {2, 3};
-                CodingTest.GetQueueTimeWithPrinters(A,P);
+                string[] strings = { "5","-2","4","C","D","9","+","+" };
+                BaseballGame.CalPoints(strings); 
             }        
 
             #region CodeTests
 
-          
+            // int[] A = {10, 5, 7};
+            // int[] P = {2, 3};
+            // CodingTest.GetQueueTimeWithPrinters(A,P);
 
             #endregion
 
             #region Incomplete
             
-                // string s = "loveleetcode";
-                // char c = 'e';
-                // ShortestDistanceToACharacter.ShortestToChar(s, c);
-
-                // string[] words = {"Hello", "Alaska", "Dad", "Peace"};
-                // KeyboardRow.KeyWords(words);
-
-                // string[] strings = { "5","-2","4","C","D","9","+","+" };
-                // BaseballGame.CalPoints(strings); 
-
                 // int[] nums1 = { 4,1,2 };
                 // int[] nums2 = { 1,3,4,2 };
                 // NextGreaterElementI.NextGreaterElement(nums1, nums2);
