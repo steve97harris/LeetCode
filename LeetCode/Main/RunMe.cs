@@ -12,14 +12,14 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                int[] A = {10, 5, 7};
+                int[] P = {2, 3};
+                CodingTest.GetQueueTimeWithPrinters(A,P);
             }        
 
             #region CodeTests
 
-            // int[] A = {10, 5, 7};
-            // int[] P = {2, 3};
-            // CodingTest.GetQueueTimeWithPrinters(A,P);
+          
 
             #endregion
 

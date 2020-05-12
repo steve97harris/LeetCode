@@ -30,19 +30,13 @@ namespace LeetCode.Main.CodingTestYR
             //     second: 3 prints per second
             //     third: 1 print per second
             // All printers may print at the same time
-
-            var totalTimeForPrinter0 = 0;
-            var totalTimeForPrinter1 = 0;
-            var printerFinishingTimes = new int[2];
-            var totalTimeForPrinter = 0;
-
-            var minPrintTimeAtPrinter0 = 0;
-            var minPrintTimeAtPrinter1 = 0;
-            var minPrintTimeAtPrinter = 0;
+            
+            var processingTimeLeftPerPrinter = new int[P.Length];
 
             for (int i = 0; i < A.Length; i++)
             {
                 var printers = new int[2];
+                     // ***
                 var minPrintTime = 0;
                 
                 Console.WriteLine("Time Elapsed " + i);
@@ -50,7 +44,7 @@ namespace LeetCode.Main.CodingTestYR
                 for (int j = 0; j < P.Length; j++)
                 {
                     var printTimePerOrder = CeilingIntDivision(A[i], P[j]);
-                    printers[j] = (int) printTimePerOrder;
+                    printers[j] = (int) printTimePerOrder;        // Ben says remove !?
                     
                     if (i == 0)
                     {
@@ -59,14 +53,19 @@ namespace LeetCode.Main.CodingTestYR
                         Console.WriteLine();
                     }
                     
-                    //// Up to here with Bens comments /////
-
                     if (i < 1) continue;
-                    var waitTime = 0;
-                    minPrintTime = j == 0 ? minPrintTimeAtPrinter0 : minPrintTimeAtPrinter1;
 
-                    waitTime = minPrintTime > 0 ? minPrintTime : 0;
-                    printers[j] = (int) printTimePerOrder + waitTime;
+                    // minPrintTime = j == 0 ? minPrintTimeAtPrinter0 : minPrintTimeAtPrinter1;
+                    //if (j ==)
+                    {
+                        minPrintTime = processingTimeLeftPerPrinter[j];
+                    }
+
+                    // waitTime = minPrintTime > 0 ? minPrintTime : 0;
+
+                    var waitTime = minPrintTime;
+                    
+                    printers[j] += waitTime;
 
                     Console.WriteLine("B[{0}] = {1}",j,printers[j]);
                     Console.WriteLine("printTime = " + printTimePerOrder + ", waitTime = " + waitTime);
@@ -74,44 +73,40 @@ namespace LeetCode.Main.CodingTestYR
                 }
                 minPrintTime = printers.Min();
 
-                var minPrintTimeIndex = printers[0] == minPrintTime ? 0 : 1;
-                if (minPrintTimeIndex == 0)
+                var minPrintTimeIndex = -1;
+                for (int k = 0; k < printers.Length; k++)
                 {
-                    minPrintTimeAtPrinter0 = minPrintTime;
-
-                    if (totalTimeForPrinter0 < minPrintTimeAtPrinter0 + i)
-                        totalTimeForPrinter0 = minPrintTimeAtPrinter0 + i;         // !!??
+                    if (printers[k] != minPrintTime) continue;
+                    minPrintTimeIndex = k;
+                    break;
                 }
-                else
-                {
-                    minPrintTimeAtPrinter1 = minPrintTime;
-                    
-                    if (totalTimeForPrinter1 < minPrintTimeAtPrinter1 + i)
-                        totalTimeForPrinter1 = minPrintTimeAtPrinter1 + i;        // !!??
-                }
+                // or
+                // var keyIndex = printers.Select((v, i) => new {Val = v, Index = i})
+                //     .FirstOrDefault(x => x.Val == printers.Min())?.Index ?? -1;
 
-
-                if (minPrintTimeAtPrinter0 > 0)
+                var totalTimeWithCurrentOrder = new int[printers.Length];
+                for (int l = 0; l < totalTimeWithCurrentOrder.Length; l++)
                 {
-                    minPrintTimeAtPrinter0 -= 1;
+                    totalTimeWithCurrentOrder[l] = printers[l] + processingTimeLeftPerPrinter[l];
+                    Console.WriteLine("total time with current order: " + totalTimeWithCurrentOrder[l]);
                 }
 
-                if (minPrintTimeAtPrinter1 > 0)
+                processingTimeLeftPerPrinter[minPrintTimeIndex] += printers[minPrintTimeIndex];
+                Console.WriteLine("min print time index: " + minPrintTimeIndex);
+                Console.WriteLine("processing time left per printer: " + processingTimeLeftPerPrinter[minPrintTimeIndex]);
+
+                for (int m = 0; m < processingTimeLeftPerPrinter.Length; m++)
                 {
-                    minPrintTimeAtPrinter1 -= 1;
+                    processingTimeLeftPerPrinter[m] = Math.Max(processingTimeLeftPerPrinter[m]--, 0);
                 }
-                
-                
-                Console.WriteLine("Send order to printer at index: " + minPrintTimeIndex);
-                Console.WriteLine("** minPrintTime = " + minPrintTime);
+
                 Console.WriteLine("------");
             }
             
-            Console.WriteLine("P[0] finishes at: " + totalTimeForPrinter0);
-            Console.WriteLine("P[1] finishes at: " + totalTimeForPrinter1);
             
-            
-            return Math.Max(totalTimeForPrinter0,totalTimeForPrinter1); 
+            Console.WriteLine("Max processing time: " + processingTimeLeftPerPrinter.Max());
+            return processingTimeLeftPerPrinter.Max(); 
+            // Correct answer is 7. 
         }
 
         private static decimal CeilingIntDivision(int a, int b)

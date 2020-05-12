@@ -132,6 +132,7 @@
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="SearchInRotatedSortedArray.cs" t="Include" />
             <e p="ShortestDistanceToACharacter.cs" t="Include" />
+            <e p="SingleElementInSortedArray.cs" t="Include" />
             <e p="SingleNumber.cs" t="Include" />
             <e p="SingleNumberInArray.cs" t="Include" />
             <e p="SmallerThanCurrent.cs" t="Include" />
