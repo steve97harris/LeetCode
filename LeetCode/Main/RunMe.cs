@@ -12,15 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                // PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
-
-                var image = new int[][]
-                {
-                    new int[] {0, 0, 0},
-                    new int[] {0, 1, 1},
-                    // new int[] {1, 0, 1}
-                };
-                FloodFiller.FloodFill(image, 1, 1, 1);
+                
             }        
 
             #region CodeTests
@@ -101,6 +93,8 @@ namespace LeetCode.Main
                 // iterator.Next();    // return 20
                 // iterator.HasNext();
                 
+                // PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
+
                 #endregion
         }
     }
