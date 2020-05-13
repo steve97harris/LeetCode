@@ -23,6 +23,7 @@
             <e p="StevesHashSet.cs" t="Include" />
             <e p="StevesStack.cs" t="Include" />
             <e p="Trie.cs" t="Include" />
+            <e p="Twitter.cs" t="Include" />
           </e>
           <e p="Notes" t="Include">
             <e p="BigO_Notation" t="Include" />
@@ -81,6 +82,7 @@
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
             <e p="HappyNumber.cs" t="Include" />
+            <e p="ImplementQueueUsingStack.cs" t="Include" />
             <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
@@ -121,6 +123,7 @@
             <e p="RangeSumOfBST.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
             <e p="RelativelySortArray.cs" t="Include" />
+            <e p="RemoveKNumberOfDigits.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="ReshapeTheMatrix.cs" t="Include" />
             <e p="RevealCardsInIncreasingOrder.cs" t="Include" />
