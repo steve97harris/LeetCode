@@ -54,7 +54,7 @@ namespace LeetCode.Main
             }
         }
 
-        private void DisplayAllUserNewsFeeds()
+        public void DisplayAllUserNewsFeeds()
         {
             foreach (var pair in userNewsFeeds)
             {

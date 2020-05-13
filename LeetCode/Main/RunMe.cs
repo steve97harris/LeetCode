@@ -20,6 +20,8 @@ namespace LeetCode.Main
                 twitter.GetNewsFeed(1);                  // user 1 should return tweetID's 6,5
                 twitter.Unfollow(1,2);       // user 1 unfollows user 2
                 twitter.GetNewsFeed(1);                 // returns tweetID 5
+                
+                twitter.DisplayAllUserNewsFeeds();
             }        
 
             #region CodeTests
