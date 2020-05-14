@@ -6,15 +6,18 @@ namespace LeetCode.Main
 {
     public class Twitter
     {
-        private Dictionary<int, IList<int>> userNewsFeeds;        // {userId, userNewsFeed}        
+        private Dictionary<int, IList<int>> userNewsFeeds;        // {userId, userNewsFeed}       
+        private Dictionary<int, IList<int>> usersFollowers;        // {userId, followersId}
         public Twitter()
         {
             userNewsFeeds = new Dictionary<int, IList<int>>();
+            usersFollowers = new Dictionary<int, IList<int>>();
         }
 
         /** Compose a new tweet. */
         public void PostTweet(int userId, int tweetId)        // userNewsFeed - IList<int> where int is tweetId
         {
+            
             if (userNewsFeeds.ContainsKey(userId))
             {
                 userNewsFeeds[userId].Add(tweetId);
@@ -22,6 +25,23 @@ namespace LeetCode.Main
             else
             {
                 userNewsFeeds.Add(userId, new List<int>() { tweetId });
+            }
+            
+            if (usersFollowers.ContainsKey(userId))
+            {
+                PostToUserFollowers(userId, tweetId);
+            }
+        }
+
+        private void PostToUserFollowers(int userId, int tweetId)
+        {
+            foreach (var pair in usersFollowers.Where(pair => pair.Key == userId))
+            {
+                for (int i = 0; i < pair.Value.Count; i++)        // for all usersFollowers 
+                {
+                    var follower = pair.Value[i];
+                    userNewsFeeds[follower].Add(tweetId);
+                }
             }
         }
         
@@ -32,6 +52,7 @@ namespace LeetCode.Main
             var last10 = new List<int>();
             if (!userNewsFeeds.ContainsKey(userId)) return last10;
             last10 = userNewsFeeds[userId].TakeLast(10).ToList();
+            last10.Reverse();
 
             Console.WriteLine("Last10: ");
             foreach (var i in last10)
@@ -45,28 +66,25 @@ namespace LeetCode.Main
         /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
         public void Follow(int followerId, int followeeId)
         {
-            if (!userNewsFeeds.ContainsKey(followeeId))
+            if (usersFollowers.ContainsKey(followeeId))
             {
-                userNewsFeeds.Add(followeeId,new List<int>());
+                usersFollowers[followeeId].Add(followerId);
             }
-
-            var followeeList = userNewsFeeds[followeeId];
-            for (int i = 0; i < followeeList.Count; i++)
+            else
             {
-                userNewsFeeds[followerId].Add(followeeList[i]);
-                Console.WriteLine(followeeList[i]);
+                usersFollowers.Add(followeeId,new List<int>() {followerId});
             }
         }
 
         /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
         public void Unfollow(int followerId, int followeeId)
         {
-            if (!userNewsFeeds.ContainsKey(followerId) || !userNewsFeeds.ContainsKey(followeeId)) return;
-            var followeeList = userNewsFeeds[followeeId];
-            for (int i = 0; i < followeeList.Count; i++)
+            if (usersFollowers.ContainsKey(followeeId))
             {
-                userNewsFeeds[followerId].Remove(followeeList[i]);
+                usersFollowers[followeeId].Remove(followerId);
             }
+            
+            // remove followee tweets from follower tweets
         }
 
         public void DisplayAllUserNewsFeeds()

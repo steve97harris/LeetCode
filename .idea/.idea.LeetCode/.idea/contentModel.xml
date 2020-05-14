@@ -47,6 +47,7 @@
             <e p="ComplementOfBase10Integer.cs" t="Include" />
             <e p="ConstructBinaryTreeFromPostorderTraversal.cs" t="Include" />
             <e p="ContiguousArray.cs" t="Include" />
+            <e p="ConvertBinaryNumberInLinkedListToInt.cs" t="Include" />
             <e p="CorrespondingNodeOfBinaryTreeInACloneOfThatTree.cs" t="Include" />
             <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
@@ -61,6 +62,7 @@
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="DeleteNodeInLinkedList.cs" t="Include" />
+            <e p="DestinationCity.cs" t="Include" />
             <e p="DiameterOfBinaryTree.cs" t="Include" />
             <e p="DistributeCandies.cs" t="Include" />
             <e p="DistributeCandiesToPeople.cs" t="Include" />
