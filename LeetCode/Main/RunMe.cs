@@ -12,7 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                MorseCode.UniqueMorseRepresentations(new string[] {"gin", "zen", "gig", "msg"});
+                
             }        
 
             #region CodeTests
