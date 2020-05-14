@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steve\\Documents\\GitHub\\Leetcode\\LeetCode\\LeetCode.csproj": {}
+    "C:\\Users\\steve\\Documents\\GitHub\\LeetCode\\LeetCode\\LeetCode.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steve\\Documents\\GitHub\\Leetcode\\LeetCode\\LeetCode.csproj": {
+    "C:\\Users\\steve\\Documents\\GitHub\\LeetCode\\LeetCode\\LeetCode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steve\\Documents\\GitHub\\Leetcode\\LeetCode\\LeetCode.csproj",
+        "projectUniqueName": "C:\\Users\\steve\\Documents\\GitHub\\LeetCode\\LeetCode\\LeetCode.csproj",
         "projectName": "LeetCode",
-        "projectPath": "C:\\Users\\steve\\Documents\\GitHub\\Leetcode\\LeetCode\\LeetCode.csproj",
+        "projectPath": "C:\\Users\\steve\\Documents\\GitHub\\LeetCode\\LeetCode\\LeetCode.csproj",
         "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steve\\Documents\\GitHub\\Leetcode\\LeetCode\\obj\\",
+        "outputPath": "C:\\Users\\steve\\Documents\\GitHub\\LeetCode\\LeetCode\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config"

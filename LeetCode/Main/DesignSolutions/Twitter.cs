@@ -88,6 +88,9 @@ namespace LeetCode.Main
         /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
         public void Unfollow(int followerId, int followeeId)
         {
+            if (followerId == followeeId)
+                return;
+            
             if (usersFollowers.ContainsKey(followeeId))
             {
                 usersFollowers[followeeId].Remove(followerId);
