@@ -66,6 +66,15 @@ namespace LeetCode.Main
         /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
         public void Follow(int followerId, int followeeId)
         {
+            if (!userNewsFeeds.ContainsKey(followerId))
+            {
+                if (!userNewsFeeds.ContainsKey(followeeId))
+                {
+                    userNewsFeeds.Add(followerId, new List<int>());
+                }
+                else
+                    userNewsFeeds.Add(followerId, userNewsFeeds[followeeId]);
+            }
             if (usersFollowers.ContainsKey(followeeId))
             {
                 usersFollowers[followeeId].Add(followerId);
@@ -85,6 +94,15 @@ namespace LeetCode.Main
             }
             
             // remove followee tweets from follower tweets
+            for (int i = 0; i < userNewsFeeds[followeeId].Count; i++)
+            {
+                if (userNewsFeeds.ContainsKey(followerId))
+                    userNewsFeeds[followerId].Remove(userNewsFeeds[followeeId][i]);
+                else
+                {
+                    
+                }
+            }
         }
 
         public void DisplayAllUserNewsFeeds()
