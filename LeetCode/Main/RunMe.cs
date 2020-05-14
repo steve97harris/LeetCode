@@ -12,15 +12,8 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var twitter = new Twitter();
-                twitter.PostTweet(1,5);            // user 1 posts tweetID 5
-                // twitter.GetNewsFeed(1);                   // returns tweetID 5
-                twitter.Follow(1,2);          // 1 follows 2
-                twitter.PostTweet(2,6);           // user 2 posts tweetID 6 
-                twitter.GetNewsFeed(1);                  // user 1 should return tweetID's 6,5
-                twitter.Unfollow(1,2);       // user 1 unfollows user 2
-                twitter.GetNewsFeed(1);                 // returns tweetID 5
-                // twitter.DisplayAllUserNewsFeeds();
+              
+               
             }        
 
             #region CodeTests
@@ -75,7 +68,25 @@ namespace LeetCode.Main
                 
                 // PartitionDeLabels.PartitionLabels("ababcbacadefegdehijhklij");
 
-              
+                // var twitter = new Twitter();
+                // twitter.PostTweet(1,5);            // user 1 posts tweetID 5
+                // // twitter.GetNewsFeed(1);                   // returns tweetID 5
+                // twitter.Follow(1,2);          // 1 follows 2
+                // twitter.PostTweet(2,6);           // user 2 posts tweetID 6 
+                // twitter.GetNewsFeed(1);                  // user 1 should return tweetID's 6,5
+                // twitter.Unfollow(1,2);       // user 1 unfollows user 2
+                // twitter.GetNewsFeed(1);                 // returns tweetID 5
+                // // twitter.DisplayAllUserNewsFeeds();
+                
+                // var root = new Node(1);
+                // var rootChildren = root.children = new List<Node>();
+                // rootChildren.Add(new Node(3));
+                // rootChildren.Add(new Node(2));
+                // rootChildren.Add(new Node(4));
+                // var rootChildrenLevel2 = root.children[0].children = new List<Node>();
+                // rootChildrenLevel2.Add(new Node(5));
+                // rootChildrenLevel2.Add(new Node(6));
+                // TreePreorderTraversal.Preorder(root);
                 
                 #endregion
         }
