@@ -8,42 +8,29 @@ namespace LeetCode.Main.Solutions
     {
         public static int UniqueMorseRepresentations(string[] words)
         {
-            int numberOfWords = 0;
-
-            string letters = "abcdefghijklmnopqrstuvwxyz";
-            string[] morse = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+            var morseWords = new List<string>();
+            for (int i = 0; i < words.Length; i++)
+            {
+                var morseWord = TranslateToMorse(words[i]);
+                if (!morseWords.Contains(morseWord))
+                    morseWords.Add(morseWord);
+            }
             
-            
-            Dictionary<char, string> morseDictionary = new Dictionary<char, string>();
-            List<string> result = new List<string>();
+            return morseWords.Count;
+        }
 
+        private static string TranslateToMorse(string word)
+        {
+            const string letters = "abcdefghijklmnopqrstuvwxyz";
+            var morse = new string[] {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+            
+            var morseDictionary = new Dictionary<char, string>();
             for (int i = 0; i < letters.Length; i++)
             {
-                morseDictionary.Add(letters[i], morse[i]);
-            }
-            
-            foreach (string word in words)
-            {
-                foreach (char character in word)
-                {
-                    morseDictionary.TryGetValue(character, out string value);
-                    result.Add(value);
-                }
+                morseDictionary.Add(letters[i],morse[i]);
             }
 
-            
-
-            foreach (KeyValuePair<char,string> xPair in morseDictionary)
-            {
-                Console.WriteLine(xPair);
-            }
-
-            foreach (string x in result)
-            {
-                Console.WriteLine(x);
-            }
-
-            return numberOfWords;
+            return word.Aggregate("", (current, t) => current + morseDictionary[t]);
         }
     }
 }
