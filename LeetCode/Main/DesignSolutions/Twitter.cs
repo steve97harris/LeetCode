@@ -7,17 +7,16 @@ namespace LeetCode.Main
     public class Twitter
     {
         private Dictionary<int, IList<int>> userNewsFeeds;        // {userId, userNewsFeed}       
-        private Dictionary<int, IList<int>> usersFollowers;        // {userId, followersId}
+        private List<int>[] followers; 
         public Twitter()
         {
             userNewsFeeds = new Dictionary<int, IList<int>>();
-            usersFollowers = new Dictionary<int, IList<int>>();
+            followers = new List<int>[1000];
         }
 
         /** Compose a new tweet. */
         public void PostTweet(int userId, int tweetId)        // userNewsFeed - IList<int> where int is tweetId
         {
-            
             if (userNewsFeeds.ContainsKey(userId))
             {
                 userNewsFeeds[userId].Add(tweetId);
@@ -26,24 +25,27 @@ namespace LeetCode.Main
             {
                 userNewsFeeds.Add(userId, new List<int>() { tweetId });
             }
-            
-            if (usersFollowers.ContainsKey(userId))
-            {
-                PostToUserFollowers(userId, tweetId);
-            }
-        }
 
-        private void PostToUserFollowers(int userId, int tweetId)
-        {
-            foreach (var pair in usersFollowers.Where(pair => pair.Key == userId))
+            if (followers[userId] != null)
             {
-                for (int i = 0; i < pair.Value.Count; i++)        // for all usersFollowers 
+                for (int i = 0; i < followers[userId].Count; i++)
                 {
-                    var follower = pair.Value[i];
-                    userNewsFeeds[follower].Add(tweetId);
+                    userNewsFeeds[followers[userId][i]].Add(tweetId);
                 }
             }
         }
+
+        // private void PostToUserFollowers(int userId, int tweetId)
+        // {
+        //     foreach (var pair in usersFollowers.Where(pair => pair.Key == userId))
+        //     {
+        //         for (int i = 0; i < pair.Value.Count; i++)        // for all usersFollowers 
+        //         {
+        //             var follower = pair.Value[i];
+        //             userNewsFeeds[follower].Add(tweetId);
+        //         }
+        //     }
+        // }
         
         /** Retrieve the 10 most recent tweet ids in the user's news feed.
         Each item in the news feed must be posted by users who the user followed or by the user herself. Tweets must be ordered from most recent to least recent. */
@@ -66,46 +68,51 @@ namespace LeetCode.Main
         /** Follower follows a followee. If the operation is invalid, it should be a no-op. */
         public void Follow(int followerId, int followeeId)
         {
+            if (followerId == followeeId)
+                return;
+            
+            if (!userNewsFeeds.ContainsKey(followeeId))
+            {
+                userNewsFeeds.Add(followeeId, new List<int>());
+            }
+
             if (!userNewsFeeds.ContainsKey(followerId))
             {
-                if (!userNewsFeeds.ContainsKey(followeeId))
-                {
-                    userNewsFeeds.Add(followerId, new List<int>());
-                }
-                else
-                    userNewsFeeds.Add(followerId, userNewsFeeds[followeeId]);
+                userNewsFeeds.Add(followerId, new List<int>());
             }
-            if (usersFollowers.ContainsKey(followeeId))
+            
+            for (int i = 0; i < userNewsFeeds[followeeId].Count; i++)
             {
-                usersFollowers[followeeId].Add(followerId);
+                if (!userNewsFeeds[followerId].Contains(userNewsFeeds[followeeId][i]))
+                    userNewsFeeds[followerId].Add(userNewsFeeds[followeeId][i]);
             }
+            
+            if (followers[followeeId] != null)
+                followers[followeeId].Add(followerId);
             else
-            {
-                usersFollowers.Add(followeeId,new List<int>() {followerId});
-            }
+                followers[followeeId] = new List<int>() {followerId};
         }
 
         /** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
         public void Unfollow(int followerId, int followeeId)
         {
-            if (followerId == followeeId)
-                return;
-            
-            if (usersFollowers.ContainsKey(followeeId))
+            if (!userNewsFeeds.ContainsKey(followeeId))
             {
-                usersFollowers[followeeId].Remove(followerId);
+                userNewsFeeds.Add(followeeId, new List<int>());
+            }
+
+            if (!userNewsFeeds.ContainsKey(followerId))
+            {
+                userNewsFeeds.Add(followerId, new List<int>());
             }
             
-            // remove followee tweets from follower tweets
             for (int i = 0; i < userNewsFeeds[followeeId].Count; i++)
             {
-                if (userNewsFeeds.ContainsKey(followerId))
-                    userNewsFeeds[followerId].Remove(userNewsFeeds[followeeId][i]);
-                else
-                {
-                    
-                }
+                userNewsFeeds[followerId].Remove(userNewsFeeds[followeeId][i]);
             }
+
+            if (followers[followeeId] != null)
+                followers[followeeId].Remove(followerId);
         }
 
         public void DisplayAllUserNewsFeeds()
@@ -121,6 +128,5 @@ namespace LeetCode.Main
                 Console.WriteLine("----");
             }
         }
-        
     }
 }

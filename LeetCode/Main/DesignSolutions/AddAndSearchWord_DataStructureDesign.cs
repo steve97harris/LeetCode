@@ -4,74 +4,82 @@ using System.Linq;
 
 namespace LeetCode.Main
 {
+    public class CharNode
+    {
+        public bool isEnd = false;        // is end of word
+        public CharNode[] children = new CharNode[27];
+
+        public CharNode()
+        {
+            
+        }
+    }
     public class AddAndSearchWordDataStructureDesign
     {
-        private List<string> wordList;
+        private CharNode root;
         
         public AddAndSearchWordDataStructureDesign()
         {
-            wordList = new List<string>();    
-            
+            root = new CharNode();
         }
 
         public void AddWord(string word)
         {
-            wordList.Add(word);
+            var node = root;
+            foreach (var c in word)
+            {               
+                int index = c - 'a';
+                if (c == '.')
+                {
+                    index = 26; // last one is reserved for '.' character
+                }
+
+                if (node.children[index] == null)
+                {
+                    node.children[index] = new CharNode();
+                }
+
+                node = node.children[index];                
+            }
+
+            // last one is set as leaf node
+            node.isEnd = true;
         }
 
         public bool Search(string word)
         {
-            if (wordList.Contains(word))
+            return SearchNode(word, root);
+        }
+
+        private bool SearchNode(string word, CharNode node)
+        {
+            for (int i = 0; i < word.Length; i++)
             {
-                Console.WriteLine(word + " -> true");
-                return true;
-            }
-            
-
-            var charList = word.ToList();
-            if (charList.Contains('.'))
-            {
-                charList.RemoveAll(c => c == '.');
-                var searchWordWithoutDot = new string(charList.ToArray());
-
-                var indexOfDots = new List<int>();
-                for (int i = 0; i < word.Length; i++)
-                {
-                    if (word[i] == '.')
-                    {
-                        indexOfDots.Add(i);
-                    }
-                }
-
-                var items = wordList.Select(item => item).Where(item => item.Length == word.Length).ToArray();
-                foreach (var item in items)
-                {
-                    var itemAsCharList = item.ToList();
-                    
-                    if (indexOfDots.Count >= 2) ////
-                    {
-                        for (int i = 0; i < indexOfDots.Count; i++)
-                        {
-                            itemAsCharList.RemoveAt(indexOfDots[i] - i);
-                        }
-                    }
-                    else
-                    {
-                        itemAsCharList.RemoveAt(indexOfDots[0]); 
-                        Console.Write(itemAsCharList);
-                    }
-
-
-                    var result = new string(itemAsCharList.ToArray());
-                    if (result != searchWordWithoutDot) continue;
-                    Console.WriteLine(word + " -> true*");
-                    return true;
-                }
-            }
-            
+                var current = word[i];
+                var charIndex = word[i] - 'a';
+                var isDot = current == '.';
                 
-            Console.WriteLine(word + " -> false");
-            return false;
+                if (!isDot)
+                {
+                    if (node.children[charIndex] == null)
+                        return false;
+
+                    node = node.children[charIndex];
+                }
+                else
+                {
+                    if (i == word.Length - 1)
+                    {
+                        return node.children.Any(child => child != null && child.isEnd);
+                    }
+
+                    var restOfWord = word.Substring(i + 1);    // skip dot
+
+                    return node.children.Where(child => child != null).Any(child => SearchNode(restOfWord, child));
+                }
+            }
+
+            return node.isEnd;
         }
     }
 }

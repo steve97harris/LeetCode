@@ -4,34 +4,26 @@ namespace LeetCode.Main
 {
     public static class CorrespondingNodeOfBinaryTreeInACloneOfThatTree
     {
+        private static TreeNode clone = new TreeNode();
         public static TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target)
         {
-            var x = GetOgTarget(original, target);
-            Console.WriteLine(x.val);
-            
-            
-
-            return cloned;
+            GetClone(cloned, target);
+            return clone;
         }
 
-        private static TreeNode GetOgTarget(TreeNode original, TreeNode target)
+        private static void GetClone(TreeNode node, TreeNode target)
         {
-            if (original == null)
-                return null;
-            if (original == target)
-            {
-                return original;
-            }
+            if (node == null || target == null)
+                return;
 
-            var goDownLeft = GetOgTarget(original.left, target);
-            if (goDownLeft == target)
-                return goDownLeft;
-            
-            var goDownRight = GetOgTarget(original.right, target);
-            if (goDownRight == target)
-                return goDownRight;
+            if (node.val == target.val)
+                clone = node;
 
-            return original;
+            if (node.left != null)
+                GetClone(node.left, target);
+
+            if (node.right != null)
+                GetClone(node.right, target);
         }
     }
 }

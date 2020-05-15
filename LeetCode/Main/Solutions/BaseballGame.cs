@@ -9,7 +9,6 @@ namespace LeetCode.Main
         public static int CalPoints(string[] ops)
         {
             var currentPoints = 0;
-            var lastValidPoints = 0;
             var lastValidPointsList = new List<int>();
             
             for (int i = 0; i < ops.Length; i++)
@@ -20,27 +19,33 @@ namespace LeetCode.Main
                 {
                     case "C":
                     {
-                        currentPoints -= lastValidPoints;
-                        lastValidPointsList.Remove(lastValidPoints);
-                        if (lastValidPointsList.Count != 0)
-                            lastValidPoints = lastValidPointsList[^1];
+                        if (lastValidPointsList.Count == 0)
+                            continue;
+                        
+                        currentPoints -= lastValidPointsList[^1];
+                        lastValidPointsList.RemoveAt(lastValidPointsList.Count - 1);
                         break;
                     }
                     case "D":
-                        currentPoints += 2 * lastValidPoints;
-                        lastValidPoints = 2 * lastValidPoints;
+                        if (lastValidPointsList.Count == 0)
+                            continue;
+                        
+                        currentPoints += 2 * lastValidPointsList[^1];
+                        lastValidPointsList.Add(2 * lastValidPointsList[^1]);
                         break;
                     case "+":
+                        if (lastValidPointsList.Count < 2)
+                            continue;
+                        
                         currentPoints += lastValidPointsList[^1] + lastValidPointsList[^2];
-                        lastValidPoints = lastValidPointsList[^1] + lastValidPointsList[^2];
+                        lastValidPointsList.Add(lastValidPointsList[^1] + lastValidPointsList[^2]);
                         break;
                     default:
                         currentPoints += result;
-                        lastValidPoints = result;
+                        lastValidPointsList.Add(result);
                         break;
                 }
-                lastValidPointsList.Add(lastValidPoints);
-                
+
 
                 Console.WriteLine(currentPoints);
             }

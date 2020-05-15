@@ -90,6 +90,7 @@
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
+            <e p="KidsWithTheGreatestNumberOfCandies.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
@@ -102,6 +103,7 @@
             <e p="MaximumLevelSumOfBinaryTree.cs" t="Include" />
             <e p="MaximumSquare.cs" t="Include" />
             <e p="MaximumSubArray.cs" t="Include" />
+            <e p="MaximumSumCircularSubarray.cs" t="Include" />
             <e p="MaxIncreaseToKeepCitySkyline.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />
             <e p="MiddleOfLinkedList.cs" t="Include" />
