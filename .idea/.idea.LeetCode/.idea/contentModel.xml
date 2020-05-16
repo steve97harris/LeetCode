@@ -128,6 +128,7 @@
             <e p="RangeSumOfBST.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
             <e p="RelativelySortArray.cs" t="Include" />
+            <e p="RemoveDuplicatesFromSortedArray.cs" t="Include" />
             <e p="RemoveKNumberOfDigits.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="ReshapeTheMatrix.cs" t="Include" />
@@ -137,6 +138,7 @@
             <e p="ReverseWordsInStringIII.cs" t="Include" />
             <e p="ReversingIntegerDigits.cs" t="Include" />
             <e p="RobotReturnToOrigin.cs" t="Include" />
+            <e p="RotateDeArray.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="SearchInRotatedSortedArray.cs" t="Include" />
             <e p="ShortestDistanceToACharacter.cs" t="Include" />

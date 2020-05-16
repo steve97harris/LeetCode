@@ -12,23 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                // var twitter = new Twitter();
-                // twitter.PostTweet(1,4);            
-                // twitter.PostTweet(2,5);           
-                // twitter.Follow(1,2);
-                // twitter.GetNewsFeed(1);
-                // twitter.Unfollow(1,2);
-                // twitter.GetNewsFeed(1);
-
-                var head = new ListNode(1)
-                {
-                    next = new ListNode(2)
-                    {
-                        next = new ListNode(3) {next = new ListNode(4) {next = new ListNode(5)}}
-                    }
-                };
-
-                OddEvenLinkedList.OddEvenList(head);
+                
             }        
 
             #region CodeTests
@@ -54,6 +38,14 @@ namespace LeetCode.Main
                 // rootChildrenLevel2.Add(new Node(5));
                 // rootChildrenLevel2.Add(new Node(6));
                 // TreePreorderTraversal.Preorder(root);
+                
+                // var twitter = new Twitter();
+                // twitter.PostTweet(1,4);            
+                // twitter.PostTweet(2,5);           
+                // twitter.Follow(1,2);
+                // twitter.GetNewsFeed(1);
+                // twitter.Unfollow(1,2);
+                // twitter.GetNewsFeed(1);
                 
                 #endregion
         }
