@@ -46,6 +46,7 @@
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
             <e p="ComplementOfBase10Integer.cs" t="Include" />
             <e p="ConstructBinaryTreeFromPostorderTraversal.cs" t="Include" />
+            <e p="ContainsDuplicates.cs" t="Include" />
             <e p="ContiguousArray.cs" t="Include" />
             <e p="ConvertBinaryNumberInLinkedListToInt.cs" t="Include" />
             <e p="CorrespondingNodeOfBinaryTreeInACloneOfThatTree.cs" t="Include" />
@@ -87,6 +88,7 @@
             <e p="ImplementQueueUsingStack.cs" t="Include" />
             <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
+            <e p="IntersectionOfTwoArraysII.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />

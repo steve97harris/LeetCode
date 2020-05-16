@@ -12,7 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                RotateDeArray.Rotate(new int[] {1, 2, 3, 4, 5, 6, 7}, 3);
+                IntersectionOfTwoArraysII.Intersect(new int[] {4, 9, 5}, new int[] {9, 4, 9, 8, 4});
             }        
 
             #region CodeTests
