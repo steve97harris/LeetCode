@@ -72,6 +72,7 @@
             <e p="EncodeDecodeTinyURL.cs" t="Include" />
             <e p="FactorialTrailingZeros.cs" t="Include" />
             <e p="FibonacciNumber.cs" t="Include" />
+            <e p="FindAllAnagramsInString.cs" t="Include" />
             <e p="FindAndReplacePattern.cs" t="Include" />
             <e p="FindCommonCharacters.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />

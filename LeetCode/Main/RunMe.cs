@@ -12,7 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                IntersectionOfTwoArraysII.Intersect(new int[] {4, 9, 5}, new int[] {9, 4, 9, 8, 4});
+                
             }        
 
             #region CodeTests
