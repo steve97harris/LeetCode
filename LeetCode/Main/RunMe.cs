@@ -12,7 +12,12 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                ValidSudoku.IsValidSudoku(new char[][]
+                {
+                    new char[] {'1', '.', '3'},
+                    new char[] {'1', '2', '3'},
+                    new char[] {'1', '2', '3'}
+                });
             }        
 
             #region CodeTests

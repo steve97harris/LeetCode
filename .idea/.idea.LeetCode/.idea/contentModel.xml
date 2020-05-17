@@ -30,6 +30,7 @@
           </e>
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
+            <e p="AddOne.cs" t="Include" />
             <e p="AddTwoNumbers.cs" t="Include" />
             <e p="AllElementsInTwoBinarySearchTrees.cs" t="Include" />
             <e p="ArrayPartitionI.cs" t="Include" />
@@ -90,6 +91,7 @@
             <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="IntersectionOfTwoArraysII.cs" t="Include" />
+            <e p="IsValidSudoku.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
