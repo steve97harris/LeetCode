@@ -63,6 +63,7 @@
             <e p="DecryptStringFromLettersToNumbers.cs" t="Include" />
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
+            <e p="DeleteNode.cs" t="Include" />
             <e p="DeleteNodeInLinkedList.cs" t="Include" />
             <e p="DestinationCity.cs" t="Include" />
             <e p="DiameterOfBinaryTree.cs" t="Include" />
@@ -127,6 +128,7 @@
             <e p="OddEvenLinkedList.cs" t="Include" />
             <e p="PartitionLabels.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
+            <e p="PermutationInString.cs" t="Include" />
             <e p="ProductOfArrayExceptSelf.cs" t="Include" />
             <e p="QueriesOnAPermutationWithKey.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />

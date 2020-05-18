@@ -8,9 +8,8 @@ namespace LeetCode.Main
     {
         public static bool IsValidSudoku(char[][] board)
         {
-            var rows = new List<List<int>>();
-            var cols  =new List<List<int>>();
-            
+            var threeByThrees = new List<List<int>>();
+
             for (int i = 0; i < board.Length; i++)
             {
                 var row = new List<int>();
@@ -24,22 +23,29 @@ namespace LeetCode.Main
                         row.Add(result);
                     if (result2 != 0)
                         col.Add(result2);
+                    
+                    
                 }
-                //cols.Add(col);
+
+                var distinctRow = row.Distinct().ToList();
+                if (row != distinctRow)
+                {
+                    Console.WriteLine("false");
+                    return false;
+                }
                 
-                // var distinctRow = row.Distinct().ToList();
-                // if (row != distinctRow)
-                //     return false;
-                //
-                // var distinctCol = col.Distinct().ToList();
-                // if (col != distinctCol)
-                //     return false;
+                var distinctCol = col.Distinct().ToList();
+                if (col != distinctCol)
+                {
+                    Console.WriteLine("false");
+                    return false;
+                }
 
             }
 
-            foreach (var list in cols)
+            foreach (var list in threeByThrees)
             {
-                Console.WriteLine("------");
+                Console.WriteLine("----");
                 foreach (var i in list)
                 {
                     Console.WriteLine(i);

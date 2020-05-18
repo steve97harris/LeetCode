@@ -12,12 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                ValidSudoku.IsValidSudoku(new char[][]
-                {
-                    new char[] {'1', '.', '3'},
-                    new char[] {'1', '2', '3'},
-                    new char[] {'1', '2', '3'}
-                });
+                
             }        
 
             #region CodeTests
@@ -51,6 +46,13 @@ namespace LeetCode.Main
                 // twitter.GetNewsFeed(1);
                 // twitter.Unfollow(1,2);
                 // twitter.GetNewsFeed(1);
+                
+                // ValidSudoku.IsValidSudoku(new char[][]
+                // {
+                //     new char[] {'1', '.', '3'},
+                //     new char[] {'1', '2', '3'},
+                //     new char[] {'1', '2', '3'}
+                // });
                 
                 #endregion
         }
