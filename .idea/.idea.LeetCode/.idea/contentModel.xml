@@ -138,6 +138,7 @@
             <e p="RelativelySortArray.cs" t="Include" />
             <e p="RemoveDuplicatesFromSortedArray.cs" t="Include" />
             <e p="RemoveKNumberOfDigits.cs" t="Include" />
+            <e p="RemoveNthNodeFromEndOfLinkedList.cs" t="Include" />
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="ReshapeTheMatrix.cs" t="Include" />
             <e p="RevealCardsInIncreasingOrder.cs" t="Include" />

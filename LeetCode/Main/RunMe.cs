@@ -12,20 +12,13 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var s = new StockSpanner();
-                // s.Next(100);
-                // s.Next(80);
-                // s.Next(60);
-                // s.Next(70);
-                // s.Next(60);
-                // s.Next(75);
-                // s.Next(85);
-               
-                s.Next(31);
-                s.Next(41);
-                s.Next(48);
-                s.Next(59);
-                s.Next(79); 
+                var head = new ListNode(1);
+                head.next = new ListNode(2);
+                head.next.next = new ListNode(3);
+                head.next.next.next = new ListNode(4);
+                head.next.next.next.next = new ListNode(5);
+
+                RemoveNthNodeFromEndOfLinkedList.RemoveNthFromEnd(head, 2);
             }        
 
             #region CodeTests
