@@ -22,6 +22,7 @@
             <e p="StevesHashMap.cs" t="Include" />
             <e p="StevesHashSet.cs" t="Include" />
             <e p="StevesStack.cs" t="Include" />
+            <e p="StockSpanner.cs" t="Include" />
             <e p="Trie.cs" t="Include" />
             <e p="Twitter.cs" t="Include" />
           </e>

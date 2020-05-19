@@ -12,7 +12,20 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                
+                var s = new StockSpanner();
+                // s.Next(100);
+                // s.Next(80);
+                // s.Next(60);
+                // s.Next(70);
+                // s.Next(60);
+                // s.Next(75);
+                // s.Next(85);
+               
+                s.Next(31);
+                s.Next(41);
+                s.Next(48);
+                s.Next(59);
+                s.Next(79); 
             }        
 
             #region CodeTests
