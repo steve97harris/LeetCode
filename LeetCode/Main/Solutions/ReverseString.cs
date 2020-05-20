@@ -8,19 +8,16 @@ namespace LeetCode.Main.Solutions
     {
         public static void ReverseLaString(char[] s)
         {
-            List<char> sList = new List<char>();
-
-            foreach (var character in s)
+            for (int i = 0; i < s.Length / 2; i++)
             {
-                sList.Add(character);
+                var temp = s[i];
+                s[i] = s[s.Length - 1 - i];
+                s[s.Length - 1 - i] = temp;
             }
 
-            sList.Reverse();
-            s = sList.ToArray();
-            for (int i = 0; i < sList.Count; i++)
+            foreach (var c in s)
             {
-                // s[i] = sList[i];
-                Console.WriteLine(s[i]);
+                Console.WriteLine(c);
             }
         }
     }

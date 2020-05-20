@@ -4,36 +4,41 @@ namespace LeetCode.Main
 {
     public static class RemoveNthNodeFromEndOfLinkedList
     {
-        private static int indexOfN = -1;
-        private static ListNode removeThisNode;
+        private static int count;
         public static ListNode RemoveNthFromEnd(ListNode head, int n)
         {
-            GetIndexOfNodes(head,n,0);
+            GetLinkedListLength(head);
 
-            if (head == removeThisNode)
+            var diff = count - n;
+            if (n > count)
+                return head;
+            if (n == count)
+                return head.next;
+            
+            
+            ListNode prev = null;
+            var curr = head;
+            for (int i = 0; i < diff; i++)
             {
-                head.val = head.next.val;
-                head.next = head.next.next;
+                prev = curr;
+                curr = curr.next;
             }
 
-            Console.WriteLine(removeThisNode.val);
-            
+            if (prev != null) 
+                prev.next = curr.next;
+
             DisplayNodes(head);
             return head;
         }
 
-        private static void GetIndexOfNodes(ListNode node,int n, int index)
+        private static void GetLinkedListLength(ListNode node)
         {
-            if (node.next == null)
+            var temp = node;
+            while (temp != null)
             {
-                indexOfN = index - n;
+                count++;
+                temp = temp.next;
             }
-
-            if (index == indexOfN)
-                removeThisNode = node;
-
-            if (node.next != null)
-                GetIndexOfNodes(node.next, n, index + 1);
         }
 
         private static void DisplayNodes(ListNode head)

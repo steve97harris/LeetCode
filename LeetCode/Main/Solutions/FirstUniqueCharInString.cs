@@ -8,20 +8,15 @@ namespace LeetCode.Main.Solutions
     {
         public static int FirstUniqChar(string s)
         {
-            var countDic = new Dictionary<char,int>();
+            var freq = new int[26];
             for (int i = 0; i < s.Length; i++)
             {
-                if (!countDic.ContainsKey(s[i]))
-                    countDic.Add(s[i],0);
-                countDic[s[i]] += 1;
+                freq[s[i] - 'a']++;
             }
 
-            var uniquePair = countDic.Select(k => k).FirstOrDefault(x => x.Value == 1);
-
-            Console.WriteLine(uniquePair.Key);
             for (int i = 0; i < s.Length; i++)
             {
-                if (s[i] == uniquePair.Key)
+                if (freq[s[i] - 'a'] == 1)
                     return i;
             }
 

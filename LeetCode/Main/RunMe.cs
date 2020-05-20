@@ -12,13 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var head = new ListNode(1);
-                head.next = new ListNode(2);
-                head.next.next = new ListNode(3);
-                head.next.next.next = new ListNode(4);
-                head.next.next.next.next = new ListNode(5);
-
-                RemoveNthNodeFromEndOfLinkedList.RemoveNthFromEnd(head, 2);
+                StringToInteger.MyAtoi("2147483648");
             }        
 
             #region CodeTests

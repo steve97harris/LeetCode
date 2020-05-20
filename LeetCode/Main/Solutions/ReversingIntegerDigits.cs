@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
+using System.Numerics;
 
 namespace LeetCode.Main.Solutions
 {
@@ -8,36 +10,36 @@ namespace LeetCode.Main.Solutions
     {
         public static int ReverseInt(int x)
         {
-            string xString = x.ToString();
-            List<char> intList = new List<char>();
-
-            foreach (char character in xString)
-            {
-                if (character == '-')
-                {
-                    intList.Remove(character);
-                }
-                else
-                {
-                    intList.Add(character);
-                }
-            }
-
-            intList.Reverse();
-            string intListAsString = string.Join("", intList.ToArray());
-
-            
+            if (x < -2147483647)
+                return 0;
+            var neg = false;
             if (x < 0)
             {
-                x =  -Int32.Parse(intListAsString);
+                x = Math.Abs(x);
+                neg = true;
             }
-            else
+            
+            var xString = x.ToString();
+            var xArray = xString.ToArray();
+            for (int i = 0; i < xArray.Length / 2; i++)
             {
-                x = Int32.Parse(intListAsString);
+                var temp = xArray[i];
+                xArray[i] = xString[xString.Length - 1 - i];
+                xArray[xString.Length - 1 - i] = temp;
             }
 
-            Console.WriteLine(x);
-            return x;
+            var stringResult = string.Join("", xArray);
+
+            var res = BigInteger.Parse(stringResult);
+            if (res > 2147483647)
+                return 0;
+            
+            if (neg)
+            {
+                return (int) -res;
+            }
+            
+            return (int) res;
         }
     }
 }

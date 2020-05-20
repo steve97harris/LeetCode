@@ -98,6 +98,7 @@
             <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
             <e p="KidsWithTheGreatestNumberOfCandies.cs" t="Include" />
+            <e p="KthSmallestElementInABST.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
@@ -164,6 +165,7 @@
             <e p="StringCharactersWithOddCounts.cs" t="Include" />
             <e p="StringMatchingInAnArray.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
+            <e p="StringToInteger.cs" t="Include" />
             <e p="SubArraySumEqualsK.cs" t="Include" />
             <e p="SubdomainVisitCount.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
@@ -175,6 +177,8 @@
             <e p="TwoSum.cs" t="Include" />
             <e p="UncommonWordsInSentences.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
+            <e p="ValidAnagram.cs" t="Include" />
+            <e p="ValidPalindrome.cs" t="Include" />
             <e p="ValidParenthesisString.cs" t="Include" />
             <e p="ValidPerfectSquare.cs" t="Include" />
             <e p="VersionControl.cs" t="Include" />
