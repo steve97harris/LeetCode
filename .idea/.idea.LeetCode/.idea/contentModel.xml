@@ -193,6 +193,7 @@
             <e p="ListNode.cs" t="Include" />
             <e p="ListOfTreeNodes.cs" t="Include" />
             <e p="Node.cs" t="Include" />
+            <e p="PrintListNodes.cs" t="Include" />
             <e p="TreeNode.cs" t="Include" />
           </e>
         </e>
