@@ -124,6 +124,7 @@
             <e p="MorseCode.cs" t="Include" />
             <e p="MoveZeroes.cs" t="Include" />
             <e p="MovingZeroesToEnd.cs" t="Include" />
+            <e p="NeedleInAHaystack.cs" t="Include" />
             <e p="NextGreaterElementI.cs" t="Include" />
             <e p="NoOfUniqueEmails.cs" t="Include" />
             <e p="NumberOfIslands.cs" t="Include" />
