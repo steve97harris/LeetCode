@@ -12,7 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                StringToInteger.MyAtoi("2147483648");
+                
             }        
 
             #region CodeTests

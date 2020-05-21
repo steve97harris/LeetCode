@@ -55,6 +55,7 @@
             <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
             <e p="CountNumberOfTeams.cs" t="Include" />
+            <e p="CountSquareSubmatricesWithAllOnes.cs" t="Include" />
             <e p="CousinsInBinaryTree.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
             <e p="DailyTemperatures.cs" t="Include" />
