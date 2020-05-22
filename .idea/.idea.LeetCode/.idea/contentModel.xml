@@ -103,6 +103,7 @@
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
+            <e p="LinkedListCycle.cs" t="Include" />
             <e p="LongestCommonSubsequence.cs" t="Include" />
             <e p="LongestSubstringWithoutRepeatingCharacters.cs" t="Include" />
             <e p="MajorityElement.cs" t="Include" />
@@ -115,6 +116,7 @@
             <e p="MaximumSumCircularSubarray.cs" t="Include" />
             <e p="MaxIncreaseToKeepCitySkyline.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />
+            <e p="MergeTwoSortedLists.cs" t="Include" />
             <e p="MiddleOfLinkedList.cs" t="Include" />
             <e p="MinAbsoluteDifference.cs" t="Include" />
             <e p="MinimumPathSum.cs" t="Include" />
@@ -130,6 +132,7 @@
             <e p="NumberOfIslands.cs" t="Include" />
             <e p="OccurencesAfterBigram.cs" t="Include" />
             <e p="OddEvenLinkedList.cs" t="Include" />
+            <e p="PalindromeLinkedList.cs" t="Include" />
             <e p="PartitionLabels.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
             <e p="PermutationInString.cs" t="Include" />
@@ -160,6 +163,7 @@
             <e p="SmallerThanCurrent.cs" t="Include" />
             <e p="SortArrayByParityII.cs" t="Include" />
             <e p="SortByParity.cs" t="Include" />
+            <e p="SortCharsByFreq.cs" t="Include" />
             <e p="SortIntegersByNumberOf1Bits.cs" t="Include" />
             <e p="SortIntegersByPowerValue.cs" t="Include" />
             <e p="SortMatrixDiagonally.cs" t="Include" />
@@ -189,6 +193,7 @@
           </e>
           <e p="VersatileClasses" t="Include">
             <e p="BinaryTree.cs" t="Include" />
+            <e p="CreatingALinkedListOfNodes.cs" t="Include" />
             <e p="GetTreeNodeLevels.cs" t="Include" />
             <e p="ListNode.cs" t="Include" />
             <e p="ListOfTreeNodes.cs" t="Include" />

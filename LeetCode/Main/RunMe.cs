@@ -12,20 +12,19 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                var head = new ListNode(1)
+                // SortCharsByFreq.FrequencySort("tree");
+
+                var x = new ListNode(1)
                 {
                     next = new ListNode(2)
                     {
-                        next = new ListNode(3)
+                        next = new ListNode(2)
                         {
-                            next = new ListNode(4)
-                            {
-                                next = new ListNode(5)
-                            }
+                            next = new ListNode(1)
                         }
                     }
                 };
-                ReverseLinkedList.ReverseList(head);
+                PalindromeLinkedList.IsPalindrome(x);
             }        
 
             #region CodeTests
