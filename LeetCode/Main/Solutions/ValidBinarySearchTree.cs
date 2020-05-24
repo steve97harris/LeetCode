@@ -4,50 +4,27 @@ namespace LeetCode.Main
 {
     public static class ValidBinarySearchTree
     {
-        private static int rootVal;
+        private static TreeNode prev;
         public static bool IsValidBST(TreeNode root)
         {
-            if (root == null)
+            return ValidBSTHelper(root);
+        }
+        
+        private static bool ValidBSTHelper(TreeNode node)
+        {
+            if (node == null) 
                 return true;
             
-            rootVal = root.val;
-            
-            Console.WriteLine(ValidBSTHelper(root, 1, false, false));
-            return ValidBSTHelper(root, 1, false, false);
-        }
-        private static bool ValidBSTHelper(TreeNode node, int level, bool isLeftTree, bool isRightTree)
-        {
-            // if (node == null)
-            //     return true;
-
-            if (node.val <= rootVal && isRightTree)
+            if (!ValidBSTHelper(node.left))
                 return false;
-            if (node.val >= rootVal && isLeftTree)
+
+            if (prev != null && node.val <= prev.val)
                 return false;
-            
-            if (node.left != null)
-            {
-                if (node.left.val >= node.val)
-                    return false; 
-                
-                if (level == 1)
-                    ValidBSTHelper(node.left, level + 1, true, false);
 
-                ValidBSTHelper(node.left, level + 1, isLeftTree, isRightTree);
-            }
+            prev = node;
 
-            if (node.right != null)
-            {
-                if (node.right.val <= node.val)
-                    return false;
-                
-                if (level == 1)
-                    ValidBSTHelper(node.right, level + 1, false, true);
-                
-                ValidBSTHelper(node.right, level + 1, isLeftTree, isRightTree);
-            }
+            return ValidBSTHelper(node.right);
 
-            return true;
         }
     }
 }

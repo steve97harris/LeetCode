@@ -12,14 +12,7 @@ namespace LeetCode.Main
         {
             static void Main()
             {
-                // SortCharsByFreq.FrequencySort("tree");
-
-                var root = new TreeNode(10);
-                root.left = new TreeNode(5);
-                root.right = new TreeNode(15);
-                root.right.left = new TreeNode(6);
-                root.right.right = new TreeNode(20);
-                ValidBinarySearchTree.IsValidBST(root);
+                
             }        
 
             #region CodeTests
@@ -61,6 +54,8 @@ namespace LeetCode.Main
                 //     new char[] {'1', '2', '3'}
                 // });
                 
+                // SortCharsByFreq.FrequencySort("tree");
+
                 #endregion
         }
     }
