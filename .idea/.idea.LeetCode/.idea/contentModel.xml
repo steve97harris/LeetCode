@@ -94,6 +94,7 @@
             <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="IntersectionOfTwoArraysII.cs" t="Include" />
+            <e p="IntervalListIntersections.cs" t="Include" />
             <e p="IsValidSudoku.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="JumpGame.cs" t="Include" />
@@ -184,6 +185,7 @@
             <e p="UncommonWordsInSentences.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
             <e p="ValidAnagram.cs" t="Include" />
+            <e p="ValidBinarySearchTree.cs" t="Include" />
             <e p="ValidPalindrome.cs" t="Include" />
             <e p="ValidParenthesisString.cs" t="Include" />
             <e p="ValidPerfectSquare.cs" t="Include" />
@@ -195,6 +197,7 @@
             <e p="BinaryTree.cs" t="Include" />
             <e p="CreatingALinkedListOfNodes.cs" t="Include" />
             <e p="GetTreeNodeLevels.cs" t="Include" />
+            <e p="Interval.cs" t="Include" />
             <e p="ListNode.cs" t="Include" />
             <e p="ListOfTreeNodes.cs" t="Include" />
             <e p="Node.cs" t="Include" />

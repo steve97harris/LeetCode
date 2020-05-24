@@ -4,19 +4,25 @@ namespace LeetCode.Main.Solutions
 {
     public static class MaxDepthOfBinaryTree
     {
+        private static int depth = 0;
         public static int MaxDepth(TreeNode root)
         {
-            if (root.left == null && root.right == null)
-            {
-                Console.WriteLine("both left and right nodes are null, therefore stop");
-            }
-            else
-            {
-                               
-            }
+            MaxDepthHelper(root, 1);
+            return depth;
+        }
 
-            int x = 0;
-            return x;
+        private static void MaxDepthHelper(TreeNode node, int level)
+        {
+            if (node == null)
+                return;
+
+            if (level > depth)
+                depth = level;
+
+            if (node.left != null)
+                MaxDepthHelper(node.left, level+1);
+            if (node.right != null)
+                MaxDepthHelper(node.right, level+1);
         }
     }
 }

@@ -14,17 +14,12 @@ namespace LeetCode.Main
             {
                 // SortCharsByFreq.FrequencySort("tree");
 
-                var x = new ListNode(1)
-                {
-                    next = new ListNode(2)
-                    {
-                        next = new ListNode(2)
-                        {
-                            next = new ListNode(1)
-                        }
-                    }
-                };
-                PalindromeLinkedList.IsPalindrome(x);
+                var root = new TreeNode(10);
+                root.left = new TreeNode(5);
+                root.right = new TreeNode(15);
+                root.right.left = new TreeNode(6);
+                root.right.right = new TreeNode(20);
+                ValidBinarySearchTree.IsValidBST(root);
             }        
 
             #region CodeTests
