@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using LeetCode.Main.CodingTestYR;
 using LeetCode.Main.DesignSolutions;
 using LeetCode.Main.Solutions;
+using LeetCode.Main.VersatileClasses;
 
 namespace LeetCode.Main
 {
