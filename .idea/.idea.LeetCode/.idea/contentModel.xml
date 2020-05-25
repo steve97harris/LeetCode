@@ -44,6 +44,7 @@
             <e p="BinaryGap.cs" t="Include" />
             <e p="BinaryNumberWithAlternatingBits.cs" t="Include" />
             <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
+            <e p="BinaryTreeLevelOrderTraversal.cs" t="Include" />
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
@@ -161,6 +162,7 @@
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="SearchInRotatedSortedArray.cs" t="Include" />
             <e p="ShortestDistanceToACharacter.cs" t="Include" />
+            <e p="ShuffleAnArray.cs" t="Include" />
             <e p="SingleElementInSortedArray.cs" t="Include" />
             <e p="SingleNumber.cs" t="Include" />
             <e p="SingleNumberInArray.cs" t="Include" />
@@ -206,6 +208,7 @@
             <e p="ListOfTreeNodes.cs" t="Include" />
             <e p="Node.cs" t="Include" />
             <e p="PrintListNodes.cs" t="Include" />
+            <e p="PrintTreeNodes.cs" t="Include" />
             <e p="SortedArrayToBinarySearchTree.cs" t="Include" />
             <e p="TreeNode.cs" t="Include" />
           </e>

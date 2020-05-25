@@ -1,23 +1,30 @@
-﻿namespace LeetCode.Main
+﻿using System;
+using System.Linq;
+using LeetCode.Main.VersatileClasses;
+
+namespace LeetCode.Main
 {
     public static class SortedArrayToBinarySearchTree
     {
-        private static TreeNode root;
         public static TreeNode SortedArrayToBST(int[] nums)
         {
-            // { root, root.left, root.right, root.left.left, root.left.right, root.right.left, root.right.right }
-
-            for (int i = 0; i < nums.Length; i++)
-            {
-                AddNode(nums[i]);
-            }
-
+            var root = InsertNode(nums, 0, nums.Length - 1);
+            root.Print();
             return root;
         }
 
-        private static void AddNode(int val)
+        private static TreeNode InsertNode(int[] nums, int left, int right)
         {
+            if (right < left)
+                return null;
             
+            var mid = (left + right) / 2;
+            
+            var root = new TreeNode(nums[mid]);
+            root.left = InsertNode(nums, left, mid - 1);
+            root.right = InsertNode(nums, mid + 1, right);
+
+            return root;
         }
     }
 }

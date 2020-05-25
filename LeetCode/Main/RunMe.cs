@@ -11,9 +11,11 @@ namespace LeetCode.Main
     {
         public static class RunMe
         {
-            static void Main()
+            private static void Main()
             {
-                
+                var x = new ShuffleAnArray(new int[] {1,2,3});
+                x.Shuffle();
+                x.Reset();
             }        
 
             #region CodeTests
