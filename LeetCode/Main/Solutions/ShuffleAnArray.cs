@@ -6,27 +6,26 @@ namespace LeetCode.Main.Solutions
 {
     public class ShuffleAnArray
     {
-        private int[] originalNums;
+        private List<int> originalNums;
         private int[] shuffledNums;
         public ShuffleAnArray(int[] nums)
         {
-            originalNums = nums;
+            originalNums = nums.ToList();
         }
 
         public int[] Reset()
         {
             Console.WriteLine("Reset: ");
-            for (int i = 0; i < originalNums.Length; i++)
+            foreach (var i in originalNums)
             {
-                Console.WriteLine(originalNums[i]);
+                Console.WriteLine(i);
             }
-            
-            return originalNums;
+            return originalNums.ToArray();
         }
 
         public int[] Shuffle()
         {
-            shuffledNums = originalNums;
+            shuffledNums = originalNums.ToArray();
             var random = new Random();
             var n = shuffledNums.Length;
 

@@ -13,9 +13,18 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var x = new ShuffleAnArray(new int[] {1,2,3});
-                x.Shuffle();
-                x.Reset();
+                // var root = new Node(1)
+                // {
+                //     children = new List<Node>()
+                //     {
+                //         new Node(3), new Node(2), new Node(4)
+                //     }
+                // };
+                // root.children[0].children = new List<Node>() {new Node(5), new Node(6)};
+                // TreePostorderTraversal.Postorder(root);
+
+                const uint x = 4294967293;
+                ReverseDeBits.ReverseBits(x);
             }        
 
             #region CodeTests
@@ -58,6 +67,14 @@ namespace LeetCode.Main
                 // });
                 
                 // SortCharsByFreq.FrequencySort("tree");
+                
+                // var dislikes = new int[][]
+                // {
+                //     new int[] {1, 2},
+                //     new int[] {1, 3},
+                //     new int[] {2, 4}
+                // };
+                // PossibleBiPartition.PossibleBipartition(4, dislikes);
 
                 #endregion
         }

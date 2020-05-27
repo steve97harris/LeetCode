@@ -8,30 +8,30 @@ namespace LeetCode.Main.DesignSolutions
         private static IList<int> preorderNodeValues = new List<int>();
         public static IList<int> Preorder(Node root)
         {
-            var nodeStack = new Stack<Node>();
-            nodeStack.Push(root);
-            
-            while (nodeStack.Count != 0)
-            {
-                var currentNode = nodeStack.Pop();
+            PreorderHelper(root);
 
-                //if (currentNode != null && currentNode.children.Count != 0)
-                {
-                    foreach (var child in currentNode.children)
-                    {
-                        // nodeStack.Push(child);
-                        Console.WriteLine(child.val);
-                    }
-                    preorderNodeValues.Add(currentNode.val);
-                }
-            }
-            
             for (int i = 0; i < preorderNodeValues.Count; i++)
             {
                 Console.WriteLine(preorderNodeValues[i]);
             }
-            
+
             return preorderNodeValues;
+        }
+
+        private static void PreorderHelper(Node node)
+        {
+            if (node == null)
+                return;
+            
+            preorderNodeValues.Add(node.val);
+
+            if (node.children == null) 
+                return;
+            
+            for (int i = 0; i < node.children.Count; i++)
+            {
+                PreorderHelper(node.children[i]);
+            }
         }
     }
 }

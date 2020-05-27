@@ -58,6 +58,7 @@
             <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
             <e p="CountNumberOfTeams.cs" t="Include" />
+            <e p="CountPrimes.cs" t="Include" />
             <e p="CountSquareSubmatricesWithAllOnes.cs" t="Include" />
             <e p="CousinsInBinaryTree.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
@@ -92,7 +93,9 @@
             <e p="GoatLatin.cs" t="Include" />
             <e p="GroupAnagrams.cs" t="Include" />
             <e p="GroupPeopleDependingOnGroupSize.cs" t="Include" />
+            <e p="HammingDistance.cs" t="Include" />
             <e p="HappyNumber.cs" t="Include" />
+            <e p="HouseRobber.cs" t="Include" />
             <e p="ImplementQueueUsingStack.cs" t="Include" />
             <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
@@ -134,6 +137,7 @@
             <e p="NeedleInAHaystack.cs" t="Include" />
             <e p="NextGreaterElementI.cs" t="Include" />
             <e p="NoOfUniqueEmails.cs" t="Include" />
+            <e p="NumberOf1Bits.cs" t="Include" />
             <e p="NumberOfIslands.cs" t="Include" />
             <e p="OccurencesAfterBigram.cs" t="Include" />
             <e p="OddEvenLinkedList.cs" t="Include" />
@@ -141,6 +145,8 @@
             <e p="PartitionLabels.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
             <e p="PermutationInString.cs" t="Include" />
+            <e p="PossibleBipartition.cs" t="Include" />
+            <e p="PowerOfThree.cs" t="Include" />
             <e p="ProductOfArrayExceptSelf.cs" t="Include" />
             <e p="QueriesOnAPermutationWithKey.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
@@ -153,11 +159,13 @@
             <e p="ReplaceElementswithGreatestElementToRight.cs" t="Include" />
             <e p="ReshapeTheMatrix.cs" t="Include" />
             <e p="RevealCardsInIncreasingOrder.cs" t="Include" />
+            <e p="ReverseBits.cs" t="Include" />
             <e p="ReverseLinkedList.cs" t="Include" />
             <e p="ReverseString.cs" t="Include" />
             <e p="ReverseWordsInStringIII.cs" t="Include" />
             <e p="ReversingIntegerDigits.cs" t="Include" />
             <e p="RobotReturnToOrigin.cs" t="Include" />
+            <e p="RomanToInteger.cs" t="Include" />
             <e p="RotateDeArray.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="SearchInRotatedSortedArray.cs" t="Include" />
