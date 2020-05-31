@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Numerics;
 
 namespace LeetCode.Main.Solutions
 {
@@ -9,7 +10,7 @@ namespace LeetCode.Main.Solutions
         {
             var x = ConvertToStringOfBits(n);
             var reverseX = new string(x.Reverse().ToArray());
-            var res = uint.Parse(reverseX);
+            var res = (uint) BigInteger.Parse(reverseX);
             return res;
         }
         

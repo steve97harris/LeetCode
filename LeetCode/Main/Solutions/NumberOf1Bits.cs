@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace LeetCode.Main
 {
@@ -6,15 +7,10 @@ namespace LeetCode.Main
     {
         public static int HammingWeight(uint n)
         {
-            var count = 0;
             var stringN = new string(n.ToString());
             Console.WriteLine(stringN);
-            
-            foreach (var t in stringN)
-            {
-                if (t == '1')
-                    count++;
-            }
+
+            var count = stringN.Count(t => t == '1');
 
             Console.WriteLine(count);
             return count;

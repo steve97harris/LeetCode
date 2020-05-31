@@ -44,8 +44,8 @@
             <e p="BinaryGap.cs" t="Include" />
             <e p="BinaryNumberWithAlternatingBits.cs" t="Include" />
             <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
-            <e p="BinaryTreeLevelOrderTraversal.cs" t="Include" />
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
+            <e p="BinaryTreeZigZagLevelOrder.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
             <e p="ClimbingStairs.cs" t="Include" />
@@ -55,6 +55,7 @@
             <e p="ContiguousArray.cs" t="Include" />
             <e p="ConvertBinaryNumberInLinkedListToInt.cs" t="Include" />
             <e p="CorrespondingNodeOfBinaryTreeInACloneOfThatTree.cs" t="Include" />
+            <e p="CountBits.cs" t="Include" />
             <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
             <e p="CountNumberOfTeams.cs" t="Include" />
@@ -69,7 +70,6 @@
             <e p="DecryptStringFromLettersToNumbers.cs" t="Include" />
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
-            <e p="DeleteNode.cs" t="Include" />
             <e p="DeleteNodeInLinkedList.cs" t="Include" />
             <e p="DestinationCity.cs" t="Include" />
             <e p="DiameterOfBinaryTree.cs" t="Include" />
@@ -100,6 +100,7 @@
             <e p="InsertIntoABinarySearchTree.cs" t="Include" />
             <e p="IntersectionOfTwoArrays.cs" t="Include" />
             <e p="IntersectionOfTwoArraysII.cs" t="Include" />
+            <e p="IntersectionOfTwoLinkedLists.cs" t="Include" />
             <e p="IntervalListIntersections.cs" t="Include" />
             <e p="IsValidSudoku.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
@@ -112,6 +113,7 @@
             <e p="LetterCasePermutation.cs" t="Include" />
             <e p="LinkedListCycle.cs" t="Include" />
             <e p="LongestCommonSubsequence.cs" t="Include" />
+            <e p="LongestPalindromicSubstring.cs" t="Include" />
             <e p="LongestSubstringWithoutRepeatingCharacters.cs" t="Include" />
             <e p="MajorityElement.cs" t="Include" />
             <e p="Max69Number.cs" t="Include" />
@@ -167,8 +169,10 @@
             <e p="RobotReturnToOrigin.cs" t="Include" />
             <e p="RomanToInteger.cs" t="Include" />
             <e p="RotateDeArray.cs" t="Include" />
+            <e p="RotateDeImage.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="SearchInRotatedSortedArray.cs" t="Include" />
+            <e p="SetMatrixZeroes.cs" t="Include" />
             <e p="ShortestDistanceToACharacter.cs" t="Include" />
             <e p="ShuffleAnArray.cs" t="Include" />
             <e p="SingleElementInSortedArray.cs" t="Include" />
@@ -192,9 +196,9 @@
             <e p="SumOfArrayEqualZero.cs" t="Include" />
             <e p="SumOfEvenNumbersAfterQueries.cs" t="Include" />
             <e p="SymmetricTree.cs" t="Include" />
+            <e p="TheMissingNumber.cs" t="Include" />
+            <e p="ThreeSum.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
-            <e p="TreePostorderTraversal.cs" t="Include" />
-            <e p="TreePreorderTraversal.cs" t="Include" />
             <e p="TwoSum.cs" t="Include" />
             <e p="UncommonWordsInSentences.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
@@ -208,17 +212,31 @@
             <e p="ZigZagConversion.cs" t="Include" />
           </e>
           <e p="VersatileClasses" t="Include">
-            <e p="BinaryTree.cs" t="Include" />
-            <e p="CreatingALinkedListOfNodes.cs" t="Include" />
-            <e p="GetTreeNodeLevels.cs" t="Include" />
+            <e p="ArraysAndStrings" t="Include">
+              <e p="GenerateSubsetsOfAnArray.cs" t="Include" />
+            </e>
             <e p="Interval.cs" t="Include" />
-            <e p="ListNode.cs" t="Include" />
-            <e p="ListOfTreeNodes.cs" t="Include" />
-            <e p="Node.cs" t="Include" />
-            <e p="PrintListNodes.cs" t="Include" />
-            <e p="PrintTreeNodes.cs" t="Include" />
-            <e p="SortedArrayToBinarySearchTree.cs" t="Include" />
-            <e p="TreeNode.cs" t="Include" />
+            <e p="LinkedLists" t="Include">
+              <e p="CreatingALinkedListOfNodes.cs" t="Include" />
+              <e p="DeleteNode.cs" t="Include" />
+              <e p="ListNode.cs" t="Include" />
+              <e p="PrintListNodes.cs" t="Include" />
+            </e>
+            <e p="Nodes" t="Include">
+              <e p="Node.cs" t="Include" />
+            </e>
+            <e p="TreesAndGraphs" t="Include">
+              <e p="BinaryTree.cs" t="Include" />
+              <e p="BinaryTreeInorderTraversal.cs" t="Include" />
+              <e p="BinaryTreeLevelOrderTraversal.cs" t="Include" />
+              <e p="GetTreeNodeLevels.cs" t="Include" />
+              <e p="ListOfTreeNodes.cs" t="Include" />
+              <e p="PrintTreeNodes.cs" t="Include" />
+              <e p="SortedArrayToBinarySearchTree.cs" t="Include" />
+              <e p="TreeNode.cs" t="Include" />
+              <e p="TreePostorderTraversal.cs" t="Include" />
+              <e p="TreePreorderTraversal.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="obj" t="ExcludeRecursive">

@@ -13,18 +13,7 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                // var root = new Node(1)
-                // {
-                //     children = new List<Node>()
-                //     {
-                //         new Node(3), new Node(2), new Node(4)
-                //     }
-                // };
-                // root.children[0].children = new List<Node>() {new Node(5), new Node(6)};
-                // TreePostorderTraversal.Postorder(root);
-
-                const uint x = 4294967293;
-                ReverseDeBits.ReverseBits(x);
+                
             }        
 
             #region CodeTests
@@ -58,14 +47,7 @@ namespace LeetCode.Main
                 // twitter.GetNewsFeed(1);
                 // twitter.Unfollow(1,2);
                 // twitter.GetNewsFeed(1);
-                
-                // ValidSudoku.IsValidSudoku(new char[][]
-                // {
-                //     new char[] {'1', '.', '3'},
-                //     new char[] {'1', '2', '3'},
-                //     new char[] {'1', '2', '3'}
-                // });
-                
+
                 // SortCharsByFreq.FrequencySort("tree");
                 
                 // var dislikes = new int[][]
@@ -75,6 +57,11 @@ namespace LeetCode.Main
                 //     new int[] {2, 4}
                 // };
                 // PossibleBiPartition.PossibleBipartition(4, dislikes);
+                
+                // const uint x = 4294967293;
+                // ReverseDeBits.ReverseBits(x);
+                
+                // LongestPalindromicSubstring.LongestPalindrome("abababcd");
 
                 #endregion
         }

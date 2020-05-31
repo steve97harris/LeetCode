@@ -7,10 +7,12 @@ namespace LeetCode.Main
 {
     public static class TreePostorderTraversal
     {
-        private static Stack<int> stack1 = new Stack<int>();
         private static IList<int> postorderNodeValues = new List<int>();
         public static IList<int> Postorder(Node root)
         {
+            if (root == null)
+                return null;
+            
             PostorderHelper(root);
 
             foreach (var i in postorderNodeValues)
@@ -23,24 +25,15 @@ namespace LeetCode.Main
 
         private static void PostorderHelper(Node node)
         {
-            if (node == null)
+            if (node.children == null)
                 return;
-            
-            stack1.Push(node.val);
 
-            while (stack1.Count() != 0)
+            foreach (var nodeChild in node.children)
             {
-                var topStack1 = stack1.Pop();
-                postorderNodeValues.Add(topStack1);
-
-                if (node.children == null) 
-                    return;
-                
-                for (int i = 0; i < node.children.Count; i++)
-                {
-                    PostorderHelper(node.children[i]);
-                }
+                PostorderHelper(nodeChild);
             }
+            
+            postorderNodeValues.Add(node.val);
         }
     }
 }

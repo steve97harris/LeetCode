@@ -7,22 +7,37 @@ namespace LeetCode.Main
     {
         public static int LengthOfLongestSubstring(string s)
         {
-            var res = 0; 
-            var visited = new bool[256]; 
-  
-            for (int i = 0; i < s.Length; i++) 
-            { 
-                for (int j = i; j < s.Length; j++) 
-                { 
-                    if (visited[s[j]]) 
-                        break;
-                    
-                    res = Math.Max(res, j - i + 1); 
-                    visited[s[j]] = true;
-                } 
-                visited[s[i]] = false; 
-            } 
-            return res; 
+            if (s == null)
+                return 0;
+
+            var hashtable = new int[256];        // key's - char, value's - position in the string (index)
+            for (int m = 0; m < hashtable.Length; m++)
+            {
+                hashtable[m] = -1;
+            }
+
+            var maxLengthOfSubstring = 0;
+            var substringStartPosition = 0;
+            var i = 0;
+            while (i < s.Length)
+            {
+                if (hashtable[s[i]] != -1)
+                {
+                    maxLengthOfSubstring = Math.Max(maxLengthOfSubstring, i - substringStartPosition);
+
+                    for (int j = substringStartPosition; j < hashtable[s[i]]; j++)
+                    {
+                        hashtable[s[j]] = -1;
+                    }
+
+                    substringStartPosition = hashtable[s[i]] + 1;
+                }
+
+                hashtable[s[i]] = i;
+                ++i;
+            }
+
+            return Math.Max(maxLengthOfSubstring, i - substringStartPosition);
         }
     }
 }
