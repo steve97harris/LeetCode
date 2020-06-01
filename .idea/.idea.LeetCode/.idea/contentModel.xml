@@ -111,6 +111,7 @@
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
+            <e p="LetterCombinationsOfAPhoneNumber.cs" t="Include" />
             <e p="LinkedListCycle.cs" t="Include" />
             <e p="LongestCommonSubsequence.cs" t="Include" />
             <e p="LongestPalindromicSubstring.cs" t="Include" />

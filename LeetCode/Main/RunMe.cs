@@ -13,7 +13,7 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                
+                LetterCombinationsOfAPhoneNumber.LetterCombinations("23");
             }        
 
             #region CodeTests
