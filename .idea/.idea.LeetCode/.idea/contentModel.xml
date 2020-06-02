@@ -15,6 +15,7 @@
           <e p="DesignSolutions" t="Include">
             <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
             <e p="BinarySearchTreeIterator.cs" t="Include" />
+            <e p="EncodeDecodeBinaryTree.cs" t="Include" />
             <e p="FirstUnique.cs" t="Include" />
             <e p="LeastRecentlyUsedCache.cs" t="Include" />
             <e p="MinimumElementInStack.cs" t="Include" />
@@ -102,6 +103,7 @@
             <e p="IntersectionOfTwoArraysII.cs" t="Include" />
             <e p="IntersectionOfTwoLinkedLists.cs" t="Include" />
             <e p="IntervalListIntersections.cs" t="Include" />
+            <e p="InvertBinaryTree.cs" t="Include" />
             <e p="IsValidSudoku.cs" t="Include" />
             <e p="JewelsAndStones.cs" t="Include" />
             <e p="JumpGame.cs" t="Include" />
@@ -183,6 +185,7 @@
             <e p="SortArrayByParityII.cs" t="Include" />
             <e p="SortByParity.cs" t="Include" />
             <e p="SortCharsByFreq.cs" t="Include" />
+            <e p="SortColours.cs" t="Include" />
             <e p="SortIntegersByNumberOf1Bits.cs" t="Include" />
             <e p="SortIntegersByPowerValue.cs" t="Include" />
             <e p="SortMatrixDiagonally.cs" t="Include" />
@@ -200,6 +203,7 @@
             <e p="TheMissingNumber.cs" t="Include" />
             <e p="ThreeSum.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
+            <e p="TopKFreqElements.cs" t="Include" />
             <e p="TwoSum.cs" t="Include" />
             <e p="UncommonWordsInSentences.cs" t="Include" />
             <e p="UniqueNumberOfOccurrences.cs" t="Include" />
@@ -219,7 +223,7 @@
             <e p="Interval.cs" t="Include" />
             <e p="LinkedLists" t="Include">
               <e p="CreatingALinkedListOfNodes.cs" t="Include" />
-              <e p="DeleteNode.cs" t="Include" />
+              <e p="DeleteListNode.cs" t="Include" />
               <e p="ListNode.cs" t="Include" />
               <e p="PrintListNodes.cs" t="Include" />
             </e>
@@ -230,6 +234,7 @@
               <e p="BinaryTree.cs" t="Include" />
               <e p="BinaryTreeInorderTraversal.cs" t="Include" />
               <e p="BinaryTreeLevelOrderTraversal.cs" t="Include" />
+              <e p="DeleteTreeNode.cs" t="Include" />
               <e p="GetTreeNodeLevels.cs" t="Include" />
               <e p="ListOfTreeNodes.cs" t="Include" />
               <e p="PrintTreeNodes.cs" t="Include" />

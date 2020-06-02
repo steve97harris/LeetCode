@@ -13,7 +13,7 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                LetterCombinationsOfAPhoneNumber.LetterCombinations("23");
+                
             }        
 
             #region CodeTests
@@ -62,6 +62,11 @@ namespace LeetCode.Main
                 // ReverseDeBits.ReverseBits(x);
                 
                 // LongestPalindromicSubstring.LongestPalindrome("abababcd");
+                
+                // LetterCombinationsOfAPhoneNumber.LetterCombinations("23");
+                
+                // InvertBinaryTree.InvertTree(root);
+
 
                 #endregion
         }
