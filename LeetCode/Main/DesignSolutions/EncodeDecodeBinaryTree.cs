@@ -5,12 +5,12 @@
         
         public string Serialize(TreeNode root)
         {
-            
+            return "";
         }
 
         public TreeNode Deserialize(string data)
         {
-            
+            return new TreeNode();
         }
     }
 }
