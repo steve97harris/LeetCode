@@ -13,16 +13,7 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var x = new int[][]
-                {
-                    new int[] {259, 770},
-                    new int[] {448, 54},
-                    new int[] {926, 667},
-                    new int[] {184, 139},
-                    new int[] {840, 118},
-                    new int[] {577, 469}
-                };
-                TwoCityScheduling.TwoCitySchedCost(x);
+                
             }        
 
             #region CodeTests
@@ -76,6 +67,15 @@ namespace LeetCode.Main
                 
                 // InvertBinaryTree.InvertTree(root);
 
+                // var root = new TreeNode(1);
+                // root.left = new TreeNode(2);
+                // root.right = new TreeNode(3);
+                // root.right.left = new TreeNode(4);
+                // root.right.right = new TreeNode(5);
+                // var s = "[1,2,3,null,null,4,5]";
+                // var x = new EncodeDecodeBinaryTree();
+                // x.Serialize(root);
+                // x.Deserialize(s);
 
                 #endregion
         }
