@@ -173,6 +173,7 @@
             <e p="RomanToInteger.cs" t="Include" />
             <e p="RotateDeArray.cs" t="Include" />
             <e p="RotateDeImage.cs" t="Include" />
+            <e p="RunningSumOf1dArray.cs" t="Include" />
             <e p="SearchInBinaryTree.cs" t="Include" />
             <e p="SearchInRotatedSortedArray.cs" t="Include" />
             <e p="SetMatrixZeroes.cs" t="Include" />
@@ -196,6 +197,7 @@
             <e p="StringToInteger.cs" t="Include" />
             <e p="SubArraySumEqualsK.cs" t="Include" />
             <e p="SubdomainVisitCount.cs" t="Include" />
+            <e p="SubrectangleQueries.cs" t="Include" />
             <e p="SubtractProductAndSum.cs" t="Include" />
             <e p="SumOfArrayEqualZero.cs" t="Include" />
             <e p="SumOfEvenNumbersAfterQueries.cs" t="Include" />
@@ -219,6 +221,7 @@
           </e>
           <e p="VersatileClasses" t="Include">
             <e p="ArraysAndStrings" t="Include">
+              <e p="DisplayMatrix.cs" t="Include" />
               <e p="GenerateSubsetsOfAnArray.cs" t="Include" />
             </e>
             <e p="Interval.cs" t="Include" />
