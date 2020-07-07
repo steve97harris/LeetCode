@@ -144,6 +144,7 @@
             <e p="NoOfUniqueEmails.cs" t="Include" />
             <e p="NumberOf1Bits.cs" t="Include" />
             <e p="NumberOfIslands.cs" t="Include" />
+            <e p="NumberOfStudentsDoingHomework.cs" t="Include" />
             <e p="OccurencesAfterBigram.cs" t="Include" />
             <e p="OddEvenLinkedList.cs" t="Include" />
             <e p="PalindromeLinkedList.cs" t="Include" />
