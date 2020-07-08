@@ -48,6 +48,7 @@
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BinaryTreeZigZagLevelOrder.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
+            <e p="CellsWithOddValuesInAMatrix.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
             <e p="ClimbingStairs.cs" t="Include" />
             <e p="ComplementOfBase10Integer.cs" t="Include" />
@@ -127,6 +128,7 @@
             <e p="MaximumSubArray.cs" t="Include" />
             <e p="MaximumSumCircularSubarray.cs" t="Include" />
             <e p="MaxIncreaseToKeepCitySkyline.cs" t="Include" />
+            <e p="MaxProductOfTwoElementsInAnArray.cs" t="Include" />
             <e p="MergeSortedArray.cs" t="Include" />
             <e p="MergeTrees.cs" t="Include" />
             <e p="MergeTwoSortedLists.cs" t="Include" />

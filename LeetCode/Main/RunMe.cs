@@ -14,7 +14,12 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                
+                var mat = new int[][]
+                {
+                    new int[] {1, 1},
+                    new int[] {0, 0}
+                };
+                CellsWithOddValuesInAMatrix.OddCells(2, 2, mat);
             }        
 
             #region CodeTests
