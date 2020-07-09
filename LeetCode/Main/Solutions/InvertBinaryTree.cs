@@ -4,10 +4,8 @@ namespace LeetCode.Main
 {
     public static class InvertBinaryTree
     {
-        private static TreeNode _root;
         public static TreeNode InvertTree(TreeNode root)
         {
-            _root = root;
             Helper(root);
             
             root.Print();

@@ -8,15 +8,18 @@ namespace LeetCode.Main
     public class EncodeDecodeBinaryTree
     {
         private Dictionary<TreeNode, string> map = new Dictionary<TreeNode, string>();
-        private string currString = "";
+        private string _currString = "";
         public string Serialize(TreeNode root)
         {
+            if (root == null)
+                return "";
+            
             if (map.ContainsKey(root))
                 return map[root];
-
+            
             TreeToString(root);
-            var res = currString;
-            currString = "";
+            var res = _currString;
+            _currString = "";
             map.Add(root, res);
             
             Console.WriteLine(res);
@@ -49,12 +52,8 @@ namespace LeetCode.Main
                     dataList.Add(-1);
                 }
             }
-
-            foreach (var i in dataList)
-            {
-                Console.WriteLine(i);
-            }
-            var root = InsertNode(dataList.ToArray(), 0, dataList.Count - 1);
+            
+            var root = ArrayToBt(dataList.ToArray(), new TreeNode(), 0);
             root.Print();
                 
             return root;
@@ -64,28 +63,35 @@ namespace LeetCode.Main
         {
             if (node == null)
             {
-                currString += "null,";
+                _currString += "null,";
                 return;
             }
-
-            currString += node.val + ",";
+        
+            _currString += node.val + ",";
             
             TreeToString(node.left);
             TreeToString(node.right);
         }
-        
-        private TreeNode InsertNode(int[] nums, int left, int right)
+
+        private static TreeNode ArrayToBt(int[] nums, TreeNode root, int i)
         {
-            if (right < left)
+            if (i >= nums.Length) 
+                return root;
+
+            TreeNode temp = null;
+            
+            if (nums[i] != -1)
+                temp = new TreeNode(nums[i]);
+
+            root = temp;
+
+            if (root == null) 
                 return null;
             
-            var mid = (left + right) / 2;
-            
-            var root = new TreeNode(nums[mid]);
-            root.left = InsertNode(nums, left, mid - 1);
-            root.right = InsertNode(nums, mid + 1, right);
+            root.left = ArrayToBt(nums, root.left, 2 * i + 1);
+            root.right = ArrayToBt(nums, root.right, 2 * i + 2);
 
-            return root;
-        }    
+            return root; 
+        }
     }
 }

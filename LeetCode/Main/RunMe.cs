@@ -14,7 +14,14 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                DecryptStringFromLettersToNumbers.FreqAlphabets("25#23#");
+                var customStack = new DesignStackWithIncrementOperation(2);
+                customStack.Push(34);
+                customStack.Pop();
+                customStack.Increment(8,100);
+                customStack.Pop();
+                customStack.Increment(9,91);
+                customStack.Push(63);
+                customStack.Pop();
             }        
 
             #region CodeTests
@@ -74,19 +81,11 @@ namespace LeetCode.Main
                 // LongestPalindromicSubstring.LongestPalindrome("abababcd");
                 
                 // LetterCombinationsOfAPhoneNumber.LetterCombinations("23");
-                
+
+                // var nums = new int[] {1, 2, 3, 4, 5, 6};
+                // var root = ArrayToBinaryTree.ArrayToBt(nums, new TreeNode(), 0);
+                // root.Print();
                 // InvertBinaryTree.InvertTree(root);
-
-                // var root = new TreeNode(1);
-                // root.left = new TreeNode(2);
-                // root.right = new TreeNode(3);
-                // root.right.left = new TreeNode(4);
-                // root.right.right = new TreeNode(5);
-                // var s = "[1,2,3,null,null,4,5]";
-                // var x = new EncodeDecodeBinaryTree();
-                // x.Serialize(root);
-                // x.Deserialize(s);
-
                 #endregion
         }
     }

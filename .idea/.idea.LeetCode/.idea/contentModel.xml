@@ -73,6 +73,7 @@
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="DeleteNodeInLinkedList.cs" t="Include" />
+            <e p="DesignStackWithIncrementOperation.cs" t="Include" />
             <e p="DestinationCity.cs" t="Include" />
             <e p="DiameterOfBinaryTree.cs" t="Include" />
             <e p="DistributeCandies.cs" t="Include" />
@@ -82,6 +83,7 @@
             <e p="EncodeDecodeTinyURL.cs" t="Include" />
             <e p="FactorialTrailingZeros.cs" t="Include" />
             <e p="FibonacciNumber.cs" t="Include" />
+            <e p="FinalPricesWithASpecialDiscountInAShop.cs" t="Include" />
             <e p="FindAllAnagramsInString.cs" t="Include" />
             <e p="FindAndReplacePattern.cs" t="Include" />
             <e p="FindCommonCharacters.cs" t="Include" />
