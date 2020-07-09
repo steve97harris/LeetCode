@@ -14,14 +14,7 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var customStack = new DesignStackWithIncrementOperation(2);
-                customStack.Push(34);
-                customStack.Pop();
-                customStack.Increment(8,100);
-                customStack.Pop();
-                customStack.Increment(9,91);
-                customStack.Push(63);
-                customStack.Pop();
+                
             }        
 
             #region CodeTests
