@@ -112,6 +112,7 @@
             <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
             <e p="KidsWithTheGreatestNumberOfCandies.cs" t="Include" />
+            <e p="KthLexicographicalStringOfAllHappyStrings.cs" t="Include" />
             <e p="KthSmallestElementInABST.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
