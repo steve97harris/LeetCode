@@ -14,7 +14,10 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                
+                var nums = new int[] {3, 1, 4, 3, -1, 1, 5};
+                var root = ArrayToBinaryTree.ArrayToBt(nums, new TreeNode(), 0);
+
+                CountGoodNodesInBinaryTree.GoodNodes(root);
             }        
 
             #region CodeTests

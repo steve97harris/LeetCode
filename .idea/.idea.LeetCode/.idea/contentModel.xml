@@ -58,6 +58,7 @@
             <e p="ConvertBinaryNumberInLinkedListToInt.cs" t="Include" />
             <e p="CorrespondingNodeOfBinaryTreeInACloneOfThatTree.cs" t="Include" />
             <e p="CountBits.cs" t="Include" />
+            <e p="CountGoodNodesInBinaryTree.cs" t="Include" />
             <e p="CountingElements.cs" t="Include" />
             <e p="CountNegatives.cs" t="Include" />
             <e p="CountNumberOfTeams.cs" t="Include" />
