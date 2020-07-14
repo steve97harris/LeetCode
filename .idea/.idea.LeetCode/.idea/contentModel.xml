@@ -30,6 +30,7 @@
           <e p="Notes" t="Include">
             <e p="BigO_Notation" t="Include" />
           </e>
+          <e p="QueensThatCanAttackTheKing.cs" t="Include" />
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
             <e p="AddOne.cs" t="Include" />
@@ -40,6 +41,7 @@
             <e p="BackspaceStringCompare.cs" t="Include" />
             <e p="BalanceABinaryTree.cs" t="Include" />
             <e p="BaseballGame.cs" t="Include" />
+            <e p="BattleshipsInABoard.cs" t="Include" />
             <e p="BestTimeToBuyAndSellStock.cs" t="Include" />
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
             <e p="BinaryGap.cs" t="Include" />
@@ -64,6 +66,7 @@
             <e p="CountNumberOfTeams.cs" t="Include" />
             <e p="CountPrimes.cs" t="Include" />
             <e p="CountSquareSubmatricesWithAllOnes.cs" t="Include" />
+            <e p="CountTripletsThatCanFormTwoArraysOfEqualXor.cs" t="Include" />
             <e p="CousinsInBinaryTree.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
             <e p="DailyTemperatures.cs" t="Include" />
@@ -113,6 +116,7 @@
             <e p="JumpGame.cs" t="Include" />
             <e p="KeyboardRow.cs" t="Include" />
             <e p="KidsWithTheGreatestNumberOfCandies.cs" t="Include" />
+            <e p="KthFactorOfN.cs" t="Include" />
             <e p="KthLexicographicalStringOfAllHappyStrings.cs" t="Include" />
             <e p="KthSmallestElementInABST.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
@@ -212,6 +216,7 @@
             <e p="SumOfNodesWithEvenValuedGrandparent.cs" t="Include" />
             <e p="SymmetricTree.cs" t="Include" />
             <e p="TheMissingNumber.cs" t="Include" />
+            <e p="TheSpiralMatrixIII.cs" t="Include" />
             <e p="ThreeSum.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
             <e p="TopKFreqElements.cs" t="Include" />
