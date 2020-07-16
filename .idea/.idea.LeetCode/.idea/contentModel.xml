@@ -30,7 +30,6 @@
           <e p="Notes" t="Include">
             <e p="BigO_Notation" t="Include" />
           </e>
-          <e p="QueensThatCanAttackTheKing.cs" t="Include" />
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
             <e p="AddOne.cs" t="Include" />
@@ -164,6 +163,7 @@
             <e p="PossibleBipartition.cs" t="Include" />
             <e p="PowerOfThree.cs" t="Include" />
             <e p="ProductOfArrayExceptSelf.cs" t="Include" />
+            <e p="QueensThatCanAttackTheKing.cs" t="Include" />
             <e p="QueriesOnAPermutationWithKey.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
             <e p="RangeSumOfBST.cs" t="Include" />
@@ -232,6 +232,7 @@
             <e p="VersionControl.cs" t="Include" />
             <e p="WordsThatCanBeFormedByCharacters.cs" t="Include" />
             <e p="XorOperationInAnArray.cs" t="Include" />
+            <e p="XorQueriesOfASubarray.cs" t="Include" />
             <e p="ZigZagConversion.cs" t="Include" />
           </e>
           <e p="VersatileClasses" t="Include">

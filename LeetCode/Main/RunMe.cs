@@ -14,17 +14,15 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var queens = new int[][]
+                var arr = new int[] {1, 3, 4, 8};
+                var queries = new int[][]
                 {
                     new int[] {0, 1},
-                    new int[] {1, 0},
-                    new int[] {4, 0},
-                    new int[] {0, 4},
-                    new int[] {3, 3},
-                    new int[] {2, 4}
+                    new int[] {1, 2},
+                    new int[] {0, 3},
+                    new int[] {3, 3}
                 };
-                var king = new int[] {0, 0};
-                QueensThatCanAttackTheKing.QueensAttackTheKing(queens, king);
+                XorQueriesOfASubarray.XorQueries(arr, queries);
             }        
 
             #region CodeTests
