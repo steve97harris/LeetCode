@@ -10,19 +10,20 @@ namespace LeetCode.Main.Solutions
             var res = new List<int>();
             for (int i = 0; i < queries.Length; i++)
             {
-                var x = 0;
-                // for (int j = queries[i][0]; j < queries[i][1]; j++)
-                // {
-                //     x ^= arr[j];
-                //     Console.WriteLine(x);
-                //     Console.WriteLine("arr: " + arr[j]);
-                // }
-                Console.WriteLine("res = " + x);
-                res.Add(x);
+                var xor = 0;
+                if (i >= 1 && queries[i] == queries[i - 1])
+                {
+                    res.Add(res[^1]);
+                }
+                else
+                {
+                    for (int j = queries[i][0]; j <= queries[i][1]; j++)
+                    {
+                        xor ^= arr[j];
+                    }
+                    res.Add(xor);
+                }
             }
-
-            var c = 1 ^ 3;
-            Console.WriteLine("sdjklfhaiksdb =" + c);
 
             return res.ToArray();
         }

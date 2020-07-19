@@ -12,26 +12,12 @@
             <e p="BenCommentsCodingTest.cs" t="Include" />
             <e p="CodingTest.cs" t="Include" />
           </e>
-          <e p="DesignSolutions" t="Include">
-            <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
-            <e p="BinarySearchTreeIterator.cs" t="Include" />
-            <e p="EncodeDecodeBinaryTree.cs" t="Include" />
-            <e p="FirstUnique.cs" t="Include" />
-            <e p="LeastRecentlyUsedCache.cs" t="Include" />
-            <e p="MinimumElementInStack.cs" t="Include" />
-            <e p="MyQueue.cs" t="Include" />
-            <e p="StevesHashMap.cs" t="Include" />
-            <e p="StevesHashSet.cs" t="Include" />
-            <e p="StevesStack.cs" t="Include" />
-            <e p="StockSpanner.cs" t="Include" />
-            <e p="Trie.cs" t="Include" />
-            <e p="Twitter.cs" t="Include" />
-          </e>
           <e p="Notes" t="Include">
             <e p="BigO_Notation" t="Include" />
           </e>
           <e p="RunMe.cs" t="Include" />
           <e p="Solutions" t="Include">
+            <e p="AddAndSearchWord_DataStructureDesign.cs" t="Include" />
             <e p="AddOne.cs" t="Include" />
             <e p="AddTwoNumbers.cs" t="Include" />
             <e p="AllElementsInTwoBinarySearchTrees.cs" t="Include" />
@@ -45,6 +31,7 @@
             <e p="BestTimeToBuyAndSellStockII.cs" t="Include" />
             <e p="BinaryGap.cs" t="Include" />
             <e p="BinaryNumberWithAlternatingBits.cs" t="Include" />
+            <e p="BinarySearchTreeIterator.cs" t="Include" />
             <e p="BinarySearchTreeToGreaterSumTree.cs" t="Include" />
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BinaryTreeZigZagLevelOrder.cs" t="Include" />
@@ -52,7 +39,9 @@
             <e p="CellsWithOddValuesInAMatrix.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
             <e p="ClimbingStairs.cs" t="Include" />
+            <e p="CombinationIterator.cs" t="Include" />
             <e p="ComplementOfBase10Integer.cs" t="Include" />
+            <e p="ComplexMultiplication.cs" t="Include" />
             <e p="ConstructBinaryTreeFromPostorderTraversal.cs" t="Include" />
             <e p="ContainsDuplicates.cs" t="Include" />
             <e p="ContiguousArray.cs" t="Include" />
@@ -83,6 +72,7 @@
             <e p="DistributeCandiesToPeople.cs" t="Include" />
             <e p="DIString.cs" t="Include" />
             <e p="ElementAppearingMoreThan25%InSortedArray.cs" t="Include" />
+            <e p="EncodeDecodeBinaryTree.cs" t="Include" />
             <e p="EncodeDecodeTinyURL.cs" t="Include" />
             <e p="FactorialTrailingZeros.cs" t="Include" />
             <e p="FibonacciNumber.cs" t="Include" />
@@ -93,7 +83,9 @@
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
             <e p="FindNumbersWithEvenNumberOfDigits.cs" t="Include" />
             <e p="FindTheTownJudge.cs" t="Include" />
+            <e p="FirstUnique.cs" t="Include" />
             <e p="FirstUniqueCharInString.cs" t="Include" />
+            <e p="FizzBuzzMultithreaded.cs" t="Include" />
             <e p="FizzFizzBuzzBuzz.cs" t="Include" />
             <e p="FlippingAnImage.cs" t="Include" />
             <e p="FloodFill.cs" t="Include" />
@@ -120,6 +112,7 @@
             <e p="KthSmallestElementInABST.cs" t="Include" />
             <e p="KWeakestRowsInMatrix.cs" t="Include" />
             <e p="LastStoneWeight.cs" t="Include" />
+            <e p="LeastRecentlyUsedCache.cs" t="Include" />
             <e p="LetterCasePermutation.cs" t="Include" />
             <e p="LetterCombinationsOfAPhoneNumber.cs" t="Include" />
             <e p="LinkedListCycle.cs" t="Include" />
@@ -141,6 +134,7 @@
             <e p="MergeTwoSortedLists.cs" t="Include" />
             <e p="MiddleOfLinkedList.cs" t="Include" />
             <e p="MinAbsoluteDifference.cs" t="Include" />
+            <e p="MinimumElementInStack.cs" t="Include" />
             <e p="MinimumPathSum.cs" t="Include" />
             <e p="MinimumSubsequenceInNonIncreasingOrder.cs" t="Include" />
             <e p="MinNumOfStepsForAnagram.cs" t="Include" />
@@ -148,6 +142,7 @@
             <e p="MorseCode.cs" t="Include" />
             <e p="MoveZeroes.cs" t="Include" />
             <e p="MovingZeroesToEnd.cs" t="Include" />
+            <e p="MyQueue.cs" t="Include" />
             <e p="NeedleInAHaystack.cs" t="Include" />
             <e p="NextGreaterElementI.cs" t="Include" />
             <e p="NoOfUniqueEmails.cs" t="Include" />
@@ -157,12 +152,14 @@
             <e p="OccurencesAfterBigram.cs" t="Include" />
             <e p="OddEvenLinkedList.cs" t="Include" />
             <e p="PalindromeLinkedList.cs" t="Include" />
+            <e p="PancakeFlipping.cs" t="Include" />
             <e p="PartitionLabels.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
             <e p="PermutationInString.cs" t="Include" />
             <e p="PossibleBipartition.cs" t="Include" />
             <e p="PowerOfThree.cs" t="Include" />
             <e p="ProductOfArrayExceptSelf.cs" t="Include" />
+            <e p="PseudoPalindromicPaths.cs" t="Include" />
             <e p="QueensThatCanAttackTheKing.cs" t="Include" />
             <e p="QueriesOnAPermutationWithKey.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
@@ -203,6 +200,10 @@
             <e p="SortIntegersByPowerValue.cs" t="Include" />
             <e p="SortMatrixDiagonally.cs" t="Include" />
             <e p="SquaresOfSortedArray.cs" t="Include" />
+            <e p="StevesHashMap.cs" t="Include" />
+            <e p="StevesHashSet.cs" t="Include" />
+            <e p="StevesStack.cs" t="Include" />
+            <e p="StockSpanner.cs" t="Include" />
             <e p="StringCharactersWithOddCounts.cs" t="Include" />
             <e p="StringMatchingInAnArray.cs" t="Include" />
             <e p="StringSplit_Incomplete.cs" t="Include" />
@@ -220,6 +221,8 @@
             <e p="ThreeSum.cs" t="Include" />
             <e p="ToLowerCase.cs" t="Include" />
             <e p="TopKFreqElements.cs" t="Include" />
+            <e p="Trie.cs" t="Include" />
+            <e p="Twitter.cs" t="Include" />
             <e p="TwoCityScheduling.cs" t="Include" />
             <e p="TwoSum.cs" t="Include" />
             <e p="UncommonWordsInSentences.cs" t="Include" />

@@ -14,15 +14,12 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var arr = new int[] {1, 3, 4, 8};
-                var queries = new int[][]
-                {
-                    new int[] {0, 1},
-                    new int[] {1, 2},
-                    new int[] {0, 3},
-                    new int[] {3, 3}
-                };
-                XorQueriesOfASubarray.XorQueries(arr, queries);
+                var x = new int[] {8,8,-1,7,7,-1,-1,2,4,-1,8,-1,7,-1,1};
+                var root = ArrayToBinaryTree.ArrayToBt(x, new TreeNode(), 0);
+                root.Print();
+                
+                var palindromePaths = new PseudoPalindromicPathsI();
+                palindromePaths.PseudoPalindromicPaths(root);
             }        
 
             #region CodeTests
