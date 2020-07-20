@@ -65,6 +65,7 @@
             <e p="DeepestLeavesSum.cs" t="Include" />
             <e p="DefangingAnIPAddress.cs" t="Include" />
             <e p="DeleteNodeInLinkedList.cs" t="Include" />
+            <e p="DeleteNodesAndReturnForest.cs" t="Include" />
             <e p="DesignStackWithIncrementOperation.cs" t="Include" />
             <e p="DestinationCity.cs" t="Include" />
             <e p="DiameterOfBinaryTree.cs" t="Include" />
@@ -164,6 +165,7 @@
             <e p="QueriesOnAPermutationWithKey.cs" t="Include" />
             <e p="QueueReconstructionByHeight.cs" t="Include" />
             <e p="RangeSumOfBST.cs" t="Include" />
+            <e p="ReduceArraySizeToTheHalf.cs" t="Include" />
             <e p="ReducingNumberToZero.cs" t="Include" />
             <e p="RelativelySortArray.cs" t="Include" />
             <e p="RemoveDuplicatesFromSortedArray.cs" t="Include" />

@@ -14,12 +14,8 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var x = new int[] {8,8,-1,7,7,-1,-1,2,4,-1,8,-1,7,-1,1};
-                var root = ArrayToBinaryTree.ArrayToBt(x, new TreeNode(), 0);
-                root.Print();
-                
-                var palindromePaths = new PseudoPalindromicPathsI();
-                palindromePaths.PseudoPalindromicPaths(root);
+                var x = new ReduceArraySizeToTheHalf();
+                x.MinSetSize(new int[] {1,2,3,4,5,6,7,8,9,10});
             }        
 
             #region CodeTests

@@ -111,10 +111,12 @@ namespace LeetCode.Main
             return false;
         }
 
-        private bool CheckIfPalindromic(int[] arr)
+        private bool CheckIfPalindromic(int[] arr)        
         {
             var rev = arr.Reverse().ToArray();
             return arr.SequenceEqual(rev);
+            
+            // or Note that the node values of a path form a palindrome if at most one digit has an odd frequency (parity).
         }
     }
 }
