@@ -14,8 +14,8 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var x = new ReduceArraySizeToTheHalf();
-                x.MinSetSize(new int[] {1,2,3,4,5,6,7,8,9,10});
+                var x = new BuildAnArrayWithStackOperations();
+                x.BuildArray(new int[] {1, 3}, 3);
             }        
 
             #region CodeTests

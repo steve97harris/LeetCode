@@ -36,6 +36,7 @@
             <e p="BinaryTreeMaximumPathSum.cs" t="Include" />
             <e p="BinaryTreeZigZagLevelOrder.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
+            <e p="BuildAnArrayWithStackOperations.cs" t="Include" />
             <e p="CellsWithOddValuesInAMatrix.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
             <e p="ClimbingStairs.cs" t="Include" />
