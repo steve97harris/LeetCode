@@ -26,10 +26,7 @@ namespace LeetCode.Main
             
             for (int i = 0; i < product.Length; i++)
             {
-                for (int j = 0; j < amount[i]; j++)
-                {
-                    bill += productPrices[product[i]];
-                }
+                bill += productPrices[product[i]] * amount[i];
             }
 
             customer++;
