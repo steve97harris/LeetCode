@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.Main.VersatileClasses.TreesAndGraphs
 {
-    public static class ArrayToBinaryTree
+    public class ArrayToBinaryTree
     {
-        public static TreeNode ArrayToBt(int[] nums, TreeNode root, int i)
+        public TreeNode ArrayToBt(int[] nums, TreeNode root, int i)
         {
             if (i >= nums.Length) 
                 return root;

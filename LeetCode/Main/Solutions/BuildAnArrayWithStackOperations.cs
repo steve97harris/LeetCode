@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main
 {
@@ -10,7 +11,10 @@ namespace LeetCode.Main
             var res = new List<string>();
             for (int i = 1; i <= n; i++)
             {
-                if (target[i] == i)
+                if (i > target.Max())
+                    break;
+                
+                if (target.Contains(i))
                     res.Add("Push");
                 else
                 {

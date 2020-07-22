@@ -14,9 +14,8 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var x = new BuildAnArrayWithStackOperations();
-                x.BuildArray(new int[] {1, 3}, 3);
-            }        
+                
+            }
 
             #region CodeTests
 

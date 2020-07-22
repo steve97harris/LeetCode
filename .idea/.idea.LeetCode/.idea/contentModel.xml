@@ -37,6 +37,7 @@
             <e p="BinaryTreeZigZagLevelOrder.cs" t="Include" />
             <e p="BitwiseANDofNumbersRange.cs" t="Include" />
             <e p="BuildAnArrayWithStackOperations.cs" t="Include" />
+            <e p="Cashier.cs" t="Include" />
             <e p="CellsWithOddValuesInAMatrix.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
             <e p="ClimbingStairs.cs" t="Include" />
@@ -58,6 +59,7 @@
             <e p="CountTripletsThatCanFormTwoArraysOfEqualXor.cs" t="Include" />
             <e p="CousinsInBinaryTree.cs" t="Include" />
             <e p="CreateTargetArrayInGivenOrder.cs" t="Include" />
+            <e p="CustomSortString.cs" t="Include" />
             <e p="DailyTemperatures.cs" t="Include" />
             <e p="DayOfTheWeek.cs" t="Include" />
             <e p="DayOfTheYear.cs" t="Include" />
@@ -80,6 +82,7 @@
             <e p="FibonacciNumber.cs" t="Include" />
             <e p="FinalPricesWithASpecialDiscountInAShop.cs" t="Include" />
             <e p="FindAllAnagramsInString.cs" t="Include" />
+            <e p="FindAllDuplicatesInAnArray.cs" t="Include" />
             <e p="FindAndReplacePattern.cs" t="Include" />
             <e p="FindCommonCharacters.cs" t="Include" />
             <e p="FindingLongestCommonPrefix.cs" t="Include" />
@@ -124,6 +127,7 @@
             <e p="MajorityElement.cs" t="Include" />
             <e p="Max69Number.cs" t="Include" />
             <e p="MaxDepthOfBinaryTree.cs" t="Include" />
+            <e p="MaxDifferenceBetweenNodeAndAncestor.cs" t="Include" />
             <e p="MaximumBinaryTree.cs" t="Include" />
             <e p="MaximumLevelSumOfBinaryTree.cs" t="Include" />
             <e p="MaximumSquare.cs" t="Include" />
@@ -136,6 +140,7 @@
             <e p="MergeTwoSortedLists.cs" t="Include" />
             <e p="MiddleOfLinkedList.cs" t="Include" />
             <e p="MinAbsoluteDifference.cs" t="Include" />
+            <e p="MinCostTreeFromLeafValues.cs" t="Include" />
             <e p="MinimumElementInStack.cs" t="Include" />
             <e p="MinimumPathSum.cs" t="Include" />
             <e p="MinimumSubsequenceInNonIncreasingOrder.cs" t="Include" />
