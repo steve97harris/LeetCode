@@ -161,7 +161,9 @@
             <e p="OddEvenLinkedList.cs" t="Include" />
             <e p="PalindromeLinkedList.cs" t="Include" />
             <e p="PancakeFlipping.cs" t="Include" />
+            <e p="PartitionArrayForMaxSum.cs" t="Include" />
             <e p="PartitionLabels.cs" t="Include" />
+            <e p="PathWithMaxGold.cs" t="Include" />
             <e p="PerformStringShifts.cs" t="Include" />
             <e p="PermutationInString.cs" t="Include" />
             <e p="PossibleBipartition.cs" t="Include" />
