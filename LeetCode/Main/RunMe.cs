@@ -14,14 +14,8 @@ namespace LeetCode.Main
         {
             private static void Main()
             {
-                var x = new int[][]
-                {
-                    new int[] {0, 6, 0},
-                    new int[] {5, 8, 7},
-                    new int[] {0, 9, 0}
-                };
-                var y = new PathWithMaxGold();
-                y.GetMaximumGold(x);
+                var x = new CircularPermutationInBinaryRepresentation();
+                x.CircularPermutation(2, 3);
             }
 
             #region CodeTests

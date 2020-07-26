@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LeetCode.Main
 {
+    
     public class PathWithMaxGold
     {
         private int[][] _grid;
-        private int[] nextIndex = new int[] {-1, -1};
-        private int bestRouteValue = 0;
-        private int totalGold = 0;
-        
         public int GetMaximumGold(int[][] grid)
         {
             _grid = grid;
@@ -19,51 +17,88 @@ namespace LeetCode.Main
             {
                 for (int j = 0; j < grid[0].Length; j++)
                 {
-                    if (grid[i][j] > 0)
+                    if (_grid[i][j] > 0)
                         possibleStartPositions.Add(new int[] {i, j});
                 }
             }
 
             var res = 0;
+            var bestPath = new List<int>();
             for (int i = 0; i < possibleStartPositions.Count; i++)
             {
-                GoldRec(possibleStartPositions[i][0], possibleStartPositions[i][1], new List<int>(), new List<int[]>());
-                if (totalGold > res)
-                    res = totalGold;
-                totalGold = 0;
-            }
+                var startPosI = possibleStartPositions[i][0];
+                var startPosJ = possibleStartPositions[i][1];
+                var startString = startPosI.ToString() + startPosJ.ToString();
+                var startValue = _grid[startPosI][startPosJ];
+                var pathPositions = new List<string>() { startString };
+                var pathValues = new List<int>() { startValue };
+                GoldRec(startPosI, startPosJ, pathValues, pathPositions);
 
+                var totalGold = pathValues.Sum();
+                if (totalGold > res)
+                {
+                    res = totalGold;
+                    bestPath = pathValues;
+                }
+            }
+            
+            foreach (var i in bestPath)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("--------");
+            
             Console.WriteLine(res);
+            
             return res;
         }
 
-        private void GoldRec(int i, int j, List<int> route, List<int[]> routeIndexes)
+        private void GoldRec(int i, int j, List<int> route, List<string> routeIndexes)
         {
-            route.Add(_grid[i][j]);
-            totalGold += _grid[i][j];
-            routeIndexes.Add(new int[] {i,j});
-            
-            GetNextIndex(i+1, j, routeIndexes);
-            GetNextIndex(i-1, j, routeIndexes);
-            GetNextIndex(i, j+1, routeIndexes);
-            GetNextIndex(i, j-1, routeIndexes);
-        }
-
-        private void GetNextIndex(int indexI, int indexJ, List<int[]> routeIndexes)
-        {
-            if (indexI < 0 || indexJ < 0)
-                return;
-
-            if (indexJ >= _grid[0].Length || indexI >= _grid.Length) 
-                return;
-            
-            var direction = _grid[indexI][indexJ];
-            if (direction > bestRouteValue && !routeIndexes.Contains(new int[] {indexI, indexJ}) && direction != 0)
+            var possibleMoves = new List<int[]>
             {
-                bestRouteValue = direction;
-                nextIndex[0] = indexI;
-                nextIndex[1] = indexJ;
+                new int[] {i + 1, j}, 
+                new int[] {i - 1, j}, 
+                new int[] {i, j + 1}, 
+                new int[] {i, j - 1}
+            };
+
+            var bestMove = 0;
+            var bestI = 0;
+            var bestJ = 0;
+            for (int k = 0; k < possibleMoves.Count; k++)
+            {
+                var newIndexI = possibleMoves[k][0];
+                var newIndexJ = possibleMoves[k][1];
+                
+                if (newIndexI < 0 || newIndexJ < 0)
+                    continue;
+
+                if (newIndexJ >= _grid[0].Length || newIndexI >= _grid.Length) 
+                    continue;
+                
+                var currentPositionValue = _grid[newIndexI][newIndexJ];
+                var stringPos = newIndexI.ToString() + newIndexJ.ToString();
+                
+                // need to fix, if currentPositionValue == bestMove 
+                // if two options are equal 3, which route do we take ?
+                
+                if (currentPositionValue > bestMove && !routeIndexes.Contains(stringPos))
+                {
+                    bestMove = currentPositionValue;
+                    bestI = newIndexI;
+                    bestJ = newIndexJ;
+                }
             }
+
+            var bestPosString = bestI.ToString() + bestJ.ToString();
+            if (routeIndexes.Contains(bestPosString) || bestMove <= 0) 
+                return;
+            
+            route.Add(bestMove);
+            routeIndexes.Add(bestPosString);
+                
+            GoldRec(bestI, bestJ, route, routeIndexes);
         }
     }
 }

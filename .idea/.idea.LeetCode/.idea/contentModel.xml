@@ -40,6 +40,7 @@
             <e p="Cashier.cs" t="Include" />
             <e p="CellsWithOddValuesInAMatrix.cs" t="Include" />
             <e p="CheckIfItIsAStraightLine.cs" t="Include" />
+            <e p="CircularPermutationInBinaryRepresentation.cs" t="Include" />
             <e p="ClimbingStairs.cs" t="Include" />
             <e p="CombinationIterator.cs" t="Include" />
             <e p="ComplementOfBase10Integer.cs" t="Include" />
@@ -151,6 +152,7 @@
             <e p="MoveZeroes.cs" t="Include" />
             <e p="MovingZeroesToEnd.cs" t="Include" />
             <e p="MyQueue.cs" t="Include" />
+            <e p="NArayTreeLevelOrderTraversal.cs" t="Include" />
             <e p="NeedleInAHaystack.cs" t="Include" />
             <e p="NextGreaterElementI.cs" t="Include" />
             <e p="NoOfUniqueEmails.cs" t="Include" />
